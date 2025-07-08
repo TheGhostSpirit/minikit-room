@@ -1,4 +1,12 @@
 {
   "name": "minikit-room",
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev:frontend": "yarn workspace frontend start"
+  }
 }
