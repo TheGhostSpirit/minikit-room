@@ -7,7 +7,7 @@
     "apps/backend"
   ],
   "scripts": {
-    "dev:frontend": "yarn workspace frontend start",
-    "dev:backend": "yarn workspace backend start:dev"
+    "dev:frontend": "yarn workspace @mkr/frontend start",
+    "dev:backend": "yarn workspace @mkr/backend start:dev"
   }
 }
