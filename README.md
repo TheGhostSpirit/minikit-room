@@ -1,6 +1,34 @@
 # minikit-room
 
-## Database
+## Run locally
+
+### Frontend
+
+Run
+
+```bash
+yarn run dev:frontend
+```
+
+### Backend
+
+Create .env file with following properties
+
+```
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+```
+
+Run
+
+```bash
+yarn run dev:backend
+```
+
+### Database
 
 Setup with docker
 
