@@ -8,6 +8,6 @@
   ],
   "scripts": {
     "dev:frontend": "yarn workspace @mkr/frontend start",
-    "dev:backend": "yarn workspace @mkr/backend start:dev"
+    "dev:backend": "yarn workspace @mkr/backend start"
   }
 }
