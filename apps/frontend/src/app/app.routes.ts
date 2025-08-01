@@ -1,3 +1,7 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { Pixeltheque } from './pages/pixeltheque/pixeltheque';
+
+export const routes: Routes = [
+  { title: 'Pixelthèque', path: 'pixeltheque', component: Pixeltheque }
+];
