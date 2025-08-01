@@ -2113,6 +2113,7 @@ __metadata:
     "@angular/forms": "npm:^20.0.0"
     "@angular/platform-browser": "npm:^20.0.0"
     "@angular/router": "npm:^20.0.0"
+    "@primeuix/themes": "npm:^1.2.3"
     "@types/jasmine": "npm:~5.1.0"
     jasmine-core: "npm:~5.7.0"
     karma: "npm:~6.4.0"
@@ -2120,6 +2121,7 @@ __metadata:
     karma-coverage: "npm:~2.2.0"
     karma-jasmine: "npm:~5.1.0"
     karma-jasmine-html-reporter: "npm:~2.1.0"
+    primeng: "npm:^20.0.1"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.8.2"
@@ -2833,6 +2835,40 @@ __metadata:
   version: 0.2.9
   resolution: "@pkgr/core@npm:0.2.9"
   checksum: 10c0/ac8e4e8138b1a7a4ac6282873aef7389c352f1f8b577b4850778f5182e4a39a5241facbe48361fec817f56d02b51691b383010843fb08b34a8e8ea3614688fd5
+  languageName: node
+  linkType: hard
+
+"@primeuix/styled@npm:^0.7.1, @primeuix/styled@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "@primeuix/styled@npm:0.7.2"
+  dependencies:
+    "@primeuix/utils": "npm:^0.6.1"
+  checksum: 10c0/e5a0c412b56230c52d2aeadf99763e82b0dfdfcd234256835bd57d438024a9700dec7c8f9980a4b6791b7fe33afbfec198270cb513b829229ecb49641766c540
+  languageName: node
+  linkType: hard
+
+"@primeuix/styles@npm:^1.2.2":
+  version: 1.2.3
+  resolution: "@primeuix/styles@npm:1.2.3"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.2"
+  checksum: 10c0/0e3dff8a4b8fb18a78b515fcb6183aa530fae832b87a46574f00d18f2a36653e00acd9e6e497187353352e712c51524a343bf49b7d27e0e76620fc4cbbd687ff
+  languageName: node
+  linkType: hard
+
+"@primeuix/themes@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@primeuix/themes@npm:1.2.3"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.2"
+  checksum: 10c0/efe861663dfaa55d6d32b3e1a33edce8159190d6bfc4e24e9c3a3f5efe73248e256b2d33d996b402fc199010b6e6e0a8fe83e90b7ae95891047c0fbfb4a415e3
+  languageName: node
+  linkType: hard
+
+"@primeuix/utils@npm:^0.6.0, @primeuix/utils@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "@primeuix/utils@npm:0.6.1"
+  checksum: 10c0/41e2f544eb58e6bba39a47eb174590565501a711af610a6e189db371be82126ba23eebbf18da78287129a34e663d9486b6f3f46770f93c3dd612048e7c1a3ce6
   languageName: node
   linkType: hard
 
@@ -9809,6 +9845,27 @@ __metadata:
     ansi-styles: "npm:^5.0.0"
     react-is: "npm:^18.0.0"
   checksum: 10c0/edc5ff89f51916f036c62ed433506b55446ff739358de77207e63e88a28ca2894caac6e73dcb68166a606e51c8087d32d400473e6a9fdd2dbe743f46c9c0276f
+  languageName: node
+  linkType: hard
+
+"primeng@npm:^20.0.1":
+  version: 20.0.1
+  resolution: "primeng@npm:20.0.1"
+  dependencies:
+    "@primeuix/styled": "npm:^0.7.1"
+    "@primeuix/styles": "npm:^1.2.2"
+    "@primeuix/utils": "npm:^0.6.0"
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    "@angular/animations": ^20.0.4
+    "@angular/cdk": ^20.0.3
+    "@angular/common": ^20.0.4
+    "@angular/core": ^20.0.4
+    "@angular/forms": ^20.0.4
+    "@angular/platform-browser": ^20.0.4
+    "@angular/router": ^20.0.4
+    rxjs: ^6.0.0 || ^7.8.1
+  checksum: 10c0/80162c6f697e214d0a85cd8f982b6350734a327c218fce9aeced8a448e51bc63b31988e5bdfc8143b06373f7cbf9b7732b2152da2c5a5fad79abf9cc82984a6a
   languageName: node
   linkType: hard
 
