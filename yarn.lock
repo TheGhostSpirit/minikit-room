@@ -246,6 +246,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@angular/animations@npm:^20.0.0":
+  version: 20.1.4
+  resolution: "@angular/animations@npm:20.1.4"
+  dependencies:
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    "@angular/common": 20.1.4
+    "@angular/core": 20.1.4
+  checksum: 10c0/da39799e29239f8449c82572bc9fed41762ac94e9c444b48c966bbcff8458b4299e64f1616a6a354fb1f6ce26571d0bd5d709ac837ead6e9d8e7bc214acc8793
+  languageName: node
+  linkType: hard
+
 "@angular/build@npm:^20.0.5":
   version: 20.1.4
   resolution: "@angular/build@npm:20.1.4"
@@ -2104,6 +2116,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mkr/frontend@workspace:apps/frontend"
   dependencies:
+    "@angular/animations": "npm:^20.0.0"
     "@angular/build": "npm:^20.0.5"
     "@angular/cli": "npm:^20.0.5"
     "@angular/common": "npm:^20.0.0"
