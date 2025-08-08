@@ -12,7 +12,12 @@ import { MenuModule } from 'primeng/menu';
 export class Sidenav {
 
   items: MenuItem[] = [
-    { label: 'Pixelthèque', routerLink: 'pixeltheque' },
+    { label: 'Pixelthèque', items: [
+        { label: 'Steam' },
+        { label: 'Xbox' },
+        { label: 'Autres', routerLink: 'pixeltheque' },
+      ]
+    },
     { label: 'Bibliothèque' },
     { label: 'Cinémathèque' },
     { label: 'Ludothèque' },
