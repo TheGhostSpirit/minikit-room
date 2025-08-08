@@ -1,9 +1,25 @@
-.app-content {
-  display: flex;
-  flex-flow: row nowrap;
-  height: 100%;
-}
+@use 'layout' as l;
 
-.sidenav {
-  width: 20%;
+.layout {
+  &-wrapper {
+    background-color: var(--surface-300);
+    @include l.layout-height-with-navbar-offset;
+    @include l.layout-width;
+  }
+
+  &-content {
+    @include l.navbar-offset;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &-sidenav {
+    @include l.layout-sidenav;
+    position: sticky;
+  }
+
+  &-content-slot {
+    height: 200vh;
+  }
 }

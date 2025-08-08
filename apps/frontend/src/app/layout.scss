@@ -1,0 +1,24 @@
+$layout-width: 1920px;
+$navbar-height: 4rem;
+
+@mixin layout-width {
+  max-width: $layout-width;
+  margin: 0 auto;
+}
+
+@mixin layout-height-with-navbar-offset {
+  height: calc(100vh - $navbar-height);
+}
+
+@mixin layout-sidenav {
+  height: calc(100vh - $navbar-height);
+  top: $navbar-height;
+}
+
+@mixin navbar-height {
+  height: $navbar-height;
+}
+
+@mixin navbar-offset {
+  margin-top: $navbar-height;
+}

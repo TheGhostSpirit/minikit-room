@@ -1,4 +1,19 @@
+@use '../../layout' as l;
+
 .navbar-menu {
-  margin: .5rem;
-  border-radius: 3rem;
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+  }
+
+  &-inner {
+    display: flex;
+    background-color: var(--primary-color);
+    @include l.navbar-height;
+    border-color: transparent;
+    @include l.layout-width;
+  }
 }

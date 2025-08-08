@@ -1,9 +1,11 @@
-<main>
+<main class="layout-wrapper">
   <app-navbar></app-navbar>
-  <div class="app-content">
-    <div class="sidenav">
+  <div class="layout-content">
+    <div class="layout-sidenav">
       <app-sidenav></app-sidenav>
     </div>
-    <router-outlet />
+    <div class="layout-content-slot">
+      <router-outlet />
+    </div>
   </div>
 </main>
