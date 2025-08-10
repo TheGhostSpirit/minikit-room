@@ -2,7 +2,6 @@
 
 .layout {
   &-wrapper {
-    background-color: var(--surface-300);
     @include l.layout-height-with-navbar-offset;
     @include l.layout-width;
   }
@@ -17,9 +16,6 @@
   &-sidenav {
     @include l.layout-sidenav;
     position: sticky;
-  }
-
-  &-content-slot {
-    height: 200vh;
+    margin: 0 3rem;
   }
 }

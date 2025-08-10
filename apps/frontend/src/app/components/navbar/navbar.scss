@@ -11,9 +11,12 @@
 
   &-inner {
     display: flex;
-    background-color: var(--primary-color);
     @include l.navbar-height;
     border-color: transparent;
     @include l.layout-width;
+
+    & > span {
+      margin: auto 2rem;
+    }
   }
 }
