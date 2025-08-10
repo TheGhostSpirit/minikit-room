@@ -1,6 +1,10 @@
 <p-menu [model]="items">
   <ng-template #item let-item>
-    <a class="flex items-center p-menu-item-link">
+    <a
+      [routerLink]="item.routerLink"
+      class="flex items-center p-menu-item-link"
+      routerLinkActive="active"
+    >
       <fa-icon [icon]="item.fa" />
       <span class="ml-2">{{ item.label }}</span>
     </a>

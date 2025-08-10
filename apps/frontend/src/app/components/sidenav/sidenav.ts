@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { MenuItem } from 'primeng/api';
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuModule } from 'primeng/menu';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPuzzlePiece, faGamepad, faVideo, faBook, faNoteSticky, faSkullCrossbones } from '@fortawesome/free-solid-svg-icons';
 import { faSteam, faXbox } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-sidenav',
-  imports: [MenuModule, FontAwesomeModule],
+  imports: [MenuModule, FontAwesomeModule, RouterModule],
   templateUrl: './sidenav.html',
   styleUrl: './sidenav.scss'
 })
