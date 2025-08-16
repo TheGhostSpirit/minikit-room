@@ -1,7 +1,16 @@
 <div class="pixeltheque-wrapper">
-  <p-toolbar>
+  <p-toolbar class="pixeltheque-header">
     <ng-template #start>
-      <h3>Pixelthèque</h3>
+      <div>
+        <h3>Pixelthèque</h3>
+        <p>Ma collection de jeux</p>
+      </div>
+    </ng-template>
+    <ng-template #center>
+      <p-floatlabel variant="in">
+        <input pInputText id="search" autocomplete="off" />
+        <label for="search">Search</label>
+      </p-floatlabel>
     </ng-template>
     <ng-template #end>
       <button pButton>
@@ -22,7 +31,11 @@
     </ng-template>
     <ng-template #body let-game>
       <tr>
-        <td>{{ game.name }}</td>
+        <td>
+          <a [routerLink]="'/game/edit/' + game.id" class="pixeltheque-link-edit">
+            {{ game.name }}
+          </a>
+        </td>
         <td>{{ game.achievements }} / 50</td>
         <td>5.0</td>
         <td><fa-icon [icon]="icons.trash" /></td>
