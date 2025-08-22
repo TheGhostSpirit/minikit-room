@@ -1,1 +1,47 @@
-<p>edit-game works!</p>
+<div>
+  <h3 class="text-2xl font-bold mb-4">{{ title }}</h3>
+  <p-stepper [value]="1" class="basis-[50rem]">
+    <p-step-list>
+      <p-step [value]="1">Informations générales</p-step>
+      <p-step [value]="2">Mon espace</p-step>
+    </p-step-list>
+    <p-step-panels>
+      <p-step-panel [value]="1">
+        <ng-template #content let-activateCallback="activateCallback">
+          <div class="flex flex-col h-48">
+            <div class="border-2 border-dashed border-surface-200 rounded bg-surface-50 flex">
+              <p-floatlabel variant="in">
+                <input
+                  pInputText
+                  id="name"
+                  [(ngModel)]="name"
+                  autocomplete="off"
+                />
+                <label for="name">Name</label>
+              </p-floatlabel>
+              <p-rating [(ngModel)]="rating" />
+            </div>
+          </div>
+          <div class="flex pt-6 justify-end">
+            <button pButton (onClick)="activateCallback(2)">
+              <span pButtonLabel>Next</span>
+              <fa-icon [icon]="faArrowRight" pButtonIcon />
+            </button>
+          </div>
+        </ng-template>
+      </p-step-panel>
+
+      <p-step-panel [value]="2">
+        <ng-template #content let-activateCallback="activateCallback">
+          <div class="flex flex-col h-48">
+            <div
+              class="border-2 border-dashed border-surface-200 rounded bg-surface-50 flex-auto flex justify-center items-center font-medium"
+            >
+              Content II
+            </div>
+          </div>
+        </ng-template>
+      </p-step-panel>
+    </p-step-panels>
+  </p-stepper>
+</div>
