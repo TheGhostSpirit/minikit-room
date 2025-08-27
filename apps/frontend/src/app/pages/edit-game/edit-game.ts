@@ -4,22 +4,37 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { RatingModule } from 'primeng/rating';
-import { StepperModule } from 'primeng/stepper';
 import { ButtonModule } from 'primeng/button';
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { SelectModule } from 'primeng/select';
+import { DividerModule } from 'primeng/divider';
+import { TextareaModule } from 'primeng/textarea';
 
 @Component({
   selector: 'app-edit-game',
-  imports: [InputTextModule, FloatLabelModule, FormsModule, RatingModule, StepperModule, ButtonModule, FontAwesomeModule],
+  imports: [InputTextModule, FloatLabelModule, FormsModule, RatingModule, ButtonModule, SelectModule, DividerModule, TextareaModule],
   templateUrl: './edit-game.html',
   styleUrl: './edit-game.scss'
 })
 export class EditGame {
-  faArrowRight = faArrowRight;
   title = 'Modifier un jeu';
 
+  platforms = [
+    'Xbox',
+    'PlayStation',
+    'PC'
+  ];
+
+  formats = [
+    'Physique',
+    'Dématérialisé'
+  ];
+
   name = '';
-  rating = 2;
+  rating = 0;
+  platform = '';
+  format = '';
+  studio = '';
+  summary = '';
+  comment = '';
+
 }

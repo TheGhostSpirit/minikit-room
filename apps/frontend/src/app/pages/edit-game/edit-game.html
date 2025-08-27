@@ -1,47 +1,73 @@
 <div>
   <h3 class="text-2xl font-bold mb-4">{{ title }}</h3>
-  <p-stepper [value]="1" class="basis-[50rem]">
-    <p-step-list>
-      <p-step [value]="1">Informations générales</p-step>
-      <p-step [value]="2">Mon espace</p-step>
-    </p-step-list>
-    <p-step-panels>
-      <p-step-panel [value]="1">
-        <ng-template #content let-activateCallback="activateCallback">
-          <div class="flex flex-col h-48">
-            <div class="border-2 border-dashed border-surface-200 rounded bg-surface-50 flex">
-              <p-floatlabel variant="in">
-                <input
-                  pInputText
-                  id="name"
-                  [(ngModel)]="name"
-                  autocomplete="off"
-                />
-                <label for="name">Name</label>
-              </p-floatlabel>
-              <p-rating [(ngModel)]="rating" />
-            </div>
-          </div>
-          <div class="flex pt-6 justify-end">
-            <button pButton (click)="activateCallback(2)">
-              <span pButtonLabel>Next</span>
-              <fa-icon [icon]="faArrowRight" pButtonIcon />
-            </button>
-          </div>
-        </ng-template>
-      </p-step-panel>
 
-      <p-step-panel [value]="2">
-        <ng-template #content let-activateCallback="activateCallback">
-          <div class="flex flex-col h-48">
-            <div
-              class="border-2 border-dashed border-surface-200 rounded bg-surface-50 flex-auto flex justify-center items-center font-medium"
-            >
-              Content II
-            </div>
-          </div>
-        </ng-template>
-      </p-step-panel>
-    </p-step-panels>
-  </p-stepper>
+  <p-divider align="left" type="solid">
+    <h4 class="text-l font-bold">Informations générales</h4>
+  </p-divider>
+
+  <div class="flex justify-between p-2">
+    <div class="flex flex-col gap-2 w-1/4">
+      <label for="name" class="font-bold">Name</label>
+      <input pInputText id="name" [(ngModel)]="name" />
+    </div>
+    <div class="flex flex-col gap-2 w-1/4">
+      <label for="studio" class="font-bold">Studio</label>
+      <input pInputText id="studio" [(ngModel)]="studio" />
+    </div>
+    <div class="flex flex-col gap-2 w-1/4">
+      <label for="platform" class="font-bold">Platforme</label>
+      <p-select
+        [options]="platforms"
+        [(ngModel)]="platform"
+        id="platform"
+        placeholder="Sélectionner..."
+      />
+    </div>
+  </div>
+  <div class="flex justify-between p-2">
+    <div class="flex flex-col gap-2 w-1/4">
+      <label for="format" class="font-bold">Format</label>
+      <p-select
+        [options]="formats"
+        [(ngModel)]="format"
+        id="format"
+        placeholder="Sélectionner..."
+      />
+    </div>
+    <div class="flex flex-col gap-2 w-[62.5%]">
+      <label for="summary" class="font-bold">Résumé</label>
+      <textarea
+        id="summary"
+        rows="5"
+        pTextarea
+        [(ngModel)]="summary"
+        [autoResize]="true"
+      ></textarea>
+    </div>
+  </div>
+
+  <p-divider align="left" type="solid">
+    <h4 class="text-l font-bold">Mon espace</h4>
+  </p-divider>
+
+  <div class="flex justify-between p-2">
+    <div class="flex flex-col gap-2 w-1/4">
+      <label for="rating" class="font-bold">Note</label>
+      <p-rating [(ngModel)]="rating" id="rating" />
+    </div>
+    <div class="flex flex-col gap-2 w-[62.5%]">
+      <label for="comment" class="font-bold">Avis</label>
+      <textarea
+        id="comment"
+        rows="5"
+        pTextarea
+        [(ngModel)]="comment"
+        [autoResize]="true"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="flex p-4 justify-center">
+    <p-button label="Sauvegarder" />
+  </div>
 </div>
