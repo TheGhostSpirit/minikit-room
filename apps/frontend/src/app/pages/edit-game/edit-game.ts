@@ -1,17 +1,10 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
-import { InputTextModule } from 'primeng/inputtext';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { RatingModule } from 'primeng/rating';
-import { ButtonModule } from 'primeng/button';
-import { SelectModule } from 'primeng/select';
-import { DividerModule } from 'primeng/divider';
-import { TextareaModule } from 'primeng/textarea';
+import { CommonModule } from 'app/common-module';
 
 @Component({
   selector: 'app-edit-game',
-  imports: [InputTextModule, FloatLabelModule, FormsModule, RatingModule, ButtonModule, SelectModule, DividerModule, TextareaModule],
+  imports: [CommonModule],
   templateUrl: './edit-game.html',
   styleUrl: './edit-game.scss'
 })

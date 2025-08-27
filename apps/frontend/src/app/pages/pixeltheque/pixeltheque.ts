@@ -1,25 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
-import { TableModule } from 'primeng/table';
-import { ButtonModule } from 'primeng/button';
-import { ToolbarModule } from 'primeng/toolbar';
-import { InputTextModule } from 'primeng/inputtext';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import * as f from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faTrash, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { CommonModule } from 'app/common-module';
 
 @Component({
   selector: 'app-pixeltheque',
-  imports: [TableModule, ButtonModule, FontAwesomeModule, ToolbarModule, InputTextModule, FloatLabelModule, RouterModule],
+  imports: [CommonModule],
   templateUrl: './pixeltheque.html',
   styleUrl: './pixeltheque.scss'
 })
 export class Pixeltheque {
   icons = {
-    trash: faTrash,
-    plus: faPlus,
+    trash: f.faTrash,
+    plus: f.faPlus,
   };
 
   games = [
