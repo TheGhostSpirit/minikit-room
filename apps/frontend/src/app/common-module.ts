@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { InputTextModule } from 'primeng/inputtext';
@@ -20,6 +20,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [],
   exports: [
     FormsModule,
+    ReactiveFormsModule,
     RouterModule,
     InputTextModule,
     FloatLabelModule,
