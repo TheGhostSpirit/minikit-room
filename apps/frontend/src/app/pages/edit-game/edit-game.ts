@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 import { CommonModule } from 'app/common-module';
+import { FORMATS, PLATFORMS } from 'app/models/game';
 
 @Component({
   selector: 'app-edit-game',
@@ -12,11 +13,10 @@ import { CommonModule } from 'app/common-module';
 export class EditGame {
   title = 'Modifier un jeu';
 
-  platforms = ['Xbox', 'PlayStation', 'PC'];
+  platforms = [...PLATFORMS];
+  formats = [...FORMATS];
 
-  formats = ['Physique', 'Dématérialisé'];
-
-  private formBuilder = inject(FormBuilder);
+  private readonly formBuilder = inject(FormBuilder);
 
   form = this.formBuilder.group({
     name: ['', Validators.required],
