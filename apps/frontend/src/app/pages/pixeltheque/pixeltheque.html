@@ -1,5 +1,5 @@
 <div class="pixeltheque-wrapper">
-  <p-toolbar class="pixeltheque-header">
+  <p-toolbar class="mb-8">
     <ng-template #start>
       <div>
         <h3 class="text-xl font-bold">Pixelthèque</h3>
@@ -20,11 +20,13 @@
     </ng-template>
   </p-toolbar>
 
-  <p-table [value]="games" [tableStyle]="{ 'min-width': '100%' }">
+  <p-table [value]="(games | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
     <ng-template #header>
       <tr>
         <th>Name</th>
-        <th>Achievements</th>
+        <th>Platform</th>
+        <th>Studio</th>
+        <th>Format</th>
         <th>Rating</th>
         <th>Actions</th>
       </tr>
@@ -36,8 +38,10 @@
             {{ game.name }}
           </a>
         </td>
-        <td>{{ game.achievements }} / 50</td>
-        <td>5.0</td>
+        <td>{{ game.platform }}</td>
+        <td>{{ game.studio }}</td>
+        <td>{{ game.format }}</td>
+        <td>{{ game.rating }}</td>
         <td><fa-icon [icon]="icons.trash" /></td>
       </tr>
     </ng-template>
