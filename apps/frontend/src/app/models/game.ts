@@ -3,7 +3,7 @@ export const PLATFORMS = ['Xbox', 'PlayStation', 'PC'] as const;
 export const FORMATS = ['Physique', 'Dématérialisé'] as const;
 
 export interface Game {
-  id: number;
+  id?: number;
   name: string;
   rating: number;
   platform: typeof PLATFORMS[number];

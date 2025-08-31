@@ -1,42 +1,30 @@
-import { Component, inject } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 
 import { CommonModule } from 'app/common-module';
-import { FORMATS, PLATFORMS } from 'app/models/game';
+import { GameForm } from 'app/components/game-form/game-form';
+import { Game } from 'app/models/game';
 
 @Component({
   selector: 'app-edit-game',
-  imports: [CommonModule],
+  imports: [CommonModule, GameForm],
   templateUrl: './edit-game.html',
   styleUrl: './edit-game.scss',
 })
 export class EditGame {
   title = 'Modifier un jeu';
 
-  platforms = [...PLATFORMS];
-  formats = [...FORMATS];
+  game = {
+    id: 1,
+    name: 'PowerWash Simulator',
+    rating: 3,
+    platform: 'Xbox',
+    format: 'Dématérialisé',
+    studio: 'Square Enix',
+    summary: 'Lorem ipsum dolor sit amet',
+    comment: 'Lorem ipsum dolor sit amet',
+  } as Game;
 
-  private readonly formBuilder = inject(FormBuilder);
-
-  form = this.formBuilder.group({
-    name: ['', Validators.required],
-    rating: [0, Validators.required],
-    platform: ['', Validators.required],
-    format: ['', Validators.required],
-    studio: ['', Validators.required],
-    summary: ['', Validators.required],
-    comment: ['', Validators.required],
-  });
-
-  get isValid() {
-    return this.form.valid;
-  }
-
-  validate() {
-    if (!this.form.valid) {
-      return;
-    }
-
-    console.log('valid');
+  effect() {
+    console.log('effect');
   }
 }
