@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 import { Game } from 'app/models/game';
 
@@ -32,10 +32,12 @@ const MOCK_GAMES: Game[] = [
 })
 export class GameService {
 
-  games = [...MOCK_GAMES];
+  private games = [...MOCK_GAMES];
+  private gamesSubject = new BehaviorSubject<Game[]>(this.games);
+  private gamesData = this.gamesSubject.asObservable();
 
   list(): Observable<Game[]> {
-    return of(this.games);
+    return this.gamesData;
   }
 
   findOne(id: number): Observable<Game> {
@@ -45,18 +47,21 @@ export class GameService {
 
   create(game: Game): Observable<Game[]> {
     this.games.push(game);
-    return of(this.games);
+    this.gamesSubject.next(this.games);
+    return this.gamesData;
   }
 
   delete(id: number): Observable<Game[]> {
     this.games = this.games.filter((g) => g.id !== id);
-    return of(this.games);
+    this.gamesSubject.next(this.games);
+    return this.gamesData;
   }
 
   modify(id: number, game: Game): Observable<Game[]> {
     const index = this.games.findIndex(g => g.id === id);
     this.games[index] = game;
-    return of(this.games);
+    this.gamesSubject.next(this.games);
+    return this.gamesData;
   }
 
 }
