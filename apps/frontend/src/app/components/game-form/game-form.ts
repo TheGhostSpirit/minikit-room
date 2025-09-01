@@ -13,28 +13,29 @@ import { FORMATS, Game, PLATFORMS } from 'app/models/game';
 export class GameForm {
   private readonly formBuilder = inject(FormBuilder);
   game = input<Game>();
-  formSubmitted = output<Game>({ alias: 'formSubmitted' });
-  form: any;
+  formSubmitted = output<Game>();
+
+  form: FormGroup = this.buildForm(this.game());
 
   platforms = [...PLATFORMS];
   formats = [...FORMATS];
 
   constructor() {
     effect(() => {
-      this.form = this.formBuilder.group({
-        name: [this.game()?.name, Validators.required],
-        rating: [this.game()?.rating, Validators.required],
-        platform: [this.game()?.platform, Validators.required],
-        format: [this.game()?.format, Validators.required],
-        studio: [this.game()?.studio, Validators.required],
-        summary: [this.game()?.summary, Validators.required],
-        comment: [this.game()?.comment, Validators.required],
-      });
+      this.form = this.buildForm(this.game());
     });
   }
 
-  get isValid() {
-    return this.form.valid;
+  buildForm(game: Game | undefined) {
+    return this.formBuilder.group({
+      name: [game?.name ?? '', Validators.required],
+      rating: [game?.rating ?? 0, Validators.required],
+      platform: [game?.platform ?? '', Validators.required],
+      format: [game?.format ?? '', Validators.required],
+      studio: [game?.studio ?? '', Validators.required],
+      summary: [game?.summary ?? '', Validators.required],
+      comment: [game?.comment ?? '', Validators.required],
+    });
   }
 
   validate() {
@@ -42,6 +43,6 @@ export class GameForm {
       return;
     }
 
-    this.formSubmitted.emit(this.form.value as Game);
+    this.formSubmitted.emit(this.form.value);
   }
 }

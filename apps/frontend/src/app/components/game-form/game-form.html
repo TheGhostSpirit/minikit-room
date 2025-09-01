@@ -67,6 +67,6 @@
   </div>
 
   <div class="flex p-4 justify-center">
-    <p-button label="Sauvegarder" [disabled]="!isValid" (click)="validate()" />
+    <p-button label="Sauvegarder" [disabled]="!form.valid" (click)="validate()" />
   </div>
 </form>
