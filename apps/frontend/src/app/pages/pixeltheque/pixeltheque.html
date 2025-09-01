@@ -42,7 +42,11 @@
         <td>{{ game.studio }}</td>
         <td>{{ game.format }}</td>
         <td>{{ game.rating }}</td>
-        <td><fa-icon [icon]="icons.trash" /></td>
+        <td>
+          <a (click)="delete(game.id)" class="cursor-pointer">
+            <fa-icon [icon]="icons.trash" />
+          </a>
+        </td>
       </tr>
     </ng-template>
   </p-table>
