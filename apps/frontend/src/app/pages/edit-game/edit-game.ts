@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { CommonModule } from 'app/common-module';
 import { GameForm } from 'app/components/game-form/game-form';
 import { Game } from 'app/models/game';
+import { GameService } from 'app/services/game-service';
 
 @Component({
   selector: 'app-edit-game',
@@ -10,21 +12,28 @@ import { Game } from 'app/models/game';
   templateUrl: './edit-game.html',
   styleUrl: './edit-game.scss',
 })
-export class EditGame {
+export class EditGame implements OnInit {
   title = 'Modifier un jeu';
 
-  game = {
-    id: 1,
-    name: 'PowerWash Simulator',
-    rating: 3,
-    platform: 'Xbox',
-    format: 'Dématérialisé',
-    studio: 'Square Enix',
-    summary: 'Lorem ipsum dolor sit amet',
-    comment: 'Lorem ipsum dolor sit amet',
-  } as Game;
+  private readonly gameService = inject(GameService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
 
-  effect() {
-    console.log('effect');
+  game: Game | undefined;
+
+  ngOnInit() {
+    this.gameService.findOne(this.getIdFromUrl())
+      .subscribe(game => {
+        this.title = `Modifier ${game.name}`;
+        this.game = game;
+      });
+  }
+
+  getIdFromUrl(): number {
+    return +(this.route.snapshot.paramMap.get('id') ?? '');
+  }
+
+  editGame(game: Game) {
+    this.gameService.modify(this.getIdFromUrl(), game).subscribe(() => this.router.navigate(['pixeltheque']));
   }
 }
