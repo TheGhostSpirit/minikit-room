@@ -3,11 +3,9 @@
   "packageManager": "yarn@4.9.1",
   "private": true,
   "workspaces": [
-    "apps/frontend",
-    "apps/backend"
+    "apps/frontend"
   ],
   "scripts": {
-    "dev:frontend": "yarn workspace @mkr/frontend start",
-    "dev:backend": "yarn workspace @mkr/backend start"
+    "dev:frontend": "yarn workspace @mkr/frontend start"
   }
 }
