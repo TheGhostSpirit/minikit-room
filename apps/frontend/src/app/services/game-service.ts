@@ -1,67 +1,53 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, from } from 'rxjs';
+import { switchMap, tap } from 'rxjs/operators';
 
 import { Game } from 'app/models/game';
-
-const MOCK_GAMES: Game[] = [
-  {
-    id: 1,
-    name: 'PowerWash Simulator',
-    rating: 3,
-    platform: 'Xbox',
-    format: 'Dématérialisé',
-    studio: 'Square Enix',
-    summary: 'Lorem ipsum dolor sit amet',
-    comment: 'Lorem ipsum dolor sit amet',
-  },
-  {
-    id: 2,
-    name: 'Silent Hill 2',
-    rating: 4,
-    platform: 'PlayStation',
-    format: 'Physique',
-    studio: 'Konami',
-    summary: 'Lorem ipsum dolor sit amet',
-    comment: 'Lorem ipsum dolor sit amet',
-  },
-];
+import { IndexedDbService } from 'app/services/indexed-db-service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GameService {
 
-  private games = [...MOCK_GAMES];
-  private gamesSubject = new BehaviorSubject<Game[]>(this.games);
+  private static readonly DB_KEY = 'game';
+  private readonly indexedDB = inject(IndexedDbService);
+
+  constructor() {
+    this.indexedDB.addTable(GameService.DB_KEY, '++id');
+  }
+
+  private gamesSubject = new BehaviorSubject<Game[]>([]);
   private gamesData = this.gamesSubject.asObservable();
 
   list(): Observable<Game[]> {
-    return this.gamesData;
+    return from(this.indexedDB.select<Game>(GameService.DB_KEY)).pipe(
+      tap((games) => this.gamesSubject.next(games)),
+      switchMap(() => this.gamesData)
+    );
   }
 
   findOne(id: number): Observable<Game> {
-    const index = this.games.findIndex(g => g.id === id);
-    return of(this.games[index]);
+    return from(this.indexedDB.selectOne<Game>(GameService.DB_KEY, id));
   }
 
   create(game: Game): Observable<Game[]> {
-    this.games.push(game);
-    this.gamesSubject.next(this.games);
-    return this.gamesData;
+    return from(this.indexedDB.add<Game>(GameService.DB_KEY, game)).pipe(
+      switchMap(() => this.list())
+    );
   }
 
   delete(id: number): Observable<Game[]> {
-    this.games = this.games.filter((g) => g.id !== id);
-    this.gamesSubject.next(this.games);
-    return this.gamesData;
+    return from(this.indexedDB.delete(GameService.DB_KEY, id)).pipe(
+      switchMap(() => this.list())
+    );
   }
 
   modify(id: number, game: Game): Observable<Game[]> {
-    const index = this.games.findIndex(g => g.id === id);
-    this.games[index] = game;
-    this.gamesSubject.next(this.games);
-    return this.gamesData;
+    return from(this.indexedDB.update(GameService.DB_KEY, id, game)).pipe(
+      switchMap(() => this.list())
+    );
   }
 
 }
