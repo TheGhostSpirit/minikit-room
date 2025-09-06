@@ -1318,6 +1318,7 @@ __metadata:
     "@primeuix/themes": "npm:^1.2.3"
     "@types/jasmine": "npm:~5.1.0"
     autoprefixer: "npm:^10.4.21"
+    dexie: "npm:^4.2.0"
     jasmine-core: "npm:~5.7.0"
     karma: "npm:~6.4.0"
     karma-chrome-launcher: "npm:~3.2.0"
@@ -3028,6 +3029,13 @@ __metadata:
   version: 2.0.4
   resolution: "detect-libc@npm:2.0.4"
   checksum: 10c0/c15541f836eba4b1f521e4eecc28eefefdbc10a94d3b8cb4c507689f332cc111babb95deda66f2de050b22122113189986d5190be97d51b5a2b23b938415e67c
+  languageName: node
+  linkType: hard
+
+"dexie@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "dexie@npm:4.2.0"
+  checksum: 10c0/ba3f84a769ee34910263bce0957736968ba05162eebf47d5dab3dbb599890b122ac0d4a64ceb02428e5ec6a39f66923d8531e120c6341709fce1afbc698ea37c
   languageName: node
   linkType: hard
 
