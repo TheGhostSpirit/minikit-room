@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CommonModule } from 'app/common-module';
@@ -18,6 +18,7 @@ export class EditGame implements OnInit {
   private readonly gameService = inject(GameService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
+  private readonly cdRef = inject(ChangeDetectorRef);
 
   game: Game | undefined;
 
@@ -26,6 +27,7 @@ export class EditGame implements OnInit {
       .subscribe(game => {
         this.title = `Modifier ${game.name}`;
         this.game = game;
+        this.cdRef.detectChanges();
       });
   }
 
