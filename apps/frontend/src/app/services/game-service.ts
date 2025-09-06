@@ -45,7 +45,7 @@ export class GameService {
   }
 
   modify(id: number, game: Game): Observable<Game[]> {
-    return from(this.indexedDB.update(GameService.DB_KEY, id, game)).pipe(
+    return from(this.indexedDB.update<Game>(GameService.DB_KEY, id, game)).pipe(
       switchMap(() => this.list())
     );
   }

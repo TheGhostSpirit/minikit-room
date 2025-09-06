@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Dexie, IndexableType } from 'dexie';
+import { Dexie, IndexableType, UpdateSpec } from 'dexie';
 
 @Injectable({
   providedIn: 'root',
@@ -31,7 +31,7 @@ export class IndexedDbService {
     return this.db.table(key).delete(id);
   }
 
-  update<T>(key: string, id: IndexableType, item: T): Promise<unknown> {
-    return this.db.table(key).put(item, id);
+  update<T extends UpdateSpec<unknown>>(key: string, id: IndexableType, item: T): Promise<unknown> {
+    return this.db.table(key).update(id, item);
   }
 }
