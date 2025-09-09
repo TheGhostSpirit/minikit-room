@@ -26,7 +26,7 @@ export class Sidenav {
     {
       label: 'Bibliothèque', items: [
         { label: 'Livres', fa: f.faBook, disabled: true },
-        { label: 'Recettes', fa: f.faNoteSticky, disabled: true },
+        { label: 'Recettes', fa: f.faPizzaSlice, disabled: true },
       ]
     },
     {
@@ -38,6 +38,12 @@ export class Sidenav {
       label: 'Ludothèque', items: [
         { label: 'Puzzles', fa: f.faPuzzlePiece, disabled: true },
         { label: 'Jeux objets cachés', fa: f.faSkullCrossbones, disabled: true },
+      ]
+    },
+    {
+      label: 'Médiathèque', items: [
+        { label: 'Notes', fa: f.faNoteSticky, disabled: true },
+        { label: 'Galerie', fa: f.faPhotoFilm, disabled: true },
       ]
     },
   ];
