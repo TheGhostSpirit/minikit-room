@@ -12,6 +12,8 @@ import { TextareaModule } from 'primeng/textarea';
 import { TableModule } from 'primeng/table';
 import { ToolbarModule } from 'primeng/toolbar';
 import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+import { AvatarModule } from 'primeng/avatar';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -33,6 +35,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ToolbarModule,
     FontAwesomeModule,
     MenuModule,
+    MenubarModule,
+    AvatarModule,
   ]
 })
 export class CommonModule { }

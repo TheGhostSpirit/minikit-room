@@ -14,9 +14,9 @@
     @include l.navbar-height;
     border-color: transparent;
     @include l.layout-width;
+  }
 
-    & > span {
-      margin: auto 2rem;
-    }
+  &-logo {
+    @include l.navbar-height;
   }
 }

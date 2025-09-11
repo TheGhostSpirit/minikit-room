@@ -1,5 +1,14 @@
 <div class="navbar-menu-wrapper">
-  <div class="navbar-menu-inner">
-    <img src="assets/icon.png">
-  </div>
+  <p-menubar class="navbar-menu-inner">
+    <ng-template #start>
+      <img src="assets/icon.png" class="navbar-menu-logo">
+    </ng-template>
+    <ng-template #end>
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+        class="cursor-pointer"
+      />
+    </ng-template>
+  </p-menubar>
 </div>
