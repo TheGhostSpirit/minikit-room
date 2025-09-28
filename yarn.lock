@@ -310,6 +310,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@angular/cdk@npm:^20.0.3":
+  version: 20.2.2
+  resolution: "@angular/cdk@npm:20.2.2"
+  dependencies:
+    parse5: "npm:^8.0.0"
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    "@angular/common": ^20.0.0 || ^21.0.0
+    "@angular/core": ^20.0.0 || ^21.0.0
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 10c0/870284df01901e2b9543fafd409f812eac9afdf7d1192640eb2442a1fe57459b9044eeb79a6c4f2fa02c2abea512391daf471efd24ff19fdb118f7e7d7296c3f
+  languageName: node
+  linkType: hard
+
 "@angular/cli@npm:^20.0.5":
   version: 20.2.1
   resolution: "@angular/cli@npm:20.2.1"
@@ -1304,6 +1318,7 @@ __metadata:
   dependencies:
     "@angular/animations": "npm:^20.0.0"
     "@angular/build": "npm:^20.0.5"
+    "@angular/cdk": "npm:^20.0.3"
     "@angular/cli": "npm:^20.0.5"
     "@angular/common": "npm:^20.0.0"
     "@angular/compiler": "npm:^20.0.0"
@@ -1317,6 +1332,7 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": "npm:^7.0.0"
     "@primeuix/themes": "npm:^1.2.3"
     "@types/jasmine": "npm:~5.1.0"
+    angular-oauth2-oidc: "npm:^20.0.2"
     autoprefixer: "npm:^10.4.21"
     dexie: "npm:^4.2.0"
     jasmine-core: "npm:~5.7.0"
@@ -2410,6 +2426,18 @@ __metadata:
     "@algolia/requester-fetch": "npm:5.35.0"
     "@algolia/requester-node-http": "npm:5.35.0"
   checksum: 10c0/3b6593dc285e7dadda08dea3998391b9439b4e1144e8da767311e470e69e33067f2396e628cdf24767d52bdc0c08c063991cf76ac787ce5aec36864fcc1e3f9a
+  languageName: node
+  linkType: hard
+
+"angular-oauth2-oidc@npm:^20.0.2":
+  version: 20.0.2
+  resolution: "angular-oauth2-oidc@npm:20.0.2"
+  dependencies:
+    tslib: "npm:^2.5.2"
+  peerDependencies:
+    "@angular/common": ">=20.0.0"
+    "@angular/core": ">=20.0.0"
+  checksum: 10c0/db22f23d4906dd6b413b2a01d832a35aa8f7e8db236eafc7d0c63fdf7e29e08ca3aea13241b16e7ca63d27f586d365dc6b1cce690a6fb6d6aaf3f88aeb89a21b
   languageName: node
   linkType: hard
 
@@ -6424,7 +6452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0, tslib@npm:^2.8.1":
+"tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.4.0, tslib@npm:^2.5.2, tslib@npm:^2.8.1":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
