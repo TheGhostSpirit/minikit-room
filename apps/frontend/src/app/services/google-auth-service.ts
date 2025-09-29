@@ -1,6 +1,6 @@
 
 
-import { Injectable, inject, signal } from '@angular/core';
+import { Injectable, Signal, inject, signal } from '@angular/core';
 
 import { AuthConfig, OAuthService } from 'angular-oauth2-oidc';
 
@@ -57,7 +57,7 @@ export class GoogleAuthService {
     this._profile.set(null);
   }
 
-  profile() {
-    return this._profile();
+  get profile(): Signal<User | null> {
+    return this._profile.asReadonly();
   }
 }
