@@ -8,7 +8,6 @@ import { FORMATS, Game, PLATFORMS } from 'app/models/game';
   selector: 'app-game-form',
   imports: [CommonModule],
   templateUrl: './game-form.html',
-  styleUrl: './game-form.scss',
 })
 export class GameForm {
   private readonly formBuilder = inject(FormBuilder);

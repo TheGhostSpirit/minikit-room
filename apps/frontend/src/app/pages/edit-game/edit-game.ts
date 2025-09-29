@@ -10,7 +10,6 @@ import { GameService } from 'app/services/game-service';
   selector: 'app-edit-game',
   imports: [CommonModule, GameForm],
   templateUrl: './edit-game.html',
-  styleUrl: './edit-game.scss',
 })
 export class EditGame implements OnInit {
   title = 'Modifier un jeu';

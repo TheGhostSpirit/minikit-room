@@ -10,7 +10,6 @@ import { GameService } from 'app/services/game-service';
   selector: 'app-create-game',
   imports: [CommonModule, GameForm],
   templateUrl: './create-game.html',
-  styleUrl: './create-game.scss',
 })
 export class CreateGame {
 
