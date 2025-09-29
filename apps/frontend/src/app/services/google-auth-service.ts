@@ -2,17 +2,10 @@
 
 import { Injectable, Signal, inject, signal } from '@angular/core';
 
-import { AuthConfig, OAuthService } from 'angular-oauth2-oidc';
+import { OAuthService } from 'angular-oauth2-oidc';
 
 import { User } from 'app/models/user';
-
-const authConfig: AuthConfig = {
-  issuer: 'https://accounts.google.com',
-  redirectUri: window.location.origin,
-  clientId: '139840034785-iuud31sup6246d4isd54q3n97oqtjl4k.apps.googleusercontent.com',
-  scope: 'openid profile email',
-  strictDiscoveryDocumentValidation: false,
-};
+import { environment } from 'environments/environment';
 
 interface GoogleUser {
   name: string;
@@ -33,7 +26,7 @@ export class GoogleAuthService {
   }
 
   private async initConfiguration() {
-    this.oAuthService.configure(authConfig);
+    this.oAuthService.configure(environment.auth.google);
     this.oAuthService.setupAutomaticSilentRefresh();
     await this.oAuthService.loadDiscoveryDocumentAndTryLogin();
     if (this.oAuthService.hasValidIdToken()) {
