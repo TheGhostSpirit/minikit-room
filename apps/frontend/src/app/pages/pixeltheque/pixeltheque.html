@@ -15,7 +15,7 @@
     <ng-template #end>
       <button pButton routerLink="/game/create">
         <fa-icon [icon]="icons.plus" pButtonIcon />
-        <span pButtonLabel>Add</span>
+        <span pButtonLabel>Ajouter</span>
       </button>
     </ng-template>
   </p-toolbar>
@@ -23,11 +23,11 @@
   <p-table [value]="(games | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
     <ng-template #header>
       <tr>
-        <th>Name</th>
-        <th>Platform</th>
+        <th>Nom</th>
+        <th>Plateforme</th>
         <th>Studio</th>
         <th>Format</th>
-        <th>Rating</th>
+        <th>Note</th>
         <th>Actions</th>
       </tr>
     </ng-template>
@@ -41,7 +41,7 @@
         <td>{{ game.platform }}</td>
         <td>{{ game.studio }}</td>
         <td>{{ game.format }}</td>
-        <td>{{ game.rating }}</td>
+        <td>{{ game.rating }} / 5</td>
         <td>
           <a (click)="delete(game.id)" class="cursor-pointer">
             <fa-icon [icon]="icons.trash" />

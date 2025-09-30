@@ -13,14 +13,14 @@ import { GoogleAuthService } from 'app/services/google-auth-service';
   styleUrl: './navbar.scss',
 })
 export class Navbar {
-  private authService = inject(GoogleAuthService);
+  private readonly authService = inject(GoogleAuthService);
 
   defaultProfilePicture = f.faUser;
   profile = this.authService.profile;
 
   loggedInMenu: MenuItem[] = [
     {
-      label: 'Logout',
+      label: 'Se déconnecter',
       command: () => this.authService.logout(),
     },
   ];
