@@ -20,6 +20,7 @@ export class GoogleAuthService {
 
   private readonly oAuthService = inject(OAuthService);
   private readonly _profile = signal<User | null>(null);
+  accessToken = '';
 
   constructor() {
     this.initConfiguration();
@@ -30,6 +31,7 @@ export class GoogleAuthService {
     this.oAuthService.setupAutomaticSilentRefresh();
     await this.oAuthService.loadDiscoveryDocumentAndTryLogin();
     if (this.oAuthService.hasValidIdToken()) {
+      this.accessToken = this.oAuthService.getAccessToken();
       this._profile.set(
         this.mapUser(this.oAuthService.getIdentityClaims() as GoogleUser)
       );
@@ -53,4 +55,5 @@ export class GoogleAuthService {
   get profile(): Signal<User | null> {
     return this._profile.asReadonly();
   }
+
 }

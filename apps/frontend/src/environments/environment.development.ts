@@ -5,7 +5,7 @@ export const environment = {
       redirectUri: window.location.origin,
       clientId:
         '139840034785-iuud31sup6246d4isd54q3n97oqtjl4k.apps.googleusercontent.com',
-      scope: 'openid profile email',
+      scope: 'openid profile email https://www.googleapis.com/auth/drive.file',
       strictDiscoveryDocumentValidation: false,
     },
   },
