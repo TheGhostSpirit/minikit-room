@@ -44,6 +44,13 @@
       ></textarea>
     </div>
   </div>
+  <div class="flex justify-between p-2">
+    <div class="flex flex-col gap-2">
+      <label for="cover" class="font-bold">Couverture</label>
+      <p-image [src]="coverUrl" id="cover" width="250" [preview]="true" />
+      <p-fileupload mode="basic" accept="image/*" maxFileSize="10000000" (onSelect)="changeImage($event)" [auto]="true" chooseLabel="Changer Image" />
+    </div>
+  </div>
 
   <p-divider align="left" type="solid">
     <h4 class="text-l font-bold">Mon espace</h4>

@@ -11,4 +11,5 @@ export interface Game {
   studio: string;
   summary: string;
   comment: string;
+  cover: File;
 }

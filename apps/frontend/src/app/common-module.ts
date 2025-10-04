@@ -15,6 +15,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { AvatarModule } from 'primeng/avatar';
 import { FileUploadModule } from 'primeng/fileupload';
+import { ImageModule } from 'primeng/image';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -39,6 +40,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MenubarModule,
     AvatarModule,
     FileUploadModule,
+    ImageModule,
   ]
 })
 export class CommonModule { }
