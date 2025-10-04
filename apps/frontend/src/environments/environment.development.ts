@@ -9,4 +9,7 @@ export const environment = {
       strictDiscoveryDocumentValidation: false,
     },
   },
+  database: {
+    name: 'MinikitRoomDatabase',
+  },
 };

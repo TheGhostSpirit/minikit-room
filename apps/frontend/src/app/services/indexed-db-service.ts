@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 
 import { Dexie, IndexableType, UpdateSpec } from 'dexie';
 
+import { environment } from 'environments/environment';
+
 @Injectable({
   providedIn: 'root',
 })
 export class IndexedDbService {
 
-  private readonly db = new Dexie('MinikitRoomDatabase');
+  private readonly db = new Dexie(environment.database.name);
 
   addTable(key: string, indexes: string): void {
     this.db.version(1).stores({
