@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { DB_INDEXES } from 'app/database/indexes';
 
 import { Dexie, IndexableType, UpdateSpec } from 'dexie';
 
@@ -11,10 +12,8 @@ export class IndexedDbService {
 
   private readonly db = new Dexie(environment.database.name);
 
-  addTable(key: string, indexes: string): void {
-    this.db.version(1).stores({
-      [key]: indexes,
-    });
+  constructor() {
+    this.db.version(1).stores(DB_INDEXES);
   }
 
   select<T>(key: string): Promise<T[]> {
