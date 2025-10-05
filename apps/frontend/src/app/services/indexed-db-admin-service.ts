@@ -2,6 +2,7 @@ import { inject, Injectable } from '@angular/core';
 
 import { Dexie } from 'dexie';
 import { exportDB } from 'dexie-export-import';
+import { defer, switchMap } from 'rxjs';
 
 import { DB_INDEXES } from 'app/database/indexes';
 import { GoogleDriveService } from 'app/services/google-drive-service';
@@ -20,12 +21,12 @@ export class IndexedDbAdminService {
     this.db.version(1).stores(DB_INDEXES);
   }
 
-  async export() {
-    const blob = await exportDB(this.db);
-    return this.driveService.uploadFile(
-      blob,
-      'backup-' + new Date().toISOString()
-    );
+  export() {
+    defer(() => exportDB(this.db))
+      .pipe(
+        switchMap(blob => this.driveService.uploadFile(blob, 'backup-' + new Date().toISOString()))
+      )
+      .subscribe();
   }
 
 }
