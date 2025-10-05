@@ -9,13 +9,11 @@ export class GoogleDriveService {
 
   private readonly authService = inject(GoogleAuthService);
 
-  async uploadFile(file: File): Promise<string> {
-    const accessToken = this.authService.accessToken;
-
+  async uploadFile(file: File | Blob): Promise<string> {
     const response = await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=media', {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${accessToken}`,
+        Authorization: `Bearer ${this.authService.accessToken}`,
         'Content-Type': file.type,
         'Content-Length': file.size.toString()
       },

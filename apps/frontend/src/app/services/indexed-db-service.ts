@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { DB_INDEXES } from 'app/database/indexes';
 
 import { Dexie, IndexableType, UpdateSpec } from 'dexie';
+
+import { DB_INDEXES } from 'app/database/indexes';
 
 import { environment } from 'environments/environment';
 

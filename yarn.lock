@@ -1335,6 +1335,7 @@ __metadata:
     angular-oauth2-oidc: "npm:^20.0.2"
     autoprefixer: "npm:^10.4.21"
     dexie: "npm:^4.2.0"
+    dexie-export-import: "npm:^4.1.4"
     jasmine-core: "npm:~5.7.0"
     karma: "npm:~6.4.0"
     karma-chrome-launcher: "npm:~3.2.0"
@@ -3057,6 +3058,15 @@ __metadata:
   version: 2.0.4
   resolution: "detect-libc@npm:2.0.4"
   checksum: 10c0/c15541f836eba4b1f521e4eecc28eefefdbc10a94d3b8cb4c507689f332cc111babb95deda66f2de050b22122113189986d5190be97d51b5a2b23b938415e67c
+  languageName: node
+  linkType: hard
+
+"dexie-export-import@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "dexie-export-import@npm:4.1.4"
+  peerDependencies:
+    dexie: ^2.0.4 || ^3.0.0 || ^4.0.1
+  checksum: 10c0/530ca5644d75f72d20cc8fce2d4872926dd30b477645a34bcafc1a1a2c8dedac2fd5e72019142de2687f0349c7d010810d9743f8e7579eade5d9609803017c5c
   languageName: node
   linkType: hard
 
