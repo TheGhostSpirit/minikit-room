@@ -22,7 +22,10 @@ export class IndexedDbAdminService {
 
   async export() {
     const blob = await exportDB(this.db);
-    return this.driveService.uploadFile(blob);
+    return this.driveService.uploadFile(
+      blob,
+      'backup-' + new Date().toISOString()
+    );
   }
 
 }
