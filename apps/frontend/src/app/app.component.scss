@@ -1,0 +1,26 @@
+@use 'app/layout/layout' as l;
+//TODO: move content to layout
+.layout {
+  &-wrapper {
+    @include l.layout-height-with-navbar-offset;
+    @include l.layout-width;
+  }
+
+  &-content {
+    @include l.navbar-offset;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &-sidenav {
+    @include l.layout-sidenav;
+    position: sticky;
+    margin: 0 3rem;
+  }
+
+  &-content-slot {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

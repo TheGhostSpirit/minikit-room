@@ -14,6 +14,7 @@ import Aura from '@primeuix/themes/aura';
 
 import { routes } from 'app/app.routes';
 
+//TODO review providers 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
