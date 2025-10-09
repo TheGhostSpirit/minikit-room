@@ -1,16 +1,15 @@
-import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 
-import { Observable, Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import * as f from '@fortawesome/free-solid-svg-icons';
 
-import { CommonModule } from 'app/shared/common-module';
+import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { Game } from 'app/features/pixeltheque/models/game';
 import { GameService } from 'app/features/pixeltheque/services/game.service';
 
 @Component({
   selector: 'app-pixeltheque',
-  imports: [CommonModule, AsyncPipe],
+  imports: [...sharedImports, ...sharedDeclarations],
   templateUrl: './pixeltheque.component.html',
   styleUrl: './pixeltheque.component.scss'
 })

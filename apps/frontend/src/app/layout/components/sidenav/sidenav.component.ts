@@ -5,11 +5,11 @@ import { MenuItem } from 'primeng/api';
 import * as f from '@fortawesome/free-solid-svg-icons';
 import * as fb from '@fortawesome/free-brands-svg-icons';
 
-import { CommonModule } from 'app/shared/common-module';
+import { sharedImports } from 'app/shared/shared.config';
 
 @Component({
   selector: 'app-sidenav',
-  imports: [CommonModule],
+  imports: [...sharedImports],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
 })

@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
 
-import { CommonModule } from 'app/shared/common-module';
+import { sharedImports } from 'app/shared/shared.config';
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [...sharedImports],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {

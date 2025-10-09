@@ -3,13 +3,13 @@ import { Component, inject } from '@angular/core';
 import * as f from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
 
-import { CommonModule } from 'app/shared/common-module';
+import { sharedImports } from 'app/shared/shared.config';
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule],
+  imports: [...sharedImports],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })

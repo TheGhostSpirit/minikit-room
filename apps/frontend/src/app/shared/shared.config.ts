@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -19,28 +19,27 @@ import { ImageModule } from 'primeng/image';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-//TODO: remove module
-@NgModule({
-  declarations: [],
-  exports: [
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule,
-    InputTextModule,
-    FloatLabelModule,
-    RatingModule,
-    ButtonModule,
-    SelectModule,
-    DividerModule,
-    TextareaModule,
-    TableModule,
-    ToolbarModule,
-    FontAwesomeModule,
-    MenuModule,
-    MenubarModule,
-    AvatarModule,
-    FileUploadModule,
-    ImageModule,
-  ]
-})
-export class CommonModule { }
+export const sharedImports = [
+  FormsModule,
+  ReactiveFormsModule,
+  RouterModule,
+  InputTextModule,
+  FloatLabelModule,
+  RatingModule,
+  ButtonModule,
+  SelectModule,
+  DividerModule,
+  TextareaModule,
+  TableModule,
+  ToolbarModule,
+  FontAwesomeModule,
+  MenuModule,
+  MenubarModule,
+  AvatarModule,
+  FileUploadModule,
+  ImageModule,
+];
+
+export const sharedDeclarations = [
+  AsyncPipe,
+];

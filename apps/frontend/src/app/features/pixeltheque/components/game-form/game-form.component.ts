@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { FileSelectEvent } from 'primeng/fileupload';
 
-import { CommonModule } from 'app/shared/common-module';
+import { sharedImports } from 'app/shared/shared.config';
 import { FORMATS, Game, PLATFORMS } from 'app/features/pixeltheque/models/game';
 
 //TODO: change assets file structure
@@ -11,7 +11,7 @@ const DEFAULT_URL = 'assets/game-form/cover-placeholder.jpg';
 
 @Component({
   selector: 'app-game-form',
-  imports: [CommonModule],
+  imports: [...sharedImports],
   templateUrl: './game-form.component.html',
 })
 export class GameFormComponent {
