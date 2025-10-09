@@ -1,5 +1,5 @@
-@use 'app/layout/layout' as l;
-//TODO: move content to layout
+@use 'app/layout/variables' as l;
+
 .layout {
   &-wrapper {
     @include l.layout-height-with-navbar-offset;
