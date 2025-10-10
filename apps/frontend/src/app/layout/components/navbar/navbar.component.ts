@@ -27,6 +27,11 @@ export class NavbarComponent {
       label: 'Synchroniser sur Drive',
       command: () => this.adminDbService.export(),
     },
+    //TODO: add warning popup before calling import
+    {
+      label: 'Restaurer depuis Drive',
+      command: () => this.adminDbService.import(),
+    },
     {
       label: 'Se déconnecter',
       command: () => { 

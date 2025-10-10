@@ -29,4 +29,10 @@ export class IndexedDbAdminService {
       .subscribe();
   }
 
+  import() {
+    // STEP 1: list all recent files in drive
+    // STEP 2: fetch most recent file content
+    // STEP 3: call dexie-ie importInto function
+  }
+
 }
