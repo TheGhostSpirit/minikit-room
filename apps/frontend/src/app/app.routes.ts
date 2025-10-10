@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 
+import { googleAuthGuard } from 'app/core/guards/google-auth.guard';
+
 export const routes: Routes = [
   {
     path: '',
@@ -7,7 +9,8 @@ export const routes: Routes = [
   },
   {
     path: 'games',
-    loadChildren: () => import('app/features/pixeltheque/pixeltheque.routes').then(m => m.routes)
+    loadChildren: () => import('app/features/pixeltheque/pixeltheque.routes').then(m => m.routes),
+    canActivate: [googleAuthGuard]
   },
   { path: '**', redirectTo: '' },
 ];

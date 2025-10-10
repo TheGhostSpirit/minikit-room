@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
@@ -16,6 +17,7 @@ import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-a
 export class NavbarComponent {
   private readonly authService = inject(GoogleAuthService);
   private readonly adminDbService = inject(IndexedDbAdminService);
+  private readonly router = inject(Router);
 
   defaultProfilePicture = f.faUser;
   profile = this.authService.profile;
@@ -27,7 +29,10 @@ export class NavbarComponent {
     },
     {
       label: 'Se déconnecter',
-      command: () => this.authService.logout(),
+      command: () => { 
+        this.authService.logout();
+        this.router.navigate(['']);
+      },
     },
   ];
 

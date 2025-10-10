@@ -48,6 +48,7 @@ export class GoogleAuthService {
     this.oAuthService.revokeTokenAndLogout();
     this.oAuthService.logOut();
     this._profile.set(null);
+    this.accessToken = '';
   }
 
   get profile(): Signal<User | null> {
