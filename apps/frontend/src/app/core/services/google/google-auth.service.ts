@@ -1,15 +1,10 @@
 import { Injectable, Signal, inject, signal } from '@angular/core';
 
 import { OAuthService } from 'angular-oauth2-oidc';
+import { GoogleUser } from 'app/core/models/google-user';
 
 import { User } from 'app/core/models/user';
 import { environment } from 'environments/environment';
-
-interface GoogleUser {
-  name: string;
-  email: string;
-  picture: string;
-}
 
 @Injectable({
   providedIn: 'root',
@@ -31,13 +26,9 @@ export class GoogleAuthService {
     if (this.oAuthService.hasValidIdToken()) {
       this.accessToken = this.oAuthService.getAccessToken();
       this._profile.set(
-        this.mapUser(this.oAuthService.getIdentityClaims() as GoogleUser)
+        GoogleUser.fromObject(this.oAuthService.getIdentityClaims()).convertToGenericUser()
       );
     }
-  }
-
-  private mapUser(user: GoogleUser): User {
-    return user as User;
   }
 
   login() {
