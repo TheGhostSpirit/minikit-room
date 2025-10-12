@@ -7,7 +7,7 @@ import { map, switchMap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
-import { getBackupFiles, getMostRecentBackupFile } from 'app/core/models/drive-file';
+import { getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
 
 import { environment } from 'environments/environment';
 
@@ -26,7 +26,7 @@ export class IndexedDbAdminService {
   export() {
     defer(() => exportDB(this.db))
       .pipe(
-        switchMap(blob => this.driveService.uploadFile(blob, 'backup-' + new Date().toISOString()))
+        switchMap(blob => this.driveService.uploadFile(blob, getNewBackupFileName()))
       )
       .subscribe();
   }
