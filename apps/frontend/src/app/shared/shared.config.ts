@@ -16,6 +16,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { AvatarModule } from 'primeng/avatar';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
+import { DynamicDialogModule, DialogService } from 'primeng/dynamicdialog';
+import { MessageModule } from 'primeng/message';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -38,8 +40,14 @@ export const sharedImports = [
   AvatarModule,
   FileUploadModule,
   ImageModule,
+  DynamicDialogModule,
+  MessageModule,
 ];
 
 export const sharedDeclarations = [
   AsyncPipe,
+];
+
+export const sharedProviders = [
+  DialogService,
 ];
