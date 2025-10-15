@@ -18,6 +18,7 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
 import { DynamicDialogModule, DialogService } from 'primeng/dynamicdialog';
 import { MessageModule } from 'primeng/message';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -42,6 +43,7 @@ export const sharedImports = [
   ImageModule,
   DynamicDialogModule,
   MessageModule,
+  ProgressBarModule,
 ];
 
 export const sharedDeclarations = [
