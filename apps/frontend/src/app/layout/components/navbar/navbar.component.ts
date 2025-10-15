@@ -9,6 +9,7 @@ import { sharedImports, sharedProviders } from 'app/shared/shared.config';
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
 import { ImportModalComponent } from 'app/core/components/import-modal/import-modal.component';
+import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
 
 @Component({
   selector: 'app-navbar',
@@ -29,7 +30,14 @@ export class NavbarComponent {
   loggedInMenu: MenuItem[] = [
     {
       label: 'Exporter sur Drive',
-      command: () => this.adminDbService.export(),
+      command: () => this.dialog.open(
+        ExportModalComponent,
+        {
+          header: 'Exporter des données sur Google Drive',
+          width: '25vw',
+          modal: true,
+        }
+      ),
     },
     {
       label: 'Importer depuis Drive',

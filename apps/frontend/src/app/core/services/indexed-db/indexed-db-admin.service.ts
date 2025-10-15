@@ -9,6 +9,7 @@ import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
 import { getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
+import { ExportState } from 'app/core/models/export-state';
 
 import { environment } from 'environments/environment';
 
@@ -21,23 +22,26 @@ export class IndexedDbAdminService {
   private readonly driveService = inject(GoogleDriveService);
 
   private readonly importState = new BehaviorSubject<ImportState>(ImportState.NOT_IMPORTING);
+  private readonly exportState = new BehaviorSubject<ExportState>(ExportState.NOT_EXPORTING);
 
   constructor() {
     this.db.version(1).stores(DB_INDEXES);
   }
 
   export() {
-    defer(() => exportDB(this.db))
+    this.exportState.next(ExportState.EXPORTING);
+    return defer(() => exportDB(this.db))
       .pipe(
-        switchMap(blob => this.driveService.uploadFile(blob, getNewBackupFileName()))
-      )
-      .subscribe();
+        tap(() => this.exportState.next(ExportState.UPLOADING)),
+        switchMap(blob => this.driveService.uploadFile(blob, getNewBackupFileName())),
+        tap(() => this.exportState.next(ExportState.FINISHED)),
+      );
   }
 
   import() {
+    this.importState.next(ImportState.NOT_IMPORTING);
     return this.driveService.listFiles()
       .pipe(
-        tap(() => this.importState.next(ImportState.NOT_IMPORTING)),
         map(files => {
           const backupFiles = getBackupFiles(files);
           const newestBackupFile = getMostRecentBackupFile(backupFiles);
@@ -53,6 +57,10 @@ export class IndexedDbAdminService {
 
   getImportState() {
     return this.importState.asObservable();
+  }
+
+  getExportState() {
+    return this.exportState.asObservable();
   }
 
 }

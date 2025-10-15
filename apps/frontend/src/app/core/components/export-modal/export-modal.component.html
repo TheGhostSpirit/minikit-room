@@ -1,0 +1,17 @@
+@if (!isExporting) {
+  <p-message severity="info">Ceci va exporter les données existantes. Procéder ?</p-message>
+  <div class="flex flex-row justify-center">
+    <p-button class="m-2" severity="secondary" (click)="cancel()">Annuler</p-button>
+    <p-button class="m-2" severity="primary" (click)="export()">Exporter</p-button>
+  </div>
+}
+@else {
+  @let status = (exportingStatus$ | async);
+  @if (status) {
+    <p-progressbar [value]="status.progress">
+      <ng-template #content>
+        <span>{{ status.label }}</span>
+      </ng-template>
+    </p-progressbar>
+  }
+}
