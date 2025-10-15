@@ -20,7 +20,7 @@
     </ng-template>
   </p-toolbar>
 
-  <p-table [value]="(games | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
+  <p-table [value]="(games$ | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
     <ng-template #header>
       <tr>
         <th>Nom</th>

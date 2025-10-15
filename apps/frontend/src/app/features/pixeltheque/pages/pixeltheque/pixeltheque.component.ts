@@ -21,7 +21,7 @@ export class PixelthequeComponent {
 
   private readonly gameService = inject(GameService);
 
-  games: Observable<Game[]> = this.gameService.list();
+  games$: Observable<Game[]> = this.gameService.list();
 
   delete(id: number) {
     this.gameService.delete(id).subscribe();
