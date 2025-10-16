@@ -7,6 +7,7 @@ import { map, switchMap, tap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
+import { GzipService } from 'app/core/services/utils/gzip.service';
 import { DriveFile, getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
@@ -20,6 +21,7 @@ export class IndexedDbAdminService {
 
   private readonly db = new Dexie(environment.database.name);
   private readonly driveService = inject(GoogleDriveService);
+  private readonly gzipService = inject(GzipService);
 
   private readonly importState = new BehaviorSubject<ImportState>(ImportState.NOT_IMPORTING);
   private readonly exportState = new BehaviorSubject<ExportState>(ExportState.NOT_EXPORTING);
@@ -40,6 +42,10 @@ export class IndexedDbAdminService {
           )),
         ),
       defer(() => exportDB(this.db))
+        .pipe(
+          tap(() => this.exportState.next(ExportState.COMPRESSING)),
+          switchMap(blob => this.gzipService.compress(blob)),
+        ),
     ]).pipe(
       tap(() => this.exportState.next(ExportState.UPLOADING)),
       switchMap(([folderId, blob])  => this.driveService.uploadFile(blob, getNewBackupFileName(), folderId)),
@@ -59,6 +65,8 @@ export class IndexedDbAdminService {
         }),
         tap(() => this.importState.next(ImportState.DOWNLOADING)),
         switchMap((file) => this.driveService.downloadFile(file.id)),
+        tap(() => this.importState.next(ImportState.DECOMPRESSING)),
+        switchMap((blob) => this.gzipService.decompress(blob)),
         tap(() => this.importState.next(ImportState.IMPORTING)),
         switchMap((blob) => defer(() => importInto(this.db, blob, { overwriteValues: true }))),
         tap(() => this.importState.next(ImportState.FINISHED)),

@@ -28,9 +28,11 @@ export class ExportModalComponent {
       case ExportState.NOT_EXPORTING:
         return { progress: 0, label: 'Initialisation' };
       case ExportState.EXPORTING:
-        return { progress: 33, label: 'Export' };
+        return { progress: 25, label: 'Export' };
+      case ExportState.COMPRESSING:
+        return { progress: 50, label: 'Compression' };
       case ExportState.UPLOADING:
-        return { progress: 66, label: 'Téléchargement' };
+        return { progress: 75, label: 'Téléchargement' };
       case ExportState.FINISHED:
         return { progress: 100, label: 'Finalisation' };
     }

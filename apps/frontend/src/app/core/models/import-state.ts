@@ -1,6 +1,7 @@
 export enum ImportState {
   NOT_IMPORTING,
   DOWNLOADING,
+  DECOMPRESSING,
   IMPORTING,
   FINISHED,
 };

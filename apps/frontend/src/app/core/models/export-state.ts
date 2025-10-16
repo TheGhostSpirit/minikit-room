@@ -1,6 +1,7 @@
 export enum ExportState {
   NOT_EXPORTING,
   EXPORTING,
+  COMPRESSING,
   UPLOADING,
   FINISHED,
 };

@@ -30,9 +30,11 @@ export class ImportModalComponent {
       case ImportState.NOT_IMPORTING:
         return { progress: 0, label: 'Initialisation' };
       case ImportState.DOWNLOADING:
-        return { progress: 33, label: 'Téléchargement' };
+        return { progress: 25, label: 'Téléchargement' };
+      case ImportState.DECOMPRESSING:
+        return { progress: 50, label: 'Décompression' };
       case ImportState.IMPORTING:
-        return { progress: 66, label: 'Import' };
+        return { progress: 75, label: 'Import' };
       case ImportState.FINISHED:
         return { progress: 100, label: 'Finalisation' };
     }
