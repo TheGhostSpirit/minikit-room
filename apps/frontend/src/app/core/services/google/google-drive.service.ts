@@ -34,9 +34,14 @@ export class GoogleDriveService {
     });
 
     return this.httpClient.post<unknown>(
-      'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',
+      'https://www.googleapis.com/upload/drive/v3/files',
       fileWithMetadata,
-      { context: new HttpContext().set(USE_GOOGLE_AUTH, true) }
+      {
+        context: new HttpContext().set(USE_GOOGLE_AUTH, true),
+        params: {
+          uploadType: 'multipart',
+        }
+      }
     ).pipe(
       catchError(err => { throw `Upload failed: ${err}`; })
     );
@@ -53,8 +58,13 @@ export class GoogleDriveService {
 
   downloadFile(id: string): Observable<Blob> {
     return this.httpClient.get<object>(
-      `https://www.googleapis.com/drive/v3/files/${id}?alt=media`,
-      { context: new HttpContext().set(USE_GOOGLE_AUTH, true) }
+      `https://www.googleapis.com/drive/v3/files/${id}`,
+      {
+        context: new HttpContext().set(USE_GOOGLE_AUTH, true),
+        params: {
+          alt: 'media',
+        }
+      }
     ).pipe(
       map(data => new Blob([JSON.stringify(data)], { type: 'application/json' }))
     );
