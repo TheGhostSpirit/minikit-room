@@ -2,12 +2,12 @@ import { inject, Injectable } from '@angular/core';
 
 import { Dexie } from 'dexie';
 import { exportDB, importInto } from 'dexie-export-import';
-import { BehaviorSubject, defer } from 'rxjs';
+import { BehaviorSubject, defer, forkJoin, iif, of } from 'rxjs';
 import { map, switchMap, tap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
-import { getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
+import { DriveFile, getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
 
@@ -30,18 +30,28 @@ export class IndexedDbAdminService {
 
   export() {
     this.exportState.next(ExportState.EXPORTING);
-    return defer(() => exportDB(this.db))
-      .pipe(
-        tap(() => this.exportState.next(ExportState.UPLOADING)),
-        switchMap(blob => this.driveService.uploadFile(blob, getNewBackupFileName())),
-        tap(() => this.exportState.next(ExportState.FINISHED)),
-      );
+    return forkJoin([
+      this.driveService.findFolder(environment.drive.folderName)
+        .pipe(
+          switchMap(folder => iif(
+            () => !folder,
+            this.driveService.createFolder(environment.drive.folderName),
+            of((folder as DriveFile)?.id)
+          )),
+        ),
+      defer(() => exportDB(this.db))
+    ]).pipe(
+      tap(() => this.exportState.next(ExportState.UPLOADING)),
+      switchMap(([folderId, blob])  => this.driveService.uploadFile(blob, getNewBackupFileName(), folderId)),
+      tap(() => this.exportState.next(ExportState.FINISHED)),
+    );
   }
 
   import() {
     this.importState.next(ImportState.NOT_IMPORTING);
-    return this.driveService.listFiles()
+    return this.driveService.findFolder(environment.drive.folderName)
       .pipe(
+        switchMap(driveFile => this.driveService.listFilesInFolder((driveFile as DriveFile)?.id)),
         map(files => {
           const backupFiles = getBackupFiles(files);
           const newestBackupFile = getMostRecentBackupFile(backupFiles);

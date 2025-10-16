@@ -2,7 +2,7 @@ import { HttpClient, HttpContext } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { catchError, map, tap } from 'rxjs/operators';
 
 import { USE_GOOGLE_AUTH } from 'app/core/tokens/use-google-auth.token';
 import { DriveFile } from 'app/core/models/drive-file';
@@ -16,7 +16,7 @@ export class GoogleDriveService {
 
   private setupFileForTransfer(
     file: File | Blob,
-    metadata: { name: string, mimeType: string }
+    metadata: { name: string, mimeType: string, parents: string[] }
   ): FormData {
     const fileWithMetadata = new FormData();
     fileWithMetadata.append(
@@ -27,10 +27,11 @@ export class GoogleDriveService {
     return fileWithMetadata;
   }
 
-  uploadFile(file: File | Blob, name: string): Observable<unknown> {
+  uploadFile(file: File | Blob, name: string, folderId: string): Observable<unknown> {
     const fileWithMetadata = this.setupFileForTransfer(file, {
-      name: name,
+      name,
       mimeType: file.type,
+      parents: [folderId]
     });
 
     return this.httpClient.post<unknown>(
@@ -47,10 +48,15 @@ export class GoogleDriveService {
     );
   }
 
-  listFiles(): Observable<DriveFile[]> {
+  listFilesInFolder(folderId: string): Observable<DriveFile[]> {
     return this.httpClient.get<{ files: DriveFile[] }>(
       'https://www.googleapis.com/drive/v3/files',
-      { context: new HttpContext().set(USE_GOOGLE_AUTH, true) }
+      {
+        context: new HttpContext().set(USE_GOOGLE_AUTH, true),
+        params: {
+          q: `'${folderId}' in parents and trashed=false`
+        }
+      }
     ).pipe(
       map(res => res.files)
     );
@@ -67,6 +73,33 @@ export class GoogleDriveService {
       }
     ).pipe(
       map(data => new Blob([JSON.stringify(data)], { type: 'application/json' }))
+    );
+  }
+
+  createFolder(name: string): Observable<string> {
+    return this.httpClient.post<{ id: string }>(
+      `https://www.googleapis.com/drive/v3/files`,
+      {
+        name,
+        mimeType: 'application/vnd.google-apps.folder'
+      },
+      { context: new HttpContext().set(USE_GOOGLE_AUTH, true) }
+    ).pipe(
+      map(res => res.id)
+    );
+  }
+
+  findFolder(name: string): Observable<DriveFile | undefined> {
+    return this.httpClient.get<{ files: DriveFile[] }>(
+      'https://www.googleapis.com/drive/v3/files',
+      {
+        context: new HttpContext().set(USE_GOOGLE_AUTH, true),
+        params: {
+          q: `name='${name}' and mimeType='application/vnd.google-apps.folder' and trashed=false`
+        }
+      }
+    ).pipe(
+      map(res => res.files[0])
     );
   }
 

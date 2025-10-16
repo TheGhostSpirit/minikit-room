@@ -12,4 +12,7 @@ export const environment = {
   database: {
     name: 'MinikitRoomDatabase',
   },
+  drive: {
+    folderName: 'MinikitRoom',
+  },
 };
