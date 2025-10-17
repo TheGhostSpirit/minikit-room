@@ -5,27 +5,25 @@ import * as f from '@fortawesome/free-solid-svg-icons';
 import { MenuItem } from 'primeng/api';
 import { DialogService } from 'primeng/dynamicdialog';
 
-import { sharedImports, sharedProviders } from 'app/shared/shared.config';
+import { sharedDeclarations, sharedImports, sharedProviders } from 'app/shared/shared.config';
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
-import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
 import { ImportModalComponent } from 'app/core/components/import-modal/import-modal.component';
 import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [...sharedImports],
+  imports: [...sharedImports, ...sharedDeclarations],
   providers: [...sharedProviders],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
   private readonly authService = inject(GoogleAuthService);
-  private readonly adminDbService = inject(IndexedDbAdminService);
   private readonly router = inject(Router);
   private readonly dialog = inject(DialogService);
 
   defaultProfilePicture = f.faUser;
-  profile = this.authService.profile;
+  profile$ = this.authService.profile$;
 
   loggedInMenu: MenuItem[] = [
     {
