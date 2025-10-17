@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { bindCallback, defer, Observable, of } from 'rxjs';
-import { delay, map, switchMap } from 'rxjs/operators';
+import { bindCallback, defer, Observable } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 
 import { gzip, gunzip } from 'fflate';
 

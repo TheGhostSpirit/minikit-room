@@ -2,7 +2,7 @@ import { HttpClient, HttpContext } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 import { USE_GOOGLE_AUTH } from 'app/core/tokens/use-google-auth.token';
 import { DriveFile } from 'app/core/models/drive-file';
