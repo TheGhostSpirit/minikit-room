@@ -43,8 +43,6 @@ export class GoogleDriveService {
           uploadType: 'multipart',
         }
       }
-    ).pipe(
-      catchError(err => { throw `Upload failed: ${err}`; })
     );
   }
 
@@ -63,16 +61,15 @@ export class GoogleDriveService {
   }
 
   downloadFile(id: string): Observable<Blob> {
-    return this.httpClient.get<object>(
+    return this.httpClient.get(
       `https://www.googleapis.com/drive/v3/files/${id}`,
       {
         context: new HttpContext().set(USE_GOOGLE_AUTH, true),
         params: {
           alt: 'media',
-        }
+        },
+        responseType: 'blob',
       }
-    ).pipe(
-      map(data => new Blob([JSON.stringify(data)], { type: 'application/json' }))
     );
   }
 
