@@ -53,7 +53,12 @@ export class ImportModalComponent {
 
   import() {
     this.isImporting = true;
-    this.adminDbService.import().subscribe(() => {
+
+    if (!this.selectedFile) {
+      return;
+    }
+
+    this.adminDbService.import(this.selectedFile).subscribe(() => {
       this.router.navigate(['/']);
       this.ref.close();
     });

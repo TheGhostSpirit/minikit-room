@@ -8,7 +8,7 @@ import { map, switchMap, tap } from 'rxjs/operators';
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
 import { GzipService } from 'app/core/services/utils/gzip.service';
-import { DriveFile, getMostRecentBackupFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
+import { DriveFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
 
@@ -53,15 +53,10 @@ export class IndexedDbAdminService {
     );
   }
 
-  //TODO change import to take particular file in parameter
-  import() {
-    this.importState.next(ImportState.NOT_IMPORTING);
-    return this.driveService.findFolder(environment.drive.folderName)
+  import(fileToImport: DriveFile) {
+    this.importState.next(ImportState.DOWNLOADING);
+    return this.driveService.downloadFile(fileToImport.id)
       .pipe(
-        switchMap(driveFile => this.driveService.listFilesInFolder((driveFile as DriveFile)?.id)),
-        map(files => getMostRecentBackupFile(files)),
-        tap(() => this.importState.next(ImportState.DOWNLOADING)),
-        switchMap((file) => this.driveService.downloadFile(file.id)),
         tap(() => this.importState.next(ImportState.DECOMPRESSING)),
         switchMap((blob) => this.gzipService.decompress(blob)),
         tap(() => this.importState.next(ImportState.IMPORTING)),
