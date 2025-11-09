@@ -2,13 +2,13 @@ import { inject, Injectable } from '@angular/core';
 
 import { Dexie } from 'dexie';
 import { exportDB, importInto } from 'dexie-export-import';
-import { BehaviorSubject, defer, forkJoin, iif, of } from 'rxjs';
+import { BehaviorSubject, defer, forkJoin, iif, Observable, of } from 'rxjs';
 import { map, switchMap, tap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
 import { GzipService } from 'app/core/services/utils/gzip.service';
-import { DriveFile, getBackupFiles, getMostRecentBackupFile, getNewBackupFileName } from 'app/core/models/drive-file';
+import { DriveFile, getMostRecentBackupFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
 
@@ -53,16 +53,13 @@ export class IndexedDbAdminService {
     );
   }
 
+  //TODO change import to take particular file in parameter
   import() {
     this.importState.next(ImportState.NOT_IMPORTING);
     return this.driveService.findFolder(environment.drive.folderName)
       .pipe(
         switchMap(driveFile => this.driveService.listFilesInFolder((driveFile as DriveFile)?.id)),
-        map(files => {
-          const backupFiles = getBackupFiles(files);
-          const newestBackupFile = getMostRecentBackupFile(backupFiles);
-          return newestBackupFile;
-        }),
+        map(files => getMostRecentBackupFile(files)),
         tap(() => this.importState.next(ImportState.DOWNLOADING)),
         switchMap((file) => this.driveService.downloadFile(file.id)),
         tap(() => this.importState.next(ImportState.DECOMPRESSING)),
@@ -70,6 +67,14 @@ export class IndexedDbAdminService {
         tap(() => this.importState.next(ImportState.IMPORTING)),
         switchMap((blob) => defer(() => importInto(this.db, blob, { overwriteValues: true }))),
         tap(() => this.importState.next(ImportState.FINISHED)),
+      );
+  }
+
+  getRecentBackupFiles(): Observable<DriveFile[]> {
+    return this.driveService.findFolder(environment.drive.folderName)
+      .pipe(
+        switchMap(driveFile => this.driveService.listFilesInFolder((driveFile as DriveFile)?.id)),
+        map(files => getMostRecentBackupFiles(files)),
       );
   }
 

@@ -1,8 +1,11 @@
 @if (!isImporting) {
+  <div class="pb-4">
+    <app-import-targets (fileSelected)="fileSelected($event)"></app-import-targets>
+  </div>
   <p-message severity="warn">Cela risque d'écraser les données existantes. Procéder ?</p-message>
   <div class="flex flex-row justify-center">
     <p-button class="m-2" severity="secondary" (click)="cancel()">Annuler</p-button>
-    <p-button class="m-2" severity="danger" (click)="import()">Importer</p-button>
+    <p-button class="m-2" severity="danger" (click)="import()" [disabled]="!selectedFile">Importer</p-button>
   </div>
 }
 @else {

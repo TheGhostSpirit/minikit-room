@@ -8,10 +8,12 @@ import { map } from 'rxjs/operators';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
 import { ImportState } from 'app/core/models/import-state';
+import { ImportTargetsComponent } from 'app/core/components/import-targets/import-targets.component';
+import { DriveFile } from 'app/core/models/drive-file';
 
 @Component({
   selector: 'app-import-modal',
-  imports: [...sharedImports, ...sharedDeclarations],
+  imports: [...sharedImports, ...sharedDeclarations, ImportTargetsComponent],
   templateUrl: './import-modal.component.html',
 })
 export class ImportModalComponent {
@@ -24,6 +26,11 @@ export class ImportModalComponent {
   importingStatus$ = this.adminDbService.getImportState().pipe(
     map(state => this.getLabelFromState(state))
   );
+
+  selectedFile: DriveFile | null = null;
+  fileSelected(file: DriveFile) {
+    this.selectedFile = file;
+  }
 
   private getLabelFromState(state: ImportState) {
     switch(state) {

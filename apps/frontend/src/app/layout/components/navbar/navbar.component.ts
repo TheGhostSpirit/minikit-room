@@ -43,7 +43,7 @@ export class NavbarComponent {
         ImportModalComponent,
         {
           header: 'Importer des données depuis Google Drive',
-          width: '25vw',
+          width: '40vw',
           modal: true,
         }
       ),

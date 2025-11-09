@@ -1,0 +1,12 @@
+<div class="flex flex-row justify-center">
+  @let files = (files$ | async);
+  @for (file of files; track file) {
+    <div class="mx-2 p-2 border-primary cursor-pointer flex flex-col"
+      [class]="selectedFile === file ? 'border-2 border-solid rounded' : ''"
+      (click)="selectFile(file)"
+    >
+      <fa-icon [icon]="icons.file" size="4x" class="mx-auto" />
+      <span class="font-bold">{{ getFileDateLabel(file) }}</span>
+    </div>
+  }
+</div>
