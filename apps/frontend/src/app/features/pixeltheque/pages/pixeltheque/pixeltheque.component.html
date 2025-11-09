@@ -8,7 +8,7 @@
     </ng-template>
     <ng-template #center>
       <p-floatlabel variant="on">
-        <input pInputText id="search" autocomplete="off" disabled />
+        <input pInputText id="search" autocomplete="off" (input)="onSearch($event.target.value)" />
         <label for="search">Search</label>
       </p-floatlabel>
     </ng-template>
@@ -20,7 +20,7 @@
     </ng-template>
   </p-toolbar>
 
-  <p-table [value]="(games$ | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
+  <p-table [value]="(filteredGames$ | async) ?? []" [tableStyle]="{ 'min-width': '100%' }">
     <ng-template #header>
       <tr>
         <th>Nom</th>
