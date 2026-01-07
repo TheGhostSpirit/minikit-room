@@ -1,0 +1,32 @@
+<div>
+  <p-toolbar class="mb-8">
+    <ng-template #start>
+      <div>
+        <h3 class="text-xl font-bold">Galerie de photos</h3>
+        <p>Mes albums photos</p>
+      </div>
+    </ng-template>
+  </p-toolbar>
+
+  <p-dataview #dv [value]="games()">
+    <ng-template #list let-items>
+      <div class="flex flex-row justify-evenly">
+        @for (item of items; track item) {
+          <div class="relative">
+            <img
+              class="rounded-lg"
+              src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg"
+            >
+            <p-tag
+              class="absolute"
+              value="Blabla"
+              severity="info"
+              [style.left.px]="4"
+              [style.top.px]="4"
+            />
+          </div>
+        }
+      </div>
+    </ng-template>
+  </p-dataview>
+</div>

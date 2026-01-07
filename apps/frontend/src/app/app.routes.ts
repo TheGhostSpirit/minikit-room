@@ -12,5 +12,10 @@ export const routes: Routes = [
     loadChildren: () => import('app/features/pixeltheque/pixeltheque.routes').then(m => m.routes),
     canActivate: [googleAuthGuard]
   },
+  {
+    path: 'media',
+    loadChildren: () => import('app/features/mediatheque/mediatheque.routes').then(m => m.routes),
+    canActivate: [googleAuthGuard]
+  },
   { path: '**', redirectTo: '' },
 ];
