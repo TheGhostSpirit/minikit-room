@@ -8,7 +8,7 @@
     </ng-template>
   </p-toolbar>
 
-  <p-dataview #dv [value]="games()">
+  <p-dataview #dv [value]="albums()">
     <ng-template #list let-items>
       <div class="flex flex-row justify-evenly">
         @for (item of items; track item) {
