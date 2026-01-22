@@ -43,7 +43,12 @@ export class SidenavComponent {
     {
       label: 'Médiathèque', items: [
         { label: 'Notes', fa: f.faNoteSticky, disabled: true },
-        { label: 'Galerie', routerLink: 'media/gallery', fa: f.faPhotoFilm },
+        { label: 'Galerie', routerLink: 'media/gallery', fa: f.faPhotoFilm, disabled: true },
+      ]
+    },
+    {
+      label: 'Autres', items: [
+        { label: 'Labyrinthine', routerLink: 'others/labyrinthine', fa: f.faShirt },
       ]
     },
   ];

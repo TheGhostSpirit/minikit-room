@@ -17,5 +17,10 @@ export const routes: Routes = [
     loadChildren: () => import('app/features/mediatheque/mediatheque.routes').then(m => m.routes),
     canActivate: [googleAuthGuard]
   },
+  {
+    path: 'others',
+    loadChildren: () => import('app/features/others/labyrinthine/labyrinthine.routes').then(m => m.routes),
+    canActivate: [googleAuthGuard]
+  },
   { path: '**', redirectTo: '' },
 ];
