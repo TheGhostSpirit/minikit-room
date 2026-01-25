@@ -5,7 +5,12 @@
     "start": "ts-node src/index.ts"
   },
   "devDependencies": {
+    "@types/jsdom": "^27",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "jsdom": "^27.4.0",
+    "node-fetch": "^3.3.2"
   }
 }
