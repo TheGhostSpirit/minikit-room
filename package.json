@@ -3,9 +3,11 @@
   "packageManager": "yarn@4.9.1",
   "private": true,
   "workspaces": [
-    "apps/frontend"
+    "apps/frontend",
+    "scripts/labyrinthine-cosmetic-scraper"
   ],
   "scripts": {
-    "dev:frontend": "yarn workspace @mkr/frontend start"
+    "dev:frontend": "yarn workspace @mkr/frontend start",
+    "task:scrap-labyrinthine": "yarn workspace @mkr/labyrinthine-cosmetic-scraper start"
   }
 }
