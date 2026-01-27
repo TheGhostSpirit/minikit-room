@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 /bazel-out
+/public/assets/labyrinthine/*
+!/public/assets/labyrinthine/.gitkeep
 
 # Node
 /node_modules

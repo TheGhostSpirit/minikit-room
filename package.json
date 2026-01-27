@@ -8,6 +8,6 @@
   ],
   "scripts": {
     "dev:frontend": "yarn workspace @mkr/frontend start",
-    "task:scrap-labyrinthine": "yarn workspace @mkr/labyrinthine-cosmetic-scraper start"
+    "task:scrap-labyrinthine": "EXPORT_PATH=apps/frontend/public/assets/labyrinthine yarn workspace @mkr/labyrinthine-cosmetic-scraper start"
   }
 }

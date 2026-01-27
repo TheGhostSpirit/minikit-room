@@ -1,5 +1,5 @@
 export interface Cosmetic {
-  id: number;
+  id: string;
   type: string;
   source: string;
   icon: string;

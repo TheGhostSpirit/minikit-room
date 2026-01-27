@@ -1,3 +1,7 @@
-export const URLS_TO_SCRAP = [
-  'https://labyrinthine.fandom.com/wiki/Customisation'
-];
+export const CONFIG = {
+  urlsToScrap: [
+    'https://labyrinthine.fandom.com/wiki/Customisation',
+  ],
+  exportPath: process.env.EXPORT_PATH,
+  debug: false,
+};

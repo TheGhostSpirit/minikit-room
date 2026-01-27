@@ -2,11 +2,12 @@
   "name": "@mkr/labyrinthine-cosmetic-scraper",
   "version": "0.0.0",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node -r tsconfig-paths/register src/index.ts"
   },
   "devDependencies": {
     "@types/jsdom": "^27",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {

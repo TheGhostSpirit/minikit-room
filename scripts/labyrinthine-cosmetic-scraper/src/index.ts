@@ -1,5 +1,6 @@
-import { extractData } from './steps/extract';
-import { fetchCosmeticsPage } from './steps/fetch';
+import { exportData } from 'steps/export';
+import { extractData } from 'steps/extract';
+import { fetchCosmeticsPage } from 'steps/fetch';
 
 (async() => {
 
@@ -7,6 +8,7 @@ import { fetchCosmeticsPage } from './steps/fetch';
 
   const data = extractData(cosmeticsPage);
 
-  console.log(data);
+  await exportData(data);
 
+  return 0;
 })();
