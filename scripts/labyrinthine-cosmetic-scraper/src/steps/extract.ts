@@ -20,10 +20,8 @@ const getDOM = (html: string): Document => {
   return dom.window.document;
 };
 
-export const extractData = (html: string): Cosmetic[] => {
-
-  const document = getDOM(html);
-  const tableRowsQuery = document.querySelector('#tpt-1 tbody');
+const extractTable = (document: Document, querySelector: string, cosmeticType: string): Cosmetic[] => {
+  const tableRowsQuery = document.querySelector(querySelector);
 
   if (!tableRowsQuery) {
     throw new Error('Invalid page structure');
@@ -41,9 +39,27 @@ export const extractData = (html: string): Cosmetic[] => {
   return tableRows.map(row => {
     return {
       id: row.children[4].textContent.trim(),
-      type: row.children[3].textContent.trim(),
+      subType: row.children[3].textContent.trim(),
       source: row.children[5].textContent.trim(),
-      icon: row.children[1].children[0].children[0].getAttribute('href'),
+      // TODO rework
+      icon: row?.children[1]?.children[0]?.children[0]?.getAttribute('href') ?? '',
+      type: cosmeticType,
     } as Cosmetic;
   });
+}
+
+export const extractData = (html: string): Cosmetic[] => {
+
+  const document = getDOM(html);
+
+  return [
+    ...extractTable(document, '#tpt-1 tbody', 'Head'),
+    ...extractTable(document, '#tpt-2 tbody', 'Clothing'),
+    ...extractTable(document, '#tpt-3 tbody', 'Wrist'),
+    ...extractTable(document, '#tpt-4 tbody', 'Flashlight'),
+    ...extractTable(document, '#tpt-5 tbody', 'Lantern'),
+    ...extractTable(document, '#tpt-6 tbody', 'Glowsticks'),
+    ...extractTable(document, '#tpt-7 tbody', 'Face'),
+    ...extractTable(document, '#tpt-8 tbody', 'Records'),
+  ];
 };

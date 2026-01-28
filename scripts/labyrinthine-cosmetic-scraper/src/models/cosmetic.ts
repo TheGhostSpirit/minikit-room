@@ -3,4 +3,5 @@ export interface Cosmetic {
   type: string;
   source: string;
   icon: string;
+  subType: string;
 };
