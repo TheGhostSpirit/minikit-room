@@ -1,3 +1,4 @@
+import { downloadCosmeticImages } from 'steps/download-images';
 import { exportData } from 'steps/export';
 import { extractData } from 'steps/extract';
 import { fetchCosmeticsPage } from 'steps/fetch';
@@ -6,9 +7,11 @@ import { fetchCosmeticsPage } from 'steps/fetch';
 
   const cosmeticsPage = await fetchCosmeticsPage();
 
-  const data = extractData(cosmeticsPage);
+  const cosmetics = extractData(cosmeticsPage);
 
-  await exportData(data);
+  await downloadCosmeticImages(cosmetics);
+
+  await exportData(cosmetics);
 
   return 0;
 })();

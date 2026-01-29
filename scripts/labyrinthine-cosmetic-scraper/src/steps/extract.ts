@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+import { v4 as uuid } from 'uuid';
 
 import { CONFIG } from 'config';
 import { Cosmetic } from 'models/cosmetic';
@@ -38,7 +39,8 @@ const extractTable = (document: Document, querySelector: string, cosmeticType: s
   const tableRows = removeHeaderRow([...tableRowsQuery.children]);
   return tableRows.map(row => {
     return {
-      id: row.children[4].textContent.trim(),
+      id: uuid(),
+      name: row.children[4].textContent.trim(),
       subType: row.children[3].textContent.trim(),
       source: row.children[5].textContent.trim(),
       // TODO rework
