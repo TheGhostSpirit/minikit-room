@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 
 import { CONFIG } from 'config';
 import { Cosmetic } from 'models/cosmetic';
+import { CosmeticType } from 'models/cosmetic-types';
 
 const debugTree = (rootElement: Element): void => {
   const print = (e: Element, depth: number) => {
@@ -21,7 +22,7 @@ const getDOM = (html: string): Document => {
   return dom.window.document;
 };
 
-const extractTable = (document: Document, querySelector: string, cosmeticType: string): Cosmetic[] => {
+const extractTable = (document: Document, querySelector: string, cosmeticType: CosmeticType): Cosmetic[] => {
   const tableRowsQuery = document.querySelector(querySelector);
 
   if (!tableRowsQuery) {
@@ -43,9 +44,10 @@ const extractTable = (document: Document, querySelector: string, cosmeticType: s
       name: row.children[4].textContent.trim(),
       subType: row.children[3].textContent.trim(),
       source: row.children[5].textContent.trim(),
-      // TODO rework
-      icon: row?.children[1]?.children[0]?.children[0]?.getAttribute('href') ?? '',
       type: cosmeticType,
+      icon: cosmeticType === 'Records'
+        ? ''
+        : row.children[1].children[0].children[0].getAttribute('href'),
     } as Cosmetic;
   });
 }
