@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 import { map } from 'rxjs/operators';
@@ -14,10 +14,11 @@ import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 })
 export class CosmeticsComponent {
   private readonly cosmeticService = inject(CosmeticService);
+
   cosmetics = toSignal(
     this.cosmeticService.list()
       .pipe(
-        map((cosmetics) =>  cosmetics.map(([cosmetic, blob]) => this.getCosmeticWithImage(cosmetic, blob)))
+        map((cosmetics) => cosmetics.map(([cosmetic, blob]) => this.getCosmeticWithImage(cosmetic, blob)))
       ),
     { initialValue: [] as Cosmetic[] }
   );
@@ -28,4 +29,14 @@ export class CosmeticsComponent {
       icon: URL.createObjectURL(blob),
     };
   }
+
+  groupedByType = computed(() => {
+    return Object.entries(
+      this.cosmetics().reduce((accumulator, cosmetic) => {
+        accumulator[cosmetic.type] ??= [];
+        accumulator[cosmetic.type].push(cosmetic);
+        return accumulator;
+      }, {} as Record<string, Cosmetic[]>)
+    );
+  });
 }
