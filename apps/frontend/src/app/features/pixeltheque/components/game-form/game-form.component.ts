@@ -24,13 +24,11 @@ export class GameFormComponent {
   platforms = [...PLATFORMS];
   formats = [...FORMATS];
 
-  constructor() {
-    effect(() => {
-      this.form = this.buildForm(this.game());
-      const cover = this.game()?.cover;
-      this.coverUrl = !!cover ? this.getCoverUrl(cover) : DEFAULT_URL;
-    });
-  }
+  readonly formEffect = effect(() => {
+    this.form = this.buildForm(this.game());
+    const cover = this.game()?.cover;
+    this.coverUrl = !!cover ? this.getCoverUrl(cover) : DEFAULT_URL;
+  });
 
   private getCoverUrl(file: File) {
     return URL.createObjectURL(file);
