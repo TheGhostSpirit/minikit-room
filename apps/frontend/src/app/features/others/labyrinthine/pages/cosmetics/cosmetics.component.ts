@@ -1,19 +1,22 @@
-import { Component, computed, inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Component, computed, effect, inject, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 
 import { map } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { CosmeticService } from 'app/features/others/labyrinthine/services/cosmetic.service';
 import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
+import { COSMETIC_TYPES } from 'app/features/others/labyrinthine/models/cosmetic-types';
 
 @Component({
   selector: 'app-cosmetics',
   imports: [...sharedImports, ...sharedDeclarations],
   templateUrl: './cosmetics.component.html'
 })
-export class CosmeticsComponent {
+export class CosmeticsComponent implements OnInit {
   private readonly cosmeticService = inject(CosmeticService);
+  private readonly formBuilder = inject(FormBuilder);
 
   cosmetics = toSignal(
     this.cosmeticService.list()
@@ -32,11 +35,38 @@ export class CosmeticsComponent {
 
   groupedByType = computed(() => {
     return Object.entries(
-      this.cosmetics().reduce((accumulator, cosmetic) => {
-        accumulator[cosmetic.type] ??= [];
-        accumulator[cosmetic.type].push(cosmetic);
-        return accumulator;
+      this.cosmetics().reduce((record, cosmetic) => {
+        record[cosmetic.type] ??= [];
+        record[cosmetic.type].push(cosmetic);
+        return record;
       }, {} as Record<string, Cosmetic[]>)
     );
   });
+
+  allTypes = 'All types';
+  allGroups = 'All groups';
+
+  form: FormGroup = this.formBuilder.group({
+    type: [this.allTypes],
+    group: [this.allGroups],
+  });
+
+  filterChanges$ = this.form.valueChanges.pipe(takeUntilDestroyed());
+
+  types = [ this.allTypes, ...COSMETIC_TYPES ];
+  groups = [ this.allGroups ];
+  getAllGroups(cosmetics: Cosmetic[]): string[] {
+    return [...new Set(cosmetics.map(cosmetic => cosmetic.source))];
+  }
+  readonly groupEffect = effect(() => {
+    this.groups = [ this.allGroups, ...this.getAllGroups(this.cosmetics()) ];
+  });
+
+  ngOnInit() {
+  this.filterChanges$
+    .subscribe(value => {
+      console.log(value);
+    });
+  }
+
 }
