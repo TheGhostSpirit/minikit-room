@@ -42,7 +42,6 @@ const extractTable = (document: Document, querySelector: string, cosmeticType: C
     return {
       id: uuid(),
       name: row.children[4].textContent.trim(),
-      subType: row.children[3].textContent.trim(),
       source: row.children[5].textContent.trim(),
       type: cosmeticType,
       icon: cosmeticType === 'Records'
