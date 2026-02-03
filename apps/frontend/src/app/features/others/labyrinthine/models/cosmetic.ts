@@ -6,4 +6,5 @@ export interface Cosmetic {
   type: CosmeticType;
   source: string;
   icon: string;
+  found?: boolean;
 };

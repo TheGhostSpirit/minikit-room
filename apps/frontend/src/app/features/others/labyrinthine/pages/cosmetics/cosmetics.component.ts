@@ -2,6 +2,8 @@ import { Component, computed, effect, inject } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { toSignal } from '@angular/core/rxjs-interop';
 
+import * as f from '@fortawesome/free-solid-svg-icons';
+
 import { map } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
@@ -17,6 +19,10 @@ import { COSMETIC_TYPES } from 'app/features/others/labyrinthine/models/cosmetic
 export class CosmeticsComponent {
   private readonly cosmeticService = inject(CosmeticService);
   private readonly formBuilder = inject(FormBuilder);
+
+  icons = {
+    medal: f.faMedal,
+  };
 
   cosmetics = toSignal(
     this.cosmeticService.list()
@@ -76,4 +82,8 @@ export class CosmeticsComponent {
       .filter(cosmetic => filterByType(cosmetic, filterChanges?.type ?? null))
       .filter(cosmetic => filterByGroup(cosmetic, filterChanges?.group ?? null));
   });
+
+  selectCosmetic(cosmetic: Cosmetic) {
+    cosmetic.found = true;
+  }
 }
