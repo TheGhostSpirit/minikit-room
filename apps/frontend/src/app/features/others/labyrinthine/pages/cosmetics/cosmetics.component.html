@@ -29,12 +29,12 @@
     </div>
   </form>
 
-  @for (type of groupedByType(); track type) {
+  @for (type of groupedByType(); track type[0]) {
     <p-divider align="left" type="solid">
       <h2 class="text-3xl font-bold my-8">{{ type[0] }}</h2>
     </p-divider>
     <div class="flex flex-row flex-wrap justify-evenly">
-      @for (cosmetic of type[1]; track cosmetic) {
+      @for (cosmetic of type[1]; track cosmetic.id) {
         <div class="p-4 m-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64">
           <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150">
           <b class="mx-auto">{{ cosmetic.name }}</b>

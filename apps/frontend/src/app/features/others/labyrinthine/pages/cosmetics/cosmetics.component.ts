@@ -1,6 +1,6 @@
-import { Component, computed, effect, inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
+import { Component, computed, effect, inject } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 import { map } from 'rxjs/operators';
 
@@ -14,7 +14,7 @@ import { COSMETIC_TYPES } from 'app/features/others/labyrinthine/models/cosmetic
   imports: [...sharedImports, ...sharedDeclarations],
   templateUrl: './cosmetics.component.html'
 })
-export class CosmeticsComponent implements OnInit {
+export class CosmeticsComponent {
   private readonly cosmeticService = inject(CosmeticService);
   private readonly formBuilder = inject(FormBuilder);
 
@@ -25,7 +25,6 @@ export class CosmeticsComponent implements OnInit {
       ),
     { initialValue: [] as Cosmetic[] }
   );
-
   getCosmeticWithImage(cosmetic: Cosmetic, blob: Blob): Cosmetic {
     return {
       ...cosmetic,
@@ -35,7 +34,7 @@ export class CosmeticsComponent implements OnInit {
 
   groupedByType = computed(() => {
     return Object.entries(
-      this.cosmetics().reduce((record, cosmetic) => {
+      this.filteredCosmetics().reduce((record, cosmetic) => {
         record[cosmetic.type] ??= [];
         record[cosmetic.type].push(cosmetic);
         return record;
@@ -45,16 +44,12 @@ export class CosmeticsComponent implements OnInit {
 
   allTypes = 'All types';
   allGroups = 'All groups';
-
-  form: FormGroup = this.formBuilder.group({
+  types = [ this.allTypes, ...COSMETIC_TYPES ];
+  groups = [ this.allGroups ];
+  form = this.formBuilder.group({
     type: [this.allTypes],
     group: [this.allGroups],
   });
-
-  filterChanges$ = this.form.valueChanges.pipe(takeUntilDestroyed());
-
-  types = [ this.allTypes, ...COSMETIC_TYPES ];
-  groups = [ this.allGroups ];
   getAllGroups(cosmetics: Cosmetic[]): string[] {
     return [...new Set(cosmetics.map(cosmetic => cosmetic.source))];
   }
@@ -62,11 +57,23 @@ export class CosmeticsComponent implements OnInit {
     this.groups = [ this.allGroups, ...this.getAllGroups(this.cosmetics()) ];
   });
 
-  ngOnInit() {
-  this.filterChanges$
-    .subscribe(value => {
-      console.log(value);
-    });
-  }
-
+  filterChanges = toSignal(this.form.valueChanges, { initialValue: this.form.value });
+  filteredCosmetics = computed(() => {
+    const filterChanges = this.filterChanges();
+    const filterByType = (cosmetic: Cosmetic, type: string | null) => {
+      if (!type || type === this.allTypes) {
+        return true;
+      }
+      return cosmetic.type === type;
+    };
+    const filterByGroup = (cosmetic: Cosmetic, group: string | null) => {
+      if (!group || group === this.allGroups) {
+        return true;
+      }
+      return cosmetic.source === group;
+    };
+    return this.cosmetics()
+      .filter(cosmetic => filterByType(cosmetic, filterChanges?.type ?? null))
+      .filter(cosmetic => filterByGroup(cosmetic, filterChanges?.group ?? null));
+  });
 }
