@@ -6,6 +6,12 @@
         <p>Mes Cosmétiques - Total {{ cosmetics().length }}</p>
       </div>
     </ng-template>
+    <ng-template #end>
+      <button pButton (click)="commit()" [disabled]="!canCommit()">
+        <fa-icon [icon]="icons.commit" pButtonIcon />
+        <span pButtonLabel>Commit</span>
+      </button>
+    </ng-template>
   </p-toolbar>
 
   <form class="flex justify-evenly p-2" [formGroup]="form">
@@ -39,6 +45,7 @@
           class="p-4 m-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64 cursor-pointer"
           (click)="selectCosmetic(cosmetic)"
           [class.bg-primary]="cosmetic.found"
+          [class.bg-zinc-300]="cosmetic.selected"
         >
           @if (cosmetic.found) {
             <fa-icon [icon]="icons.medal" />

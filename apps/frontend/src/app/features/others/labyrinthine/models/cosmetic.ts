@@ -7,4 +7,5 @@ export interface Cosmetic {
   source: string;
   icon: string;
   found?: boolean;
-};
+  selected?: boolean;
+}
