@@ -71,9 +71,11 @@ export class CosmeticsComponent {
   allGroups = 'All groups';
   types = [ this.allTypes, ...COSMETIC_TYPES ];
   groups = [ this.allGroups ];
+  foundStatus = [ 'All', 'Found', 'Not Found' ];
   form = this.formBuilder.group({
     type: [this.allTypes],
     group: [this.allGroups],
+    found: [this.foundStatus[0]],
   });
   getAllGroups(cosmetics: Cosmetic[]): string[] {
     return [...new Set(cosmetics.map(cosmetic => cosmetic.source))];
@@ -87,10 +89,13 @@ export class CosmeticsComponent {
     const filterChanges = this.filterChanges();
     const filterByType = (cosmetic: Cosmetic, type: string | null) => !type || type === this.allTypes || cosmetic.type === type;
     const filterByGroup = (cosmetic: Cosmetic, group: string | null) => !group || group === this.allGroups || cosmetic.source === group;
+    const filterByFoundStatus = (cosmetic: Cosmetic, foundStatus: string | null) =>
+      foundStatus === 'All' || foundStatus === 'Found' && cosmetic.found || foundStatus === 'Not Found' && !cosmetic.found;
 
     return this.cosmetics()
       .filter(cosmetic => filterByType(cosmetic, filterChanges?.type ?? null))
-      .filter(cosmetic => filterByGroup(cosmetic, filterChanges?.group ?? null));
+      .filter(cosmetic => filterByGroup(cosmetic, filterChanges?.group ?? null))
+      .filter(cosmetic => filterByFoundStatus(cosmetic, filterChanges?.found ?? null));
   });
 
   selectCosmetic(selectedCosmetic: Cosmetic) {
