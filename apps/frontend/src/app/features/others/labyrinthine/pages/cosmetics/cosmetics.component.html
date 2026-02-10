@@ -14,55 +14,5 @@
     </ng-template>
   </p-toolbar>
 
-  <form class="flex justify-evenly p-2" [formGroup]="form">
-    <div class="flex flex-col gap-2 w-1/4">
-      <label for="type" class="font-bold">Type</label>
-      <p-select
-        [options]="types"
-        id="type"
-        formControlName="type"
-        placeholder="Sélectionner..."
-      />
-    </div>
-    <div class="flex flex-col gap-2 w-1/4">
-      <label for="group" class="font-bold">Groupe</label>
-      <p-select
-        [options]="groups"
-        id="group"
-        formControlName="group"
-        placeholder="Sélectionner..."
-      />
-    </div>
-    <div class="flex flex-col gap-2 w-1/4">
-      <label for="found" class="font-bold">Trouvé</label>
-      <p-select
-        [options]="foundStatus"
-        id="found"
-        formControlName="found"
-        placeholder="Sélectionner..."
-      />
-    </div>
-  </form>
-
-  @for (type of groupedByType(); track type[0]) {
-    <p-divider align="left" type="solid">
-      <h2 class="text-3xl font-bold my-8">{{ type[0] }}</h2>
-    </p-divider>
-    <div class="flex flex-row flex-wrap justify-evenly">
-      @for (cosmetic of type[1]; track cosmetic.id) {
-        <div
-          class="p-4 m-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64 cursor-pointer"
-          (click)="selectCosmetic(cosmetic)"
-          [class.bg-primary]="cosmetic.found"
-          [class.bg-zinc-300]="cosmetic.selected"
-        >
-          @if (cosmetic.found) {
-            <fa-icon [icon]="icons.medal" />
-          }
-          <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150">
-          <b class="mx-auto">{{ cosmetic.name }}</b>
-        </div>
-      }
-    </div>
-  }
+  <app-cosmetics-list [(cosmetics)]="cosmetics"></app-cosmetics-list>
 </div>
