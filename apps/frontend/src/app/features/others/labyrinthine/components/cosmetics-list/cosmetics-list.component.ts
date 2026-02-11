@@ -5,6 +5,7 @@ import * as f from '@fortawesome/free-solid-svg-icons';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 import { CosmeticsFiltersComponent } from 'app/features/others/labyrinthine/components/cosmetics-filters/cosmetics-filters.component';
+import { COSMETIC_GROUP_FILTER_ALL, COSMETIC_TYPE_FILTER_ALL, CosmeticFoundStatus } from 'app/features/others/labyrinthine/models/cosmetic-filters';
 
 @Component({
   selector: 'app-cosmetics-list',
@@ -43,11 +44,10 @@ export class CosmeticsListComponent {
     );
   }
 
-  //TODO move types to file
-  filterChanged(filterChanges: any) {
-    const filterByType = (cosmetic: Cosmetic, type: string | null) => !type || type === 'All types' || cosmetic.type === type;
-    const filterByGroup = (cosmetic: Cosmetic, group: string | null) => !group || group === 'All groups' || cosmetic.source === group;
-    const filterByFoundStatus = (cosmetic: Cosmetic, foundStatus: string | null) =>
+  filterChanged(filterChanges: { type?: string | null, group?: string | null, found?: CosmeticFoundStatus | null }) {
+    const filterByType = (cosmetic: Cosmetic, type: string | null) => !type || type === COSMETIC_TYPE_FILTER_ALL || cosmetic.type === type;
+    const filterByGroup = (cosmetic: Cosmetic, group: string | null) => !group || group === COSMETIC_GROUP_FILTER_ALL || cosmetic.source === group;
+    const filterByFoundStatus = (cosmetic: Cosmetic, foundStatus: CosmeticFoundStatus | null) =>
       foundStatus === 'All' || foundStatus === 'Found' && cosmetic.found || foundStatus === 'Not Found' && !cosmetic.found;
 
     const filteredCosmetics = this.cosmetics()
