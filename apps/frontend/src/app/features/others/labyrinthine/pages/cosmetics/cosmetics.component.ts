@@ -1,9 +1,7 @@
-import { Component, computed, effect, inject, signal } from '@angular/core';
+import { Component, computed, DestroyRef, effect, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
-
-import { map } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { CosmeticService } from 'app/features/others/labyrinthine/services/cosmetic.service';
@@ -11,6 +9,7 @@ import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 import { CommitService } from 'app/features/others/labyrinthine/services/commit.service';
 import { Commit, createCommit } from 'app/features/others/labyrinthine/models/commit';
 import { CosmeticsListComponent } from 'app/features/others/labyrinthine/components/cosmetics-list/cosmetics-list.component';
+import { BlobUrlService } from 'app/shared/services/blob-url.service';
 
 @Component({
   selector: 'app-cosmetics',
@@ -20,25 +19,15 @@ import { CosmeticsListComponent } from 'app/features/others/labyrinthine/compone
 export class CosmeticsComponent {
   private readonly cosmeticService = inject(CosmeticService);
   private readonly commitService = inject(CommitService);
+  private readonly blobUrlService = inject(BlobUrlService);
+  private readonly destroyRef = inject(DestroyRef);
 
   icons = {
     commit: f.faCheck,
   };
 
-  readonly rawCosmetics = toSignal(
-    this.cosmeticService.list()
-      .pipe(
-        map((cosmetics) => cosmetics.map(([cosmetic, blob]) => this.getCosmeticWithImage(cosmetic, blob))),
-      ),
-    { initialValue: [] as Cosmetic[] }
-  );
-  getCosmeticWithImage(cosmetic: Cosmetic, blob: Blob): Cosmetic {
-    return {
-      ...cosmetic,
-      icon: URL.createObjectURL(blob),
-    };
-  }
-
+  readonly imageScope = this.blobUrlService.createScope(this.destroyRef);
+  readonly rawCosmetics = toSignal(this.cosmeticService.list(this.imageScope), { initialValue: [] as Cosmetic[] });
   readonly commits = toSignal(this.commitService.list(), { initialValue: [] as Commit[] });
   readonly cosmetics = signal<Cosmetic[]>([]);
   readonly cosmeticEffect = effect(() => {
