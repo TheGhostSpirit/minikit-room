@@ -7,7 +7,7 @@ import { map, switchMap, tap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
-import { GzipService } from 'app/core/services/utils/gzip.service';
+import { GzipService } from 'app/shared/services/gzip.service';
 import { DriveFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
