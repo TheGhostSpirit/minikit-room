@@ -26,8 +26,8 @@ export class CosmeticsComponent {
     commit: f.faCheck,
   };
 
-  readonly imageScope = this.blobUrlService.createScope(this.destroyRef);
-  readonly rawCosmetics = toSignal(this.cosmeticService.list(this.imageScope), { initialValue: [] as Cosmetic[] });
+  readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
+  readonly rawCosmetics = toSignal(this.cosmeticService.list(this.blobUrlScope), { initialValue: [] as Cosmetic[] });
   readonly commits = toSignal(this.commitService.list(), { initialValue: [] as Commit[] });
   readonly cosmetics = signal<Cosmetic[]>([]);
   readonly cosmeticEffect = effect(() => {

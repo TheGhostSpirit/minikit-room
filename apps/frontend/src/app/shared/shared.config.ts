@@ -25,6 +25,8 @@ import { GalleriaModule } from 'primeng/galleria';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { ImageUploadComponent } from 'app/shared/components/image-upload/image-upload.component';
+
 export const sharedImports = [
   FormsModule,
   ReactiveFormsModule,
@@ -54,6 +56,7 @@ export const sharedImports = [
 
 export const sharedDeclarations = [
   AsyncPipe,
+  ImageUploadComponent,
 ];
 
 export const sharedProviders = [
