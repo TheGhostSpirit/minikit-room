@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +24,7 @@ export class NavbarComponent {
   private readonly dialog = inject(DialogService);
 
   defaultProfilePicture = f.faUser;
-  profile$ = this.authService.profile$;
+  readonly profile = toSignal(this.authService.profile$, { initialValue: null });
 
   loggedInMenu: MenuItem[] = [
     {

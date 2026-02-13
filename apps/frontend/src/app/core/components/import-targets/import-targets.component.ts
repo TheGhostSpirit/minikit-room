@@ -1,4 +1,5 @@
 import { Component, inject, output } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
 import { DriveFile, extractDateFromBackupFileName } from 'app/core/models/drive-file';
@@ -21,7 +22,7 @@ export class ImportTargetsComponent {
 
   fileSelected = output<DriveFile>();
 
-  files$ = this.adminDbService.getRecentBackupFiles();
+  readonly files = toSignal(this.adminDbService.getRecentBackupFiles(), { initialValue: [] as DriveFile[] });
   selectedFile: DriveFile | null = null;
 
   selectFile(file: DriveFile) {

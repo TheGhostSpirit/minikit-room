@@ -4,10 +4,10 @@
       <img src="assets/home/logo.png" class="navbar-menu-logo">
     </ng-template>
     <ng-template #end>
-      @let profile = (profile$ | async);
-      @if (profile) {
+      @let p = profile();
+      @if (p) {
         <p-menu #menu [model]="loggedInMenu" [popup]="true" />
-        <p-avatar shape="circle" class="cursor-pointer" [image]="profile.picture" (click)="menu.toggle($event)" />
+        <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="menu.toggle($event)" />
       }
       @else {
         <p-avatar shape="circle" class="cursor-pointer" (click)="login()">

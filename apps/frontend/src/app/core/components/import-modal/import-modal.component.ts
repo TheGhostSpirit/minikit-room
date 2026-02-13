@@ -1,9 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
-
-import { map } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
@@ -23,17 +22,10 @@ export class ImportModalComponent {
   private readonly router = inject(Router);
 
   isImporting = false;
-  importingStatus$ = this.adminDbService.getImportState().pipe(
-    map(state => this.getLabelFromState(state))
-  );
-
-  selectedFile: DriveFile | null = null;
-  fileSelected(file: DriveFile) {
-    this.selectedFile = file;
-  }
-
-  private getLabelFromState(state: ImportState) {
-    switch(state) {
+  readonly importingStatus = toSignal(this.adminDbService.getImportState(), { initialValue: ImportState.NOT_IMPORTING });
+  readonly importingStatusLabel = computed(() => {
+    const importingStatus = this.importingStatus();
+    switch(importingStatus) {
       case ImportState.NOT_IMPORTING:
         return { progress: 0, label: 'Initialisation' };
       case ImportState.DOWNLOADING:
@@ -45,6 +37,11 @@ export class ImportModalComponent {
       case ImportState.FINISHED:
         return { progress: 100, label: 'Finalisation' };
     }
+  });
+
+  selectedFile: DriveFile | null = null;
+  fileSelected(file: DriveFile) {
+    this.selectedFile = file;
   }
 
   cancel() {

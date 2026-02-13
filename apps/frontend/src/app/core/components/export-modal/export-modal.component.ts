@@ -1,8 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
-
-import { map } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
@@ -19,12 +18,10 @@ export class ExportModalComponent {
   private readonly adminDbService = inject(IndexedDbAdminService);
 
   isExporting = false;
-  exportingStatus$ = this.adminDbService.getExportState().pipe(
-    map(state => this.getLabelFromState(state))
-  );
-
-  private getLabelFromState(state: ExportState) {
-    switch(state) {
+  readonly exportingStatus = toSignal(this.adminDbService.getExportState(), { initialValue: ExportState.NOT_EXPORTING });
+  readonly exportingStatusLabel = computed(() => {
+    const exportingStatus = this.exportingStatus();
+    switch(exportingStatus) {
       case ExportState.NOT_EXPORTING:
         return { progress: 0, label: 'Initialisation' };
       case ExportState.EXPORTING:
@@ -36,7 +33,7 @@ export class ExportModalComponent {
       case ExportState.FINISHED:
         return { progress: 100, label: 'Finalisation' };
     }
-  }
+  });
 
   cancel() {
     this.ref.close();

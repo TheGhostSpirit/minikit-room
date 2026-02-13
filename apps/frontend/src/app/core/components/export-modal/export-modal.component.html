@@ -6,11 +6,11 @@
   </div>
 }
 @else {
-  @let status = (exportingStatus$ | async);
-  @if (status) {
-    <p-progressbar [value]="status.progress">
+  @let s = exportingStatusLabel();
+  @if (s) {
+    <p-progressbar [value]="s.progress">
       <ng-template #content>
-        <span>{{ status.label }}</span>
+        <span>{{ s.label }}</span>
       </ng-template>
     </p-progressbar>
   }
