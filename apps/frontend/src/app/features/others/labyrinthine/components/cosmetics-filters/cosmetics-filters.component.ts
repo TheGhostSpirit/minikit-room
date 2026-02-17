@@ -6,6 +6,7 @@ import { sharedImports } from 'app/shared/shared.config';
 import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 import { COSMETIC_TYPES } from 'app/features/others/labyrinthine/models/cosmetic-types';
 import { COSMETIC_FOUND_STATUS, COSMETIC_GROUP_FILTER_ALL, COSMETIC_TYPE_FILTER_ALL } from 'app/features/others/labyrinthine/models/cosmetic-filters';
+import { COSMETIC_GROUPS } from 'app/features/others/labyrinthine/models/cosmetic-groups';
 
 @Component({
   selector: 'app-cosmetics-filters',
@@ -22,7 +23,7 @@ export class CosmeticsFiltersComponent {
   allTypes = COSMETIC_TYPE_FILTER_ALL;
   allGroups = COSMETIC_GROUP_FILTER_ALL;
   types = [ this.allTypes, ...COSMETIC_TYPES ];
-  groups = [ this.allGroups ];
+  groups = [ this.allGroups, ...COSMETIC_GROUPS ];
   foundStatus = [...COSMETIC_FOUND_STATUS];
 
   readonly form = this.formBuilder.group({
@@ -30,13 +31,6 @@ export class CosmeticsFiltersComponent {
     group: [this.allGroups],
     found: [this.foundStatus[0]],
   });
-
-  readonly groupEffect = effect(() => {
-    this.groups = [ this.allGroups, ...this.getAllGroups(this.cosmetics()) ];
-  });
-  getAllGroups(cosmetics: Cosmetic[]): string[] {
-    return [...new Set(cosmetics.map(cosmetic => cosmetic.source))];
-  }
 
   readonly filterChanges = toSignal(this.form.valueChanges, { initialValue: this.form.value });
   readonly filterChangesEffect = effect(() => {
