@@ -26,7 +26,7 @@ export class CosmeticsListComponent {
     const cosmetics = this.cosmetics();
 
     const filterByType = (cosmetic: Cosmetic, type: string | null) => !type || type === COSMETIC_TYPE_FILTER_ALL || cosmetic.type === type;
-    const filterByGroup = (cosmetic: Cosmetic, group: string | null) => !group || group === COSMETIC_GROUP_FILTER_ALL || cosmetic.source === group;
+    const filterByGroup = (cosmetic: Cosmetic, group: string | null) => !group || group === COSMETIC_GROUP_FILTER_ALL || cosmetic.group === group;
     const filterByFoundStatus = (cosmetic: Cosmetic, foundStatus: CosmeticFoundStatus | null) => {
       switch (foundStatus) {
         case 'Found': return cosmetic.found;

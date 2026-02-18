@@ -4,7 +4,7 @@ export interface Cosmetic {
   id: string;
   name: string;
   type: CosmeticType;
-  source: string;
+  group: string;
   icon: string;
   found?: boolean;
   selected?: boolean;
