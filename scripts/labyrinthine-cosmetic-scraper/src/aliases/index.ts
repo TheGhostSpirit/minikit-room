@@ -21,16 +21,14 @@ export const resolveAliases = (cosmetics: Cosmetic[], extractor: Extractors): Co
   const { groupAliases, typeAliases } = selectedAliasResolver;
 
   for (const [group, aliases] of groupAliases.entries()) {
-    const aliasesSet = new Set(aliases);
     cosmetics
-      .filter(cosmetic => aliasesSet.has(cosmetic.group))
+      .filter(cosmetic => aliases.find(alias => cosmetic.group.includes(alias)))
       .forEach(cosmetic => { cosmetic.group = group; });
   }
 
   for (const [type, aliases] of typeAliases.entries()) {
-    const aliasesSet = new Set(aliases);
     cosmetics
-      .filter(cosmetic => aliasesSet.has(cosmetic.type))
+      .filter(cosmetic => aliases.find(alias => cosmetic.type.includes(alias)))
       .forEach(cosmetic => { cosmetic.type = type; });
   }
 
