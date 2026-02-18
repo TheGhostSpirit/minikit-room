@@ -13,6 +13,6 @@ export const extractData = (html: string): Cosmetic[] => {
 
   const document = getDOM(html);
 
-  const cosmetics = getExtractor(CONFIG.defaultExtractor)(document);
-  return resolveAliases(cosmetics, CONFIG.defaultExtractor);
+  const cosmetics = getExtractor(CONFIG.defaultContext.extractor)(document);
+  return resolveAliases(cosmetics, CONFIG.defaultContext.extractor);
 };
