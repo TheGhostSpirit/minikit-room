@@ -1,9 +1,10 @@
 import { CosmeticType } from 'models/cosmetic-types';
+import { CosmeticGroup } from 'models/cosmetic-groups';
 
 export interface Cosmetic {
   id: string;
   name: string;
   type: CosmeticType;
-  group: string;
+  group: CosmeticGroup;
   icon: string;
 };
