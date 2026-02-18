@@ -3,6 +3,7 @@ import { JSDOM } from 'jsdom';
 import { CONFIG } from 'config';
 import { Cosmetic } from 'models/cosmetic';
 import { getExtractor } from 'extractors';
+import { resolveAliases } from 'aliases';
 
 export const extractData = (html: string): Cosmetic[] => {
   const getDOM = (html: string): Document => {
@@ -12,5 +13,6 @@ export const extractData = (html: string): Cosmetic[] => {
 
   const document = getDOM(html);
 
-  return getExtractor(CONFIG.defaultExtractor)(document);
+  const cosmetics = getExtractor(CONFIG.defaultExtractor)(document);
+  return resolveAliases(cosmetics, CONFIG.defaultExtractor);
 };
