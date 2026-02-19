@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
-import { Cosmetic, CosmeticType } from '@mkr/shared';
+import { Cosmetic, CosmeticType } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 import { debugTree } from 'extractors/utils';

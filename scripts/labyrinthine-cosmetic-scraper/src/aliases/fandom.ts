@@ -1,4 +1,4 @@
-import { CosmeticGroup, CosmeticType } from '@mkr/shared';
+import { CosmeticGroup, CosmeticType } from '@mkr/shared/labyrinthine';
 
 const groupAliases = new Map<CosmeticGroup, string[]>([
   [

@@ -1,4 +1,4 @@
-import { Cosmetic, COSMETIC_GROUPS, COSMETIC_TYPES } from '@mkr/shared';
+import { Cosmetic, COSMETIC_GROUPS, COSMETIC_TYPES } from '@mkr/shared/labyrinthine';
 
 export const printUnresolvedAliases = (cosmetics: Cosmetic[]): void => {
   const cosmeticTypesSet = new Set(COSMETIC_TYPES);

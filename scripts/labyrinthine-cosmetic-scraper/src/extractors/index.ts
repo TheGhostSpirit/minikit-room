@@ -1,4 +1,4 @@
-import { Cosmetic } from '@mkr/shared';
+import { Cosmetic } from '@mkr/shared/labyrinthine';
 
 import { Extractors } from 'models/extractors';
 

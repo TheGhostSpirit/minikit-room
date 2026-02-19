@@ -1,6 +1,9 @@
 {
   "name": "minikit-room",
   "packageManager": "yarn@4.9.1",
+  "engines": {
+    "node": ">=22"
+  },
   "private": true,
   "workspaces": [
     "apps/frontend",

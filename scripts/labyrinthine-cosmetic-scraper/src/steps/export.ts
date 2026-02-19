@@ -1,6 +1,6 @@
 import { writeFile } from 'node:fs/promises';
 
-import { Cosmetic } from '@mkr/shared';
+import { Cosmetic } from '@mkr/shared/labyrinthine';
 
 import { getExportPath } from 'utils';
 

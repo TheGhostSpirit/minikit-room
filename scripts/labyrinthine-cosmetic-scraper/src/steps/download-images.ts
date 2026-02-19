@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import { writeFile, copyFile } from 'node:fs/promises';
 
-import { Cosmetic } from '@mkr/shared';
+import { Cosmetic } from '@mkr/shared/labyrinthine';
 
 import { getAssetsPath, getExportPath } from 'utils';
 

@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-import { Cosmetic } from '@mkr/shared';
+import { Cosmetic } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 import { getExtractor } from 'extractors';
