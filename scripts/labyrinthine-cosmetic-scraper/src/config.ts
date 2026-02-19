@@ -14,6 +14,6 @@ export const CONFIG = {
   exportPath: process.env.EXPORT_PATH,
   debug: false,
   get defaultContext() {
-    return this.contexts.fandom;
+    return this.contexts.labytool;
   },
 };
