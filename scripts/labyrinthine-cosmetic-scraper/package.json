@@ -14,6 +14,7 @@
     "@mkr/shared": "workspace:*",
     "jsdom": "^27.4.0",
     "node-fetch": "^3.3.2",
+    "p-limit": "^7.3.0",
     "uuid": "^13.0.0"
   }
 }
