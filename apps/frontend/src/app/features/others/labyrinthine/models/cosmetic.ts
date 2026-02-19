@@ -1,12 +1,6 @@
-import { CosmeticType } from 'app/features/others/labyrinthine/models/cosmetic-types';
-import { CosmeticGroup } from 'app/features/others/labyrinthine/models/cosmetic-groups';
+import { Cosmetic as GenericCosmetic } from '@mkr/shared/labyrinthine';
 
-export interface Cosmetic {
-  id: string;
-  name: string;
-  type: CosmeticType;
-  group: CosmeticGroup;
-  icon: string;
+export interface Cosmetic extends GenericCosmetic {
   found?: boolean;
   selected?: boolean;
 }

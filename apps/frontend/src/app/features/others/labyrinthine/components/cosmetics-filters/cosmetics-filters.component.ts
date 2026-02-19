@@ -1,12 +1,12 @@
-import { Component, computed, effect, inject, input, output } from '@angular/core';
+import { Component, effect, inject, input, output } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { toSignal } from '@angular/core/rxjs-interop';
 
+import { COSMETIC_TYPES, COSMETIC_GROUPS } from '@mkr/shared/labyrinthine';
+
 import { sharedImports } from 'app/shared/shared.config';
 import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
-import { COSMETIC_TYPES } from 'app/features/others/labyrinthine/models/cosmetic-types';
 import { COSMETIC_FOUND_STATUS, COSMETIC_GROUP_FILTER_ALL, COSMETIC_TYPE_FILTER_ALL } from 'app/features/others/labyrinthine/models/cosmetic-filters';
-import { COSMETIC_GROUPS } from 'app/features/others/labyrinthine/models/cosmetic-groups';
 
 @Component({
   selector: 'app-cosmetics-filters',
