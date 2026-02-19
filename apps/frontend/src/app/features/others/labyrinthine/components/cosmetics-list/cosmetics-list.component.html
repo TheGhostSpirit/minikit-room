@@ -1,4 +1,5 @@
 <app-cosmetics-filters [cosmetics]="cosmetics()" (filterChanged)="filterChanged($event)"></app-cosmetics-filters>
+<b class="flex justify-evenly m-2">Cosmétiques affichés: {{ filteredCosmetics().length }}</b>
 
 @for (type of groupedByType(); track type[0]) {
   <p-divider align="left" type="solid">
