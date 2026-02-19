@@ -4,7 +4,8 @@
   "private": true,
   "workspaces": [
     "apps/frontend",
-    "scripts/labyrinthine-cosmetic-scraper"
+    "scripts/labyrinthine-cosmetic-scraper",
+    "packages/shared"
   ],
   "scripts": {
     "dev:frontend": "yarn workspace @mkr/frontend start",

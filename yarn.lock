@@ -1481,6 +1481,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@mkr/labyrinthine-cosmetic-scraper@workspace:scripts/labyrinthine-cosmetic-scraper"
   dependencies:
+    "@mkr/shared": "npm:*"
     "@types/jsdom": "npm:^27"
     "@types/node": "npm:^25.2.0"
     jsdom: "npm:^27.4.0"
@@ -1489,6 +1490,15 @@ __metadata:
     tsconfig-paths: "npm:^4.2.0"
     typescript: "npm:^5.9.3"
     uuid: "npm:^13.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@mkr/shared@npm:*, @mkr/shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@mkr/shared@workspace:packages/shared"
+  dependencies:
+    "@types/node": "npm:^25.2.0"
+    typescript: "npm:^5.9.3"
   languageName: unknown
   linkType: soft
 
