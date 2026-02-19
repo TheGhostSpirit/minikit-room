@@ -1,9 +1,9 @@
-import { Cosmetic } from 'models/cosmetic';
-import { Extractors } from 'models/extractors';
+import { Cosmetic } from '@mkr/shared';
 
+import { Extractors } from 'models/extractors';
+import { AliasResolver } from 'models/alias-resolver';
 import { resolveAliases as fandomAliasResolver } from 'aliases/fandom';
 import { resolveAliases as labytoolAliasResolver } from 'aliases/labytool';
-import { AliasResolver } from 'models/alias-resolver';
 import { printUnresolvedAliases } from 'aliases/utils';
 
 const aliasResolverMap = new Map<Extractors, AliasResolver>([

@@ -1,4 +1,4 @@
-import { Cosmetic } from 'models/cosmetic';
+import { Cosmetic } from '@mkr/shared';
 
 export const extract = (document: Document): Cosmetic[] => {
   return [];

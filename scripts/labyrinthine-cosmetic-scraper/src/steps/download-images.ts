@@ -1,7 +1,8 @@
 import fetch from 'node-fetch';
 import { writeFile, copyFile } from 'node:fs/promises';
 
-import { Cosmetic } from 'models/cosmetic';
+import { Cosmetic } from '@mkr/shared';
+
 import { getAssetsPath, getExportPath } from 'utils';
 
 export const downloadCosmeticImages = async (cosmetics: Cosmetic[]): Promise<unknown> => {

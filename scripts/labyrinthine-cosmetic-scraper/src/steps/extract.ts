@@ -1,7 +1,8 @@
 import { JSDOM } from 'jsdom';
 
+import { Cosmetic } from '@mkr/shared';
+
 import { CONFIG } from 'config';
-import { Cosmetic } from 'models/cosmetic';
 import { getExtractor } from 'extractors';
 import { resolveAliases } from 'aliases';
 

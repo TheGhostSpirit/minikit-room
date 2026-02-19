@@ -1,5 +1,4 @@
-import { CosmeticGroup } from 'models/cosmetic-groups';
-import { CosmeticType } from 'models/cosmetic-types';
+import { CosmeticGroup, CosmeticType } from '@mkr/shared';
 
 const groupAliases = new Map<CosmeticGroup, string[]>([]);
 

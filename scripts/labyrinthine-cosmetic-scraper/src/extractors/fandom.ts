@@ -1,8 +1,8 @@
 import { v4 as uuid } from 'uuid';
 
+import { Cosmetic, CosmeticType } from '@mkr/shared';
+
 import { CONFIG } from 'config';
-import { Cosmetic } from 'models/cosmetic';
-import { CosmeticType } from 'models/cosmetic-types';
 import { debugTree } from 'extractors/utils';
 
 export const extract = (document: Document): Cosmetic[] => {

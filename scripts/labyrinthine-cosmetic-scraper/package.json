@@ -12,6 +12,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@mkr/shared": "workspace:*",
     "jsdom": "^27.4.0",
     "node-fetch": "^3.3.2",
     "uuid": "^13.0.0"

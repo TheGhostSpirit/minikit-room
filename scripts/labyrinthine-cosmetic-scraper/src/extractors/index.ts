@@ -1,4 +1,5 @@
-import { Cosmetic } from 'models/cosmetic';
+import { Cosmetic } from '@mkr/shared';
+
 import { Extractors } from 'models/extractors';
 
 import { extract as fandomExtractor } from 'extractors/fandom';

@@ -1,6 +1,4 @@
-import { Cosmetic } from 'models/cosmetic';
-import { COSMETIC_GROUPS } from 'models/cosmetic-groups';
-import { COSMETIC_TYPES } from 'models/cosmetic-types';
+import { Cosmetic, COSMETIC_GROUPS, COSMETIC_TYPES } from '@mkr/shared';
 
 export const printUnresolvedAliases = (cosmetics: Cosmetic[]): void => {
   const cosmeticTypesSet = new Set(COSMETIC_TYPES);
