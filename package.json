@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "dev:frontend": "yarn workspace @mkr/frontend start",
+    "build:shared": "yarn workspace @mkr/shared build",
     "task:scrap-labyrinthine": "EXPORT_PATH=apps/frontend/public/assets/labyrinthine yarn workspace @mkr/labyrinthine-cosmetic-scraper start",
-    "build:prod": "yarn run task:scrap-labyrinthine && yarn workspace @mkr/frontend build"
+    "build:prod": "yarn run build:shared && yarn run task:scrap-labyrinthine && yarn workspace @mkr/frontend build"
   }
 }
