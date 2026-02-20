@@ -7,12 +7,22 @@
       </div>
     </ng-template>
     <ng-template #end>
-      <button pButton (click)="commit()" [disabled]="!canCommit()">
-        <fa-icon [icon]="icons.commit" pButtonIcon />
-        <span pButtonLabel>Commit</span>
-      </button>
+      <p-buttongroup>
+        <p-button severity="info" (click)="openHistory()">
+          <fa-icon [icon]="icons.history" pButtonIcon />
+          <span pButtonLabel>Historique</span>
+        </p-button>
+        <p-button (click)="commit()" [disabled]="!canCommit()">
+          <fa-icon [icon]="icons.commit" pButtonIcon />
+          <span pButtonLabel>Commit</span>
+        </p-button>
+      </p-buttongroup>
     </ng-template>
   </p-toolbar>
+
+  <p-drawer header="Historique des commits" [(visible)]="isHistoryVisible" [fullScreen]="true">
+    <app-commit-history />
+  </p-drawer>
 
   <app-cosmetics-list [(cosmetics)]="cosmetics"></app-cosmetics-list>
 </div>

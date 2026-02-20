@@ -5,6 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { RatingModule } from 'primeng/rating';
 import { ButtonModule } from 'primeng/button';
+import { ButtonGroupModule } from 'primeng/buttongroup';
 import { SelectModule } from 'primeng/select';
 import { DividerModule } from 'primeng/divider';
 import { TextareaModule } from 'primeng/textarea';
@@ -21,6 +22,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { DataViewModule } from 'primeng/dataview';
 import { TagModule } from 'primeng/tag';
 import { GalleriaModule } from 'primeng/galleria';
+import { DrawerModule } from 'primeng/drawer';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -34,6 +36,7 @@ export const sharedImports = [
   FloatLabelModule,
   RatingModule,
   ButtonModule,
+  ButtonGroupModule,
   SelectModule,
   DividerModule,
   TextareaModule,
@@ -51,6 +54,7 @@ export const sharedImports = [
   DataViewModule,
   TagModule,
   GalleriaModule,
+  DrawerModule,
 ];
 
 export const sharedDeclarations = [
