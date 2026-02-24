@@ -32,7 +32,7 @@ export class ImportTargetsComponent {
 
   getFileDateLabel(file: DriveFile) {
     const date = extractDateFromBackupFileName(file);
-    return `${date.getDate()}/${date.getMonth() + 1} ${date.getHours()}:${date.getMinutes()}`;
+    return Intl.DateTimeFormat('fr', { month: 'long', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(date);
   }
 
 }
