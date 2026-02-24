@@ -50,4 +50,8 @@ export class CommitHistoryComponent {
       id: 4
     },
   ];
+
+  formatDate(date: string): string {
+    return Intl.DateTimeFormat('fr', { month: 'long', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(date));
+  }
 }
