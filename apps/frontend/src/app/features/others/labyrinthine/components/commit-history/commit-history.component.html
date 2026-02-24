@@ -1,13 +1,13 @@
 <div class="card">
-  <p-timeline [value]="commits">
+  <p-timeline [value]="commits()">
     <ng-template #opposite let-commit>
       <small class="text-surface-500 dark:text-surface-400">{{ formatDate(commit.date) }}</small>
     </ng-template>
     <ng-template #content let-commit>
-      <p-card class="mb-4 w-64">
+      <p-card class="mb-4 w-96">
         <div class="flex flex-col">
           @for(cosmetic of commit.cosmetics; track cosmetic.name) {
-            <span class="text-xl">{{ cosmetic.name }}</span>
+            <span class="text-xl">{{ cosmetic.name }} | {{ cosmetic.type }}</span>
           }
         </div>
       </p-card>
