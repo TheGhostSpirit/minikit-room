@@ -23,6 +23,7 @@ import { DataViewModule } from 'primeng/dataview';
 import { TagModule } from 'primeng/tag';
 import { GalleriaModule } from 'primeng/galleria';
 import { DrawerModule } from 'primeng/drawer';
+import { TimelineModule } from 'primeng/timeline';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -55,6 +56,7 @@ export const sharedImports = [
   TagModule,
   GalleriaModule,
   DrawerModule,
+  TimelineModule,
 ];
 
 export const sharedDeclarations = [
