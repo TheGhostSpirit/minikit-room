@@ -4,16 +4,17 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import * as f from '@fortawesome/free-solid-svg-icons';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
+import { BlobUrlService } from 'app/shared/services/blob-url.service';
 import { CosmeticService } from 'app/features/others/labyrinthine/services/cosmetic.service';
 import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 import { CommitService } from 'app/features/others/labyrinthine/services/commit.service';
 import { Commit, createCommit } from 'app/features/others/labyrinthine/models/commit';
 import { CosmeticsListComponent } from 'app/features/others/labyrinthine/components/cosmetics-list/cosmetics-list.component';
-import { BlobUrlService } from 'app/shared/services/blob-url.service';
+import { CommitHistoryComponent } from 'app/features/others/labyrinthine/components/commit-history/commit-history.component';
 
 @Component({
   selector: 'app-cosmetics',
-  imports: [...sharedImports, ...sharedDeclarations, CosmeticsListComponent],
+  imports: [...sharedImports, ...sharedDeclarations, CosmeticsListComponent, CommitHistoryComponent],
   templateUrl: './cosmetics.component.html'
 })
 export class CosmeticsComponent {
@@ -24,6 +25,7 @@ export class CosmeticsComponent {
 
   icons = {
     commit: f.faCheck,
+    history: f.faHistory,
   };
 
   readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
@@ -42,6 +44,11 @@ export class CosmeticsComponent {
       )
     );
   });
+
+  isHistoryVisible = false;
+  openHistory() {
+    this.isHistoryVisible = true;
+  }
 
   readonly isCommitting = signal(false);
   readonly canCommit = computed(() =>
