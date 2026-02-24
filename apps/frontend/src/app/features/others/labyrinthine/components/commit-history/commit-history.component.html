@@ -1,19 +1,17 @@
-<div class="card">
-  <p-timeline [value]="commits()">
-    <ng-template #opposite let-commit>
-      <small>{{ formatDate(commit.date) }}</small>
-    </ng-template>
-    <ng-template #content let-commit>
-      <p-card class="mb-4 w-96">
-        <div class="flex flex-col">
-          @for(cosmetic of commit.cosmetics; track cosmetic.name) {
-            <div class="flex flex-row justify-around">
-              <span>{{ cosmetic.name }}</span>
-              <span class="text-primary">{{ cosmetic.type }}</span>
-            </div>
-          }
+<p-timeline [value]="commits()">
+  <ng-template #opposite let-commit>
+    <small>{{ formatDate(commit.date) }}</small>
+  </ng-template>
+  <ng-template #content let-commit>
+    <p-card class="mb-4 w-96">
+      <div class="flex flex-col">
+        @for(cosmetic of commit.cosmetics; track cosmetic.name) {
+        <div class="flex flex-row justify-around">
+          <span>{{ cosmetic.name }}</span>
+          <span class="text-primary">{{ cosmetic.type }}</span>
         </div>
-      </p-card>
-    </ng-template>
-  </p-timeline>
-</div>
+        }
+      </div>
+    </p-card>
+  </ng-template>
+</p-timeline>
