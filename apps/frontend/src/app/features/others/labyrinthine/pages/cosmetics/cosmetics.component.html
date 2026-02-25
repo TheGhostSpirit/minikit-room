@@ -8,6 +8,10 @@
     </ng-template>
     <ng-template #end>
       <p-buttongroup>
+        <p-button severity="info" (click)="openCompare()">
+          <fa-icon [icon]="icons.compare" pButtonIcon />
+          <span pButtonLabel>Comparaison</span>
+        </p-button>
         <p-button severity="info" (click)="openHistory()">
           <fa-icon [icon]="icons.history" pButtonIcon />
           <span pButtonLabel>Historique</span>
@@ -22,6 +26,10 @@
 
   <p-drawer header="Historique des commits" [(visible)]="isHistoryVisible" [fullScreen]="true">
     <app-commit-history [commits]="commits()" />
+  </p-drawer>
+
+  <p-drawer header="Comparaison" [(visible)]="isCompareVisible" [fullScreen]="true">
+    <app-cosmetics-compare [cosmetics]="cosmetics()" />
   </p-drawer>
 
   <app-cosmetics-list [(cosmetics)]="cosmetics"></app-cosmetics-list>
