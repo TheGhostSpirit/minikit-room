@@ -8,7 +8,7 @@ import { gzip, gunzip } from 'fflate';
 @Injectable({
   providedIn: 'root',
 })
-export class GzipService {
+export class BlobCompressionService {
 
   compress(blob: Blob): Observable<Blob> {
     return this.blobToUint8Array(blob).pipe(
