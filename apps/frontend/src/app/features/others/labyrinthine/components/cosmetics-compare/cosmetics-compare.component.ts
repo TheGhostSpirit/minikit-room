@@ -38,6 +38,10 @@ export class CosmeticsCompareComponent {
     return this.objectCompressionService.compress(myFoundCosmetics);
   });
 
+  copyToClipboard() {
+    return navigator.clipboard.writeText(this.myFoundCosmeticsHash());
+  }
+
   readonly theirFoundCosmetics = computed(() => {
     const codeToCompare = this.codeToCompare();
 

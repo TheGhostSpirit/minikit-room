@@ -8,7 +8,7 @@
             <div>
               <p-inputgroup>
                 <input pInputText placeholder="Code" readonly="true" [value]="myFoundCosmeticsHash()" />
-                <p-button label="Copier">
+                <p-button label="Copier" (click)="copyToClipboard()">
                   <fa-icon [icon]="icons.copy" pButtonIcon />
                 </p-button>
               </p-inputgroup>
