@@ -2,6 +2,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { InputTextModule } from 'primeng/inputtext';
+import { InputGroupModule } from 'primeng/inputgroup';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { RatingModule } from 'primeng/rating';
 import { ButtonModule } from 'primeng/button';
@@ -25,6 +26,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { DrawerModule } from 'primeng/drawer';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { SplitterModule } from 'primeng/splitter';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -35,6 +37,7 @@ export const sharedImports = [
   ReactiveFormsModule,
   RouterModule,
   InputTextModule,
+  InputGroupModule,
   FloatLabelModule,
   RatingModule,
   ButtonModule,
@@ -59,6 +62,7 @@ export const sharedImports = [
   DrawerModule,
   TimelineModule,
   CardModule,
+  SplitterModule,
 ];
 
 export const sharedDeclarations = [

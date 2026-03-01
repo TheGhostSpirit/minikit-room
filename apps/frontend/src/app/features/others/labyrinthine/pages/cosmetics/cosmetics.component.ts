@@ -6,15 +6,16 @@ import * as f from '@fortawesome/free-solid-svg-icons';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { BlobUrlService } from 'app/shared/services/blob-url.service';
 import { CosmeticService } from 'app/features/others/labyrinthine/services/cosmetic.service';
-import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
+import { Cosmetic, CosmeticUtils } from 'app/features/others/labyrinthine/models/cosmetic';
 import { CommitService } from 'app/features/others/labyrinthine/services/commit.service';
 import { Commit, createCommit } from 'app/features/others/labyrinthine/models/commit';
 import { CosmeticsListComponent } from 'app/features/others/labyrinthine/components/cosmetics-list/cosmetics-list.component';
 import { CommitHistoryComponent } from 'app/features/others/labyrinthine/components/commit-history/commit-history.component';
+import { CosmeticsCompareComponent } from 'app/features/others/labyrinthine/components/cosmetics-compare/cosmetics-compare.component';
 
 @Component({
   selector: 'app-cosmetics',
-  imports: [...sharedImports, ...sharedDeclarations, CosmeticsListComponent, CommitHistoryComponent],
+  imports: [...sharedImports, ...sharedDeclarations, CosmeticsListComponent, CommitHistoryComponent, CosmeticsCompareComponent],
   templateUrl: './cosmetics.component.html'
 })
 export class CosmeticsComponent {
@@ -26,6 +27,7 @@ export class CosmeticsComponent {
   icons = {
     commit: f.faCheck,
     history: f.faHistory,
+    compare: f.faCodeCompare,
   };
 
   readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
@@ -38,7 +40,7 @@ export class CosmeticsComponent {
     const foundCosmetics = commits.flatMap(commit => commit.cosmetics);
     this.cosmetics.set(
       cosmetics.map(cosmetic =>
-        foundCosmetics.find(fc => fc.name === cosmetic.name && fc.type === cosmetic.type)
+        foundCosmetics.find(foundCosmetic => CosmeticUtils.isSameCosmetic(cosmetic, foundCosmetic))
           ? { ...cosmetic, found: true }
           : cosmetic
       )
@@ -48,6 +50,11 @@ export class CosmeticsComponent {
   isHistoryVisible = false;
   openHistory() {
     this.isHistoryVisible = true;
+  }
+
+  isCompareVisible = false;
+  openCompare() {
+    this.isCompareVisible = true;
   }
 
   readonly isCommitting = signal(false);
