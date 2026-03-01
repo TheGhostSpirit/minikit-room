@@ -7,7 +7,7 @@
             <h3 class="text-xl font-bold mb-2">Mon code</h3>
             <div>
               <p-inputgroup>
-                <input pInputText placeholder="Code" readonly="true" [value]="foundCosmeticsHash()" />
+                <input pInputText placeholder="Code" readonly="true" [value]="myFoundCosmeticsHash()" />
                 <p-button label="Copier">
                   <fa-icon [icon]="icons.copy" pButtonIcon />
                 </p-button>
@@ -20,7 +20,7 @@
         <div class="flex h-full">
           <div class="p-4 m-auto w-full">
             <h3 class="text-xl font-bold mb-2">Code à comparer</h3>
-            <textarea rows="5" pTextarea fluid class="resize-none"></textarea>
+            <textarea rows="5" pTextarea fluid class="resize-none" [formControl]="codeFormControl"></textarea>
           </div>
         </div>
       </ng-template>
@@ -30,7 +30,7 @@
     <p-splitter [panelSizes]="[50, 50]">
       <ng-template #panel>
         <div class="flex flex-col">
-          @for (cosmetic of customCosmetics1(); track cosmetic) {
+          @for (cosmetic of myUniqueCosmetics(); track cosmetic) {
             <div class="p-4 mx-auto my-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64">
               <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150" />
               <b class="mx-auto">{{ cosmetic.name }}</b>
@@ -40,7 +40,7 @@
       </ng-template>
       <ng-template #panel>
         <div class="flex flex-col">
-          @for (cosmetic of customCosmetics2(); track cosmetic) {
+          @for (cosmetic of theirUniqueCosmetics(); track cosmetic) {
             <div class="p-4 mx-auto my-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64">
               <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150" />
               <b class="mx-auto">{{ cosmetic.name }}</b>

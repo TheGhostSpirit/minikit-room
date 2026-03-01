@@ -1,10 +1,12 @@
 import { Component, computed, inject, input } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
 
 import { sharedImports } from 'app/shared/shared.config';
 import { ObjectCompressionService } from 'app/shared/services/object-compression.service';
-import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
+import { Cosmetic, CosmeticIdentifier, CosmeticUtils } from 'app/features/others/labyrinthine/models/cosmetic';
 
 @Component({
   selector: 'app-cosmetics-compare',
@@ -20,19 +22,55 @@ export class CosmeticsCompareComponent {
 
   readonly cosmetics = input<Cosmetic[]>([]);
 
-  readonly foundCosmeticsHash = computed(() => {
+  readonly codeFormControl = new FormControl('');
+  readonly codeToCompare = toSignal(
+    this.codeFormControl.valueChanges,
+    { initialValue: this.codeFormControl.value }
+  );
+
+  readonly myFoundCosmetics = computed(() => {
     const cosmetics = this.cosmetics();
-    const foundCosmetics  = cosmetics.filter(cosmetic => cosmetic.found).map(cosmetic => ({ name: cosmetic.name, type: cosmetic.type }));
-    return this.objectCompressionService.compress(foundCosmetics);
+    return cosmetics.filter(cosmetic => cosmetic.found).map(cosmetic => CosmeticUtils.toCosmeticIdentifier(cosmetic));
   });
 
-  readonly customCosmetics1 = computed(() => {
-    const cosmetics = this.cosmetics();
-    return cosmetics.slice(0, 3);
+  readonly myFoundCosmeticsHash = computed(() => {
+    const myFoundCosmetics = this.myFoundCosmetics();
+    return this.objectCompressionService.compress(myFoundCosmetics);
   });
 
-  readonly customCosmetics2 = computed(() => {
+  readonly theirFoundCosmetics = computed(() => {
+    const codeToCompare = this.codeToCompare();
+
+    if (!codeToCompare) {
+      return [];
+    }
+  
+    return this.objectCompressionService.decompress<CosmeticIdentifier[]>(codeToCompare);
+  });
+
+  readonly myUniqueCosmetics = computed(() => {
     const cosmetics = this.cosmetics();
-    return cosmetics.slice(4, 6);
+    const myFoundCosmetics = this.myFoundCosmetics();
+    const theirFoundCosmetics = this.theirFoundCosmetics();
+
+    if (theirFoundCosmetics.length === 0) {
+      return [];
+    }
+
+    const myUniqueCosmeticIdentifiers = myFoundCosmetics.filter(mfc => !theirFoundCosmetics.find(tfc => CosmeticUtils.isSameCosmetic(mfc, tfc)));
+    return myUniqueCosmeticIdentifiers.map(identifier => cosmetics.find(cosmetic => CosmeticUtils.isSameCosmetic(identifier, cosmetic)) as Cosmetic);
+  });
+
+  readonly theirUniqueCosmetics = computed(() => {
+    const cosmetics = this.cosmetics();
+    const myFoundCosmetics = this.myFoundCosmetics();
+    const theirFoundCosmetics = this.theirFoundCosmetics();
+
+    if (theirFoundCosmetics.length === 0) {
+      return [];
+    }
+
+    const theirUniqueCosmeticIdentifiers = theirFoundCosmetics.filter(tfc => !myFoundCosmetics.find(mfc => CosmeticUtils.isSameCosmetic(mfc, tfc)));
+    return theirUniqueCosmeticIdentifiers.map(identifier => cosmetics.find(cosmetic => CosmeticUtils.isSameCosmetic(identifier, cosmetic)) as Cosmetic);
   });
 }
