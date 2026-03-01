@@ -6,7 +6,7 @@ import * as f from '@fortawesome/free-solid-svg-icons';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { BlobUrlService } from 'app/shared/services/blob-url.service';
 import { CosmeticService } from 'app/features/others/labyrinthine/services/cosmetic.service';
-import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
+import { Cosmetic, CosmeticUtils } from 'app/features/others/labyrinthine/models/cosmetic';
 import { CommitService } from 'app/features/others/labyrinthine/services/commit.service';
 import { Commit, createCommit } from 'app/features/others/labyrinthine/models/commit';
 import { CosmeticsListComponent } from 'app/features/others/labyrinthine/components/cosmetics-list/cosmetics-list.component';
@@ -40,7 +40,7 @@ export class CosmeticsComponent {
     const foundCosmetics = commits.flatMap(commit => commit.cosmetics);
     this.cosmetics.set(
       cosmetics.map(cosmetic =>
-        foundCosmetics.find(fc => fc.name === cosmetic.name && fc.type === cosmetic.type)
+        foundCosmetics.find(foundCosmetic => CosmeticUtils.isSameCosmetic(cosmetic, foundCosmetic))
           ? { ...cosmetic, found: true }
           : cosmetic
       )
