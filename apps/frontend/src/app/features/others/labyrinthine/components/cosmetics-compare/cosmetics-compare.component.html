@@ -29,7 +29,7 @@
   <ng-template #panel>
     <p-splitter [panelSizes]="[50, 50]">
       <ng-template #panel>
-        <div class="flex flex-col">
+        <div class="flex flex-row flex-wrap">
           @for (cosmetic of myUniqueCosmetics(); track cosmetic) {
             <div class="p-4 mx-auto my-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64">
               <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150" />
@@ -39,7 +39,7 @@
         </div>
       </ng-template>
       <ng-template #panel>
-        <div class="flex flex-col">
+        <div class="flex flex-row flex-wrap">
           @for (cosmetic of theirUniqueCosmetics(); track cosmetic) {
             <div class="p-4 mx-auto my-4 border border-primary rounded-lg flex flex-col justify-evenly h-64 w-64">
               <img class="mx-auto" [src]="cosmetic.icon" height="150" width="150" />
