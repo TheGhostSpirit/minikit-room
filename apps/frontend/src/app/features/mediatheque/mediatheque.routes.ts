@@ -5,5 +5,5 @@ import { AlbumComponent } from 'app/features/mediatheque/pages/album/album.compo
 
 export const routes: Routes = [
   { title: 'Galerie', path: 'gallery', component: GalleryComponent },
-  { title: 'Album', path: 'album', component: AlbumComponent },
+  { title: 'Album', path: 'album/:id', component: AlbumComponent },
 ];
