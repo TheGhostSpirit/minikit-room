@@ -6,6 +6,12 @@
         <p>Mes albums photos</p>
       </div>
     </ng-template>
+    <ng-template #end>
+      <p-button (click)="createAlbum()">
+        <fa-icon [icon]="icons.plus" pButtonIcon />
+        <span pButtonLabel>Créer</span>
+      </p-button>
+    </ng-template>
   </p-toolbar>
 
   <p-dataview #dv [value]="albums()">

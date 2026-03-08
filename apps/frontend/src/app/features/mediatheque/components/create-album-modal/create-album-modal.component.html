@@ -1,0 +1,5 @@
+<app-image-upload label="Ajouter images" [blobUrlScope]="blobUrlScope" (imagesUploaded)="onUpload($event)" [multiple]="true" />
+
+<div class="flex flex-row justify-center">
+  <p-button class="m-2" severity="secondary" (click)="cancel()">Annuler</p-button>
+</div>
