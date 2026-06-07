@@ -1,4 +1,7 @@
-import { Component, DestroyRef, inject } from '@angular/core';
+import { Component, computed, DestroyRef, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { AlbumService } from 'app/features/mediatheque/services/album.service';
@@ -13,12 +16,17 @@ export class AlbumComponent {
   private readonly albumService = inject(AlbumService);
   private readonly blobUrlService = inject(BlobUrlService);
   private readonly destroyRef = inject(DestroyRef);
-  // album = this.albumService.findOne(12);
+  private readonly route = inject(ActivatedRoute);
 
-  readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
-  images: any[] = [];
+  private readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
 
-  onUpload(files: [File, string][]) {
-    this.images = files.map(f => f[1]);
-  }
+  readonly album = toSignal(
+    this.route.params.pipe(
+      switchMap(params => this.albumService.findOne(+params['id']))
+    )
+  );
+
+  readonly imageUrls = computed(() =>
+    (this.album()?.images ?? []).map(img => this.blobUrlScope.create(img.data))
+  );
 }
