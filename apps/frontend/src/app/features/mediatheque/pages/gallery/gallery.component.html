@@ -18,7 +18,7 @@
     <ng-template #list let-items>
       <div class="flex flex-row flex-wrap gap-4 p-4">
         @for (item of items; track item) {
-          <div class="relative w-64 h-64 rounded-lg border border-[var(--p-secondary-color)]">
+          <div class="relative w-64 h-64 rounded-lg border border-[var(--p-secondary-color)] cursor-pointer" [routerLink]="['/media/album', item.id]">
             <img
               class="rounded-lg w-full h-full object-cover"
               [src]="albumThumbnails().get(item.id)"
