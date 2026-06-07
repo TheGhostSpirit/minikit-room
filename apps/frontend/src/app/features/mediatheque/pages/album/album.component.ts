@@ -3,6 +3,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+import * as f from '@fortawesome/free-solid-svg-icons';
+
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { AlbumService } from 'app/features/mediatheque/services/album.service';
 import { BlobUrlService } from 'app/shared/services/blob-url.service';
@@ -17,6 +19,12 @@ export class AlbumComponent {
   private readonly blobUrlService = inject(BlobUrlService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly route = inject(ActivatedRoute);
+
+  icons = {
+    addImages: f.faPlus,
+    editImages: f.faPen,
+    commit: f.faCheck,
+  };
 
   private readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
 
