@@ -1,4 +1,5 @@
 import { Component, DestroyRef, inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 
@@ -17,14 +18,25 @@ export class CreateAlbumModalComponent {
   private readonly albumService = inject(AlbumService);
   private readonly blobUrlService = inject(BlobUrlService);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly formBuilder = inject(FormBuilder);
 
   readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
   images: AlbumImage[] = [];
 
+  form: FormGroup = this.formBuilder.group({
+    name: ['', Validators.required]
+  });
+
   onUpload(files: [File, string][]) {
+    this.images = files.map(([data]) => ({ data, legend: '' }));
+  }
+
+  submit() {
+    if (!this.form.valid) return;
+
     this.albumService.create({
-      name: 'Album1',
-      images: files.map(([data]) => ({ data, legend: '' }))
+      name: this.form.value.name,
+      images: this.images
     }).subscribe(() => this.dialogRef.close());
   }
 
