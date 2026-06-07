@@ -1,11 +1,4 @@
-<p-fileupload
-  (onSelect)="onUpload($event)"
-  [multiple]="true"
-  accept="image/*"
-  maxFileSize="10000000"
-  mode="advanced"
->
-</p-fileupload>
+<app-image-upload label="Changer Image" [blobUrlScope]="blobUrlScope" (imagesUploaded)="onUpload($event)" [multiple]="true" />
 
 <div class="card">
   <p-galleria
@@ -14,10 +7,10 @@
     [numVisible]="5"
   >
     <ng-template #item let-item>
-      <img [src]="item.itemImageSrc" style="width: 100%" />
+      <img [src]="item" style="width: 100%" />
     </ng-template>
     <ng-template #thumbnail let-item>
-      <img [src]="item.itemImageSrc" />
+      <img [src]="item" />
     </ng-template>
   </p-galleria>
 </div>
