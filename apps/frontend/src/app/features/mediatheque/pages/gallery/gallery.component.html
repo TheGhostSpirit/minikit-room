@@ -16,11 +16,11 @@
 
   <p-dataview #dv [value]="albums()">
     <ng-template #list let-items>
-      <div class="flex flex-row justify-evenly">
+      <div class="flex flex-row flex-wrap gap-4 p-4">
         @for (item of items; track item) {
-          <div class="relative">
+          <div class="relative w-64 h-64 rounded-lg border border-[var(--p-secondary-color)]">
             <img
-              class="rounded-lg"
+              class="rounded-lg w-full h-full object-cover"
               [src]="albumThumbnails().get(item.id)"
             >
             <p-tag
