@@ -1,5 +1,6 @@
 import { Component, DestroyRef, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 
@@ -19,6 +20,7 @@ export class CreateAlbumModalComponent {
   private readonly blobUrlService = inject(BlobUrlService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly formBuilder = inject(FormBuilder);
+  private readonly router = inject(Router);
 
   readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
   images: AlbumImage[] = [];
@@ -37,7 +39,11 @@ export class CreateAlbumModalComponent {
     this.albumService.create({
       name: this.form.value.name,
       images: this.images
-    }).subscribe(() => this.dialogRef.close());
+    }).subscribe(albums => {
+      const newAlbum = albums.reduce((max, a) => (a.id ?? 0) > (max.id ?? 0) ? a : max);
+      this.dialogRef.close();
+      this.router.navigate(['/media/album', newAlbum.id]);
+    });
   }
 
   cancel() {
