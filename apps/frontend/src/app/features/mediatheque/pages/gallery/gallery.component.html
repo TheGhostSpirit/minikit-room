@@ -21,11 +21,11 @@
           <div class="relative">
             <img
               class="rounded-lg"
-              src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg"
+              [src]="albumThumbnails().get(item.id)"
             >
             <p-tag
               class="absolute"
-              value="Blabla"
+              [value]="item.name"
               severity="info"
               [style.left.px]="4"
               [style.top.px]="4"
