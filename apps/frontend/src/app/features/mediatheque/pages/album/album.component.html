@@ -29,6 +29,7 @@
       <p-galleria
         [value]="imageUrls()"
         [numVisible]="5"
+        [(activeIndex)]="selectedImageIndex"
       >
         <ng-template #item let-url>
           <img [src]="url" class="w-[600px] h-[600px] object-cover" />
@@ -43,7 +44,13 @@
 
     <div class="w-1/2 flex flex-col gap-2">
       <label class="font-bold">Légende</label>
-      <textarea pTextarea rows="10" [autoResize]="true"></textarea>
+      <textarea
+        pTextarea
+        rows="10"
+        [autoResize]="true"
+        [ngModel]="selectedImage()?.legend ?? ''"
+        (ngModelChange)="updateLegend($event)"
+      ></textarea>
     </div>
   </div>
 </div>

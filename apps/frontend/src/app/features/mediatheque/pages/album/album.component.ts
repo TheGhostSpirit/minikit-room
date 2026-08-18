@@ -1,4 +1,4 @@
-import { Component, computed, DestroyRef, inject } from '@angular/core';
+import { Component, computed, DestroyRef, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
@@ -34,7 +34,23 @@ export class AlbumComponent {
     )
   );
 
+  readonly images = computed(() => this.album()?.images ?? []);
+
   readonly imageUrls = computed(() =>
-    (this.album()?.images ?? []).map(img => this.blobUrlScope.create(img.data))
+    this.images().map(img => this.blobUrlScope.create(img.data))
   );
+
+  readonly selectedImageIndex = signal(0);
+
+  readonly selectedImage = computed(() =>
+    this.images()[this.selectedImageIndex()]
+  );
+
+  updateLegend(legend: string) {
+    const image = this.selectedImage();
+
+    if (image) {
+      image.legend = legend;
+    }
+  }
 }
