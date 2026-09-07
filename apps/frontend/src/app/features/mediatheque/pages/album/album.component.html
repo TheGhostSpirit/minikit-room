@@ -9,10 +9,6 @@
     <ng-template #end>
       <p-buttongroup>
         <p-button severity="info">
-          <fa-icon [icon]="icons.addImages" pButtonIcon />
-          <span pButtonLabel>Ajouter images</span>
-        </p-button>
-        <p-button severity="info">
           <fa-icon [icon]="icons.editImages" pButtonIcon />
           <span pButtonLabel>Editer images</span>
         </p-button>
@@ -48,7 +44,7 @@
         pTextarea
         rows="10"
         [autoResize]="true"
-        [ngModel]="selectedImage()?.legend ?? ''"
+        [ngModel]="selectedImage().legend"
         (ngModelChange)="updateLegend($event)"
       ></textarea>
     </div>

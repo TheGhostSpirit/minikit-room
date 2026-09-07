@@ -21,7 +21,6 @@ export class AlbumComponent {
   private readonly route = inject(ActivatedRoute);
 
   icons = {
-    addImages: f.faPlus,
     editImages: f.faPen,
     commit: f.faCheck,
   };
