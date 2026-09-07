@@ -1,4 +1,4 @@
-import { Component, computed, DestroyRef, inject, signal } from '@angular/core';
+import { Component, computed, DestroyRef, effect, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
@@ -45,11 +45,19 @@ export class AlbumComponent {
     this.images()[this.selectedImageIndex()]
   );
 
+  readonly dirty = signal(false);
+
+  readonly resetDirtyOnAlbumChange = effect(() => {
+    this.album();
+    this.dirty.set(false);
+  });
+
   updateLegend(legend: string) {
     const image = this.selectedImage();
 
-    if (image) {
+    if (image && image.legend !== legend) {
       image.legend = legend;
+      this.dirty.set(true);
     }
   }
 
@@ -57,7 +65,7 @@ export class AlbumComponent {
     const album = this.album();
 
     if (album?.id !== undefined) {
-      this.albumService.modify(album.id, album).subscribe();
+      this.albumService.modify(album.id, album).subscribe(() => this.dirty.set(false));
     }
   }
 }

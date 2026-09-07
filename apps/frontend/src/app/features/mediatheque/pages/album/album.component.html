@@ -12,7 +12,7 @@
           <fa-icon [icon]="icons.editImages" pButtonIcon />
           <span pButtonLabel>Editer images</span>
         </p-button>
-        <p-button (click)="commit()">
+        <p-button (click)="commit()" [disabled]="!dirty()">
           <fa-icon [icon]="icons.commit" pButtonIcon />
           <span pButtonLabel>Commit</span>
         </p-button>
