@@ -52,4 +52,12 @@ export class AlbumComponent {
       image.legend = legend;
     }
   }
+
+  commit() {
+    const album = this.album();
+
+    if (album?.id !== undefined) {
+      this.albumService.modify(album.id, album).subscribe();
+    }
+  }
 }
