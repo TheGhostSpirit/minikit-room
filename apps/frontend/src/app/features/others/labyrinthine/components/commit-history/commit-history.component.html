@@ -1,4 +1,4 @@
-<p-timeline [value]="commits()">
+<p-timeline [value]="commitsByDateDesc()">
   <ng-template #opposite let-commit>
     <small>{{ formatDate(commit.date) }}</small>
   </ng-template>
