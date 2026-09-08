@@ -1,4 +1,5 @@
-import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
+import { Component, computed, effect, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { sharedImports } from 'app/shared/shared.config';
@@ -11,24 +12,16 @@ import { GameService } from 'app/features/pixeltheque/services/game.service';
   imports: [...sharedImports, GameFormComponent],
   templateUrl: './edit-game.component.html',
 })
-export class EditGameComponent implements OnInit {
-  title = 'Modifier un jeu';
-
+export class EditGameComponent {
   private readonly gameService = inject(GameService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
-  private readonly cdRef = inject(ChangeDetectorRef);
 
-  game: Game | undefined;
-
-  ngOnInit() {
-    this.gameService.findOne(this.getIdFromUrl())
-      .subscribe(game => {
-        this.title = `Modifier ${game.name}`;
-        this.game = game;
-        this.cdRef.detectChanges();
-      });
-  }
+  readonly game = toSignal(this.gameService.findOne(this.getIdFromUrl()), { initialValue: undefined });
+  readonly title = computed(() => {
+    const game = this.game();
+    return `Modifier ${game?.name ?? 'un jeu'}`;
+  });
 
   getIdFromUrl(): number {
     return +(this.route.snapshot.paramMap.get('id') ?? '');

@@ -6,20 +6,26 @@
         <p>Mes albums photos</p>
       </div>
     </ng-template>
+    <ng-template #end>
+      <p-button (click)="createAlbum()">
+        <fa-icon [icon]="icons.plus" pButtonIcon />
+        <span pButtonLabel>Créer</span>
+      </p-button>
+    </ng-template>
   </p-toolbar>
 
   <p-dataview #dv [value]="albums()">
     <ng-template #list let-items>
-      <div class="flex flex-row justify-evenly">
+      <div class="flex flex-row flex-wrap gap-4 p-4">
         @for (item of items; track item) {
-          <div class="relative">
+          <div class="relative w-64 h-64 rounded-lg border border-[var(--p-secondary-color)] cursor-pointer" [routerLink]="['/media/album', item.id]">
             <img
-              class="rounded-lg"
-              src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg"
+              class="rounded-lg w-full h-full object-cover"
+              [src]="albumThumbnails().get(item.id)"
             >
             <p-tag
               class="absolute"
-              value="Blabla"
+              [value]="item.name"
               severity="info"
               [style.left.px]="4"
               [style.top.px]="4"

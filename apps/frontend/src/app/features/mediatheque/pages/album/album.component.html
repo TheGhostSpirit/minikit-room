@@ -1,23 +1,52 @@
-<p-fileupload
-  (onSelect)="onUpload($event)"
-  [multiple]="true"
-  accept="image/*"
-  maxFileSize="10000000"
-  mode="advanced"
->
-</p-fileupload>
+<div>
+  <p-toolbar class="mb-8">
+    <ng-template #start>
+      <div>
+        <h3 class="text-xl font-bold">{{ album()?.name }}</h3>
+        <p>Album photos</p>
+      </div>
+    </ng-template>
+    <ng-template #end>
+      <p-buttongroup>
+        <p-button severity="info" [routerLink]="['/media/album', album()?.id, 'edit']">
+          <fa-icon [icon]="icons.editImages" pButtonIcon />
+          <span pButtonLabel>Editer images</span>
+        </p-button>
+        <p-button (click)="commit()" [disabled]="!dirty()">
+          <fa-icon [icon]="icons.commit" pButtonIcon />
+          <span pButtonLabel>Enregistrer</span>
+        </p-button>
+      </p-buttongroup>
+    </ng-template>
+  </p-toolbar>
 
-<div class="card">
-  <p-galleria
-    [value]="images"
-    [containerStyle]="{ 'max-width': '640px' }"
-    [numVisible]="5"
-  >
-    <ng-template #item let-item>
-      <img [src]="item.itemImageSrc" style="width: 100%" />
-    </ng-template>
-    <ng-template #thumbnail let-item>
-      <img [src]="item.itemImageSrc" />
-    </ng-template>
-  </p-galleria>
+  <div class="flex flex-row gap-4 p-4">
+    <div class="w-1/2">
+      <p-galleria
+        [value]="imageUrls()"
+        [numVisible]="5"
+        [(activeIndex)]="selectedImageIndex"
+      >
+        <ng-template #item let-url>
+          <img [src]="url" class="w-[600px] h-[600px] object-cover" />
+        </ng-template>
+        <ng-template #thumbnail let-url>
+          <img [src]="url" class="h-16 w-16 object-cover" />
+        </ng-template>
+      </p-galleria>
+    </div>
+
+    <p-divider layout="vertical" />
+
+    <div class="w-1/2 flex flex-col gap-2">
+      <label class="font-bold">Légende</label>
+      <textarea
+        pTextarea
+        rows="10"
+        [autoResize]="true"
+        [ngModel]="selectedImage().legend"
+        (ngModelChange)="updateLegend($event)"
+      ></textarea>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,18 @@
+<form [formGroup]="form" class="flex flex-col gap-4 mb-4">
+  <div class="flex flex-col gap-1">
+    <label for="album-name" class="font-bold">Titre</label>
+    <input pInputText id="album-name" formControlName="name" placeholder="Nom de l'album" />
+  </div>
+
+  <div class="flex flex-col gap-2">
+    <app-image-upload label="Ajouter images" [blobUrlScope]="blobUrlScope" (imagesUploaded)="onUpload($event)" [multiple]="true" />
+    @if (images.length > 0) {
+      <span class="text-sm text-gray-500">{{ images.length }} élément(s) sélectionné(s)</span>
+    }
+  </div>
+</form>
+
+<div class="flex flex-row justify-center gap-2">
+  <p-button severity="secondary" (click)="cancel()">Annuler</p-button>
+  <p-button [disabled]="!form.valid || images.length === 0" (click)="submit()">Créer</p-button>
+</div>

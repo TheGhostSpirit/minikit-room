@@ -43,7 +43,7 @@ export class SidenavComponent {
     {
       label: 'Médiathèque', items: [
         { label: 'Notes', fa: f.faNoteSticky, disabled: true },
-        { label: 'Galerie', routerLink: 'media/gallery', fa: f.faPhotoFilm, disabled: true },
+        { label: 'Galerie', routerLink: 'media/gallery', fa: f.faPhotoFilm },
       ]
     },
     {
