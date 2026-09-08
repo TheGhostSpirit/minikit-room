@@ -28,9 +28,17 @@
     />
   </div>
 
-  <div class="flex flex-row flex-wrap gap-4 p-4">
+  <div
+    cdkDropList
+    cdkDropListOrientation="mixed"
+    class="flex flex-row flex-wrap gap-4 p-4"
+    (cdkDropListDropped)="drop($event)"
+  >
     @for (image of images(); track image; let i = $index) {
-      <div class="relative w-64 h-64 rounded-lg overflow-hidden border border-[var(--p-secondary-color)]">
+      <div
+        cdkDrag
+        class="relative w-64 h-64 rounded-lg overflow-hidden border border-[var(--p-secondary-color)] cursor-move"
+      >
         <img class="w-full h-full object-cover" [src]="imageThumbnails()[i]" />
         <p-button
           class="absolute"

@@ -3,6 +3,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
+import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
+
 import * as f from '@fortawesome/free-solid-svg-icons';
 
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
@@ -12,7 +14,7 @@ import { AlbumImage } from 'app/features/mediatheque/models/album';
 
 @Component({
   selector: 'app-edit-album',
-  imports: [...sharedImports, ...sharedDeclarations],
+  imports: [...sharedImports, ...sharedDeclarations, CdkDropList, CdkDrag],
   templateUrl: './edit-album.component.html'
 })
 export class EditAlbumComponent {
@@ -54,6 +56,14 @@ export class EditAlbumComponent {
 
   removeImage(index: number) {
     this.images.update(images => images.filter((_, i) => i !== index));
+  }
+
+  drop(event: CdkDragDrop<AlbumImage[]>) {
+    this.images.update(images => {
+      const reordered = [...images];
+      moveItemInArray(reordered, event.previousIndex, event.currentIndex);
+      return reordered;
+    });
   }
 
   save() {
