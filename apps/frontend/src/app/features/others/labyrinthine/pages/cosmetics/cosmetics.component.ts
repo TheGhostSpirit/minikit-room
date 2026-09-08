@@ -1,5 +1,6 @@
 import { Component, computed, DestroyRef, effect, inject, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
+import { switchMap } from 'rxjs';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
 
@@ -32,8 +33,13 @@ export class CosmeticsComponent {
 
   readonly blobUrlScope = this.blobUrlService.createScope(this.destroyRef);
   readonly rawCosmetics = toSignal(this.cosmeticService.list(this.blobUrlScope), { initialValue: [] as Cosmetic[] });
-  readonly commits = toSignal(this.commitService.list(), { initialValue: [] as Commit[] });
+  readonly commitsRefresh = signal(0);
+  readonly commits = toSignal(
+    toObservable(this.commitsRefresh).pipe(switchMap(() => this.commitService.list())),
+    { initialValue: [] as Commit[] }
+  );
   readonly cosmetics = signal<Cosmetic[]>([]);
+
   readonly cosmeticEffect = effect(() => {
     const commits = this.commits();
     const cosmetics = this.rawCosmetics();
@@ -71,6 +77,7 @@ export class CosmeticsComponent {
       createCommit(selectedCosmetics)
     ).subscribe(() => {
       this.isCommitting.set(false);
+      this.commitsRefresh.update(refresh => refresh + 1);
       this.cosmetics.update(
         cosmetics => cosmetics.map(cosmetic => selectedCosmeticIds.has(cosmetic.id) ? { ...cosmetic, selected: false, found: true } : cosmetic)
       );
