@@ -1,0 +1,10 @@
+[build]
+  command = "yarn run build:prod"
+  publish = "apps/frontend/dist/frontend/browser"
+
+# SPA fallback: serve index.html for any route that isn't a real file,
+# so Angular's client-side router can handle deep links on refresh.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
