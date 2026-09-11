@@ -14,6 +14,7 @@ import { TableModule } from 'primeng/table';
 import { ToolbarModule } from 'primeng/toolbar';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
+import { PopoverModule } from 'primeng/popover';
 import { AvatarModule } from 'primeng/avatar';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
@@ -50,6 +51,7 @@ export const sharedImports = [
   FontAwesomeModule,
   MenuModule,
   MenubarModule,
+  PopoverModule,
   AvatarModule,
   FileUploadModule,
   ImageModule,

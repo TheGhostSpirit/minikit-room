@@ -24,7 +24,8 @@ export class AutoSyncService {
   private readonly conflictSubject = new BehaviorSubject<boolean>(false);
   readonly conflict$ = this.conflictSubject.asObservable();
 
-  private syncing = false;
+  private readonly syncingSubject = new BehaviorSubject<boolean>(false);
+  readonly syncing$ = this.syncingSubject.asObservable();
 
   constructor() {
     this.syncMetadata.dirtyChange$
@@ -46,7 +47,7 @@ export class AutoSyncService {
   }
 
   private canSync(): boolean {
-    return !!this.authService.accessToken && !this.syncing;
+    return !!this.authService.accessToken && !this.syncingSubject.value;
   }
 
   private log(message: string, ...args: unknown[]) {
@@ -64,7 +65,7 @@ export class AutoSyncService {
     }
 
     this.log('push started');
-    this.syncing = true;
+    this.syncingSubject.next(true);
     this.adminDbService.getRecentBackupFiles()
       .pipe(
         switchMap(files => {
@@ -81,7 +82,7 @@ export class AutoSyncService {
           console.error('[AutoSync] push failed', error);
           return EMPTY;
         }),
-        finalize(() => this.syncing = false),
+        finalize(() => this.syncingSubject.next(false)),
       )
       .subscribe();
   }
@@ -93,7 +94,7 @@ export class AutoSyncService {
     }
 
     this.log('pull started');
-    this.syncing = true;
+    this.syncingSubject.next(true);
     this.adminDbService.getRecentBackupFiles()
       .pipe(
         switchMap(files => {
@@ -115,7 +116,7 @@ export class AutoSyncService {
           console.error('[AutoSync] pull failed', error);
           return EMPTY;
         }),
-        finalize(() => this.syncing = false),
+        finalize(() => this.syncingSubject.next(false)),
       )
       .subscribe();
   }

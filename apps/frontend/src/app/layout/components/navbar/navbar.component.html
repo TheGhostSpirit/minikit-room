@@ -6,16 +6,45 @@
     <ng-template #end>
       @let p = profile();
       @if (p) {
-        @if (syncConflict()) {
-          <fa-icon
-            [icon]="syncConflictIcon"
-            class="navbar-menu-sync-conflict cursor-pointer"
-            title="Conflit de synchronisation : des données ont changé sur un autre appareil. Cliquez pour choisir la sauvegarde à conserver."
-            (click)="openImportModal()"
-          />
-        }
-        <p-menu #menu [model]="loggedInMenu" [popup]="true" />
-        <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="menu.toggle($event)" />
+        <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="popover.toggle($event)" />
+        <p-popover #popover>
+          @let status = syncStatus();
+          <div class="navbar-popover">
+            <div class="navbar-popover-status" [class]="status.modifierClass">
+              <fa-icon [icon]="status.icon" [animation]="status.spin ? 'spin' : undefined" />
+              <span>{{ status.label }}</span>
+            </div>
+            <p-divider />
+            <div class="navbar-popover-actions">
+              <p-button
+                severity="secondary"
+                [rounded]="true"
+                title="Forcer l'export vers Google Drive"
+                (click)="openExportModal(); popover.hide()"
+              >
+                <fa-icon [icon]="exportIcon" pButtonIcon />
+              </p-button>
+              <p-button
+                severity="secondary"
+                [rounded]="true"
+                title="Forcer l'import depuis Google Drive"
+                (click)="openImportModal(); popover.hide()"
+              >
+                <fa-icon [icon]="importIcon" pButtonIcon />
+              </p-button>
+            </div>
+            <p-divider />
+            <p-button
+              severity="danger"
+              [text]="true"
+              title="Se déconnecter"
+              (click)="logout(); popover.hide()"
+            >
+              <fa-icon [icon]="logoutIcon" pButtonIcon />
+              <span pButtonLabel>Se déconnecter</span>
+            </p-button>
+          </div>
+        </p-popover>
       }
       @else {
         <p-avatar shape="circle" class="cursor-pointer" (click)="login()">

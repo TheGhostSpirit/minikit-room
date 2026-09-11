@@ -2,8 +2,10 @@ import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
 
+import { combineLatest } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import * as f from '@fortawesome/free-solid-svg-icons';
-import { MenuItem } from 'primeng/api';
 import { DialogService } from 'primeng/dynamicdialog';
 
 import { sharedDeclarations, sharedImports, sharedProviders } from 'app/shared/shared.config';
@@ -11,6 +13,13 @@ import { GoogleAuthService } from 'app/core/services/google/google-auth.service'
 import { ImportModalComponent } from 'app/core/components/import-modal/import-modal.component';
 import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
 import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
+
+interface SyncStatusView {
+  icon: IconDefinition;
+  label: string;
+  spin: boolean;
+  modifierClass: string;
+}
 
 @Component({
   selector: 'app-navbar',
@@ -26,37 +35,48 @@ export class NavbarComponent {
   private readonly autoSyncService = inject(AutoSyncService);
 
   defaultProfilePicture = f.faUser;
-  syncConflictIcon = f.faTriangleExclamation;
-  readonly profile = toSignal(this.authService.profile$, { initialValue: null });
-  readonly syncConflict = toSignal(this.autoSyncService.conflict$, { initialValue: false });
+  exportIcon = f.faCloudArrowUp;
+  importIcon = f.faCloudArrowDown;
+  logoutIcon = f.faRightFromBracket;
+  conflictIcon = f.faTriangleExclamation;
+  syncingIcon = f.faRotate;
+  upToDateIcon = f.faCircleCheck;
 
-  loggedInMenu: MenuItem[] = [
-    {
-      label: 'Exporter sur Drive',
-      command: () => this.dialog.open(
-        ExportModalComponent,
-        {
-          header: 'Exporter des données sur Google Drive',
-          width: '25vw',
-          modal: true,
+  readonly profile = toSignal(this.authService.profile$, { initialValue: null });
+
+  readonly syncStatus = toSignal(
+    combineLatest([this.autoSyncService.conflict$, this.autoSyncService.syncing$]).pipe(
+      map(([conflict, syncing]): SyncStatusView => {
+        if (conflict) {
+          return { icon: this.conflictIcon, label: 'Conflit de synchronisation', spin: false, modifierClass: 'navbar-popover-status--conflict' };
         }
-      ),
-    },
-    {
-      label: 'Importer depuis Drive',
-      command: () => this.openImportModal(),
-    },
-    {
-      label: 'Se déconnecter',
-      command: () => {
-        this.authService.logout();
-        this.router.navigate(['']);
-      },
-    },
-  ];
+        if (syncing) {
+          return { icon: this.syncingIcon, label: 'Synchronisation en cours', spin: true, modifierClass: 'navbar-popover-status--syncing' };
+        }
+        return { icon: this.upToDateIcon, label: 'À jour', spin: false, modifierClass: 'navbar-popover-status--ok' };
+      }),
+    ),
+    { initialValue: { icon: this.upToDateIcon, label: 'À jour', spin: false, modifierClass: 'navbar-popover-status--ok' } },
+  );
 
   login() {
     this.authService.login();
+  }
+
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['']);
+  }
+
+  openExportModal() {
+    this.dialog.open(
+      ExportModalComponent,
+      {
+        header: 'Exporter des données sur Google Drive',
+        width: '25vw',
+        modal: true,
+      }
+    );
   }
 
   openImportModal() {
