@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 
 import { BehaviorSubject, EMPTY, interval, timer } from 'rxjs';
-import { catchError, debounceTime, finalize, switchMap } from 'rxjs/operators';
+import { catchError, debounceTime, finalize, switchMap, tap } from 'rxjs/operators';
 
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
@@ -49,24 +49,36 @@ export class AutoSyncService {
     return !!this.authService.accessToken && !this.syncing;
   }
 
+  private log(message: string, ...args: unknown[]) {
+    console.log(`[AutoSync] ${new Date().toLocaleTimeString()} ${message}`, ...args);
+  }
+
   private push() {
-    if (!this.canSync() || !this.syncMetadata.isDirty()) {
+    if (!this.canSync()) {
+      this.log('push skipped: not allowed (no token or already syncing)');
+      return;
+    }
+    if (!this.syncMetadata.isDirty()) {
+      this.log('push skipped: nothing dirty');
       return;
     }
 
+    this.log('push started');
     this.syncing = true;
     this.adminDbService.getRecentBackupFiles()
       .pipe(
         switchMap(files => {
           const latest = files[0] as DriveFile | undefined;
           if (latest && latest.name !== this.syncMetadata.getLastSyncedBackupName()) {
+            this.log('push aborted: conflict detected, remote moved to', latest.name);
             this.conflictSubject.next(true);
             return EMPTY;
           }
           return this.adminDbService.export();
         }),
+        tap(() => this.log('push finished: backup uploaded')),
         catchError(error => {
-          console.error('Auto-sync push failed', error);
+          console.error('[AutoSync] push failed', error);
           return EMPTY;
         }),
         finalize(() => this.syncing = false),
@@ -76,25 +88,31 @@ export class AutoSyncService {
 
   private pull() {
     if (!this.canSync()) {
+      this.log('pull skipped: not allowed (no token or already syncing)');
       return;
     }
 
+    this.log('pull started');
     this.syncing = true;
     this.adminDbService.getRecentBackupFiles()
       .pipe(
         switchMap(files => {
           const latest = files[0] as DriveFile | undefined;
           if (!latest || latest.name === this.syncMetadata.getLastSyncedBackupName()) {
+            this.log('pull finished: no newer remote backup');
             return EMPTY;
           }
           if (this.syncMetadata.isDirty()) {
+            this.log('pull aborted: conflict detected, local dirty and remote moved to', latest.name);
             this.conflictSubject.next(true);
             return EMPTY;
           }
+          this.log('pull applying remote backup', latest.name);
           return this.adminDbService.import(latest);
         }),
+        tap(() => this.log('pull finished: local data updated')),
         catchError(error => {
-          console.error('Auto-sync pull failed', error);
+          console.error('[AutoSync] pull failed', error);
           return EMPTY;
         }),
         finalize(() => this.syncing = false),
