@@ -11,10 +11,17 @@ const getBackupFiles = (files: DriveFile[]): DriveFile[] => {
 
 const getDateFromName = (name: string) => new Date(name.split(FILE_PREFIX)[1]);
 
+const sortBackupFilesByDateDesc = (files: DriveFile[]): DriveFile[] => {
+  return getBackupFiles(files)
+    .sort((a, b) => getDateFromName(b.name).getTime() - getDateFromName(a.name).getTime());
+};
+
 export const getMostRecentBackupFiles = (files: DriveFile[]): DriveFile[] => {
-  const backupFiles = getBackupFiles(files);
-  backupFiles.sort((a, b) => getDateFromName(b.name).getTime() - getDateFromName(a.name).getTime());
-  return backupFiles.slice(0, 5);
+  return sortBackupFilesByDateDesc(files).slice(0, 5);
+};
+
+export const getBackupFilesToPrune = (files: DriveFile[], maxToKeep: number): DriveFile[] => {
+  return sortBackupFilesByDateDesc(files).slice(maxToKeep);
 };
 
 export const extractDateFromBackupFileName = (file: DriveFile): Date => {

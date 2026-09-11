@@ -8,7 +8,7 @@ import { map, switchMap, tap } from 'rxjs/operators';
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
 import { BlobCompressionService } from 'app/shared/services/blob-compression.service';
-import { DriveFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
+import { DriveFile, getBackupFilesToPrune, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
 import { SyncMetadataService } from 'app/core/services/sync/sync-metadata.service';
@@ -52,7 +52,17 @@ export class IndexedDbAdminService {
       tap(() => this.exportState.next(ExportState.UPLOADING)),
       switchMap(([folderId, blob]) => {
         const name = getNewBackupFileName();
-        return this.driveService.uploadFile(blob, name, folderId).pipe(map(() => name));
+        return this.driveService.uploadFile(blob, name, folderId).pipe(
+          switchMap(() => this.driveService.listFilesInFolder(folderId)),
+          switchMap(files => {
+            const filesToPrune = getBackupFilesToPrune(files, environment.drive.maxBackups);
+            if (!filesToPrune.length) {
+              return of(name);
+            }
+            return forkJoin(filesToPrune.map(file => this.driveService.deleteFile(file.id)))
+              .pipe(map(() => name));
+          }),
+        );
       }),
       tap((name) => {
         this.syncMetadata.setLastSyncedBackupName(name);

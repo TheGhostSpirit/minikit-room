@@ -15,5 +15,6 @@ export const environment = {
   },
   drive: {
     folderName: 'MinikitRoom',
+    maxBackups: 3,
   },
 };
