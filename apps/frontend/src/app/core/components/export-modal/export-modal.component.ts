@@ -6,6 +6,7 @@ import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-admin.service';
 import { ExportState } from 'app/core/models/export-state';
+import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
 
 @Component({
   selector: 'app-export-modal',
@@ -16,6 +17,7 @@ export class ExportModalComponent {
 
   private readonly ref = inject(DynamicDialogRef);
   private readonly adminDbService = inject(IndexedDbAdminService);
+  private readonly autoSyncService = inject(AutoSyncService);
 
   isExporting = false;
   readonly exportingStatus = toSignal(this.adminDbService.getExportState(), { initialValue: ExportState.NOT_EXPORTING });
@@ -42,6 +44,7 @@ export class ExportModalComponent {
   export() {
     this.isExporting = true;
     this.adminDbService.export().subscribe(() => {
+      this.autoSyncService.clearConflict();
       this.ref.close();
     });
   }

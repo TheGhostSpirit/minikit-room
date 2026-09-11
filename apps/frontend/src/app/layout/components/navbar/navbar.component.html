@@ -6,6 +6,14 @@
     <ng-template #end>
       @let p = profile();
       @if (p) {
+        @if (syncConflict()) {
+          <fa-icon
+            [icon]="syncConflictIcon"
+            class="navbar-menu-sync-conflict cursor-pointer"
+            title="Conflit de synchronisation : des données ont changé sur un autre appareil. Cliquez pour choisir la sauvegarde à conserver."
+            (click)="openImportModal()"
+          />
+        }
         <p-menu #menu [model]="loggedInMenu" [popup]="true" />
         <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="menu.toggle($event)" />
       }

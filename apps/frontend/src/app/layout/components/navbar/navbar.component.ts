@@ -10,6 +10,7 @@ import { sharedDeclarations, sharedImports, sharedProviders } from 'app/shared/s
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
 import { ImportModalComponent } from 'app/core/components/import-modal/import-modal.component';
 import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
+import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
 
 @Component({
   selector: 'app-navbar',
@@ -22,9 +23,12 @@ export class NavbarComponent {
   private readonly authService = inject(GoogleAuthService);
   private readonly router = inject(Router);
   private readonly dialog = inject(DialogService);
+  private readonly autoSyncService = inject(AutoSyncService);
 
   defaultProfilePicture = f.faUser;
+  syncConflictIcon = f.faTriangleExclamation;
   readonly profile = toSignal(this.authService.profile$, { initialValue: null });
+  readonly syncConflict = toSignal(this.autoSyncService.conflict$, { initialValue: false });
 
   loggedInMenu: MenuItem[] = [
     {
@@ -40,18 +44,11 @@ export class NavbarComponent {
     },
     {
       label: 'Importer depuis Drive',
-      command: () => this.dialog.open(
-        ImportModalComponent,
-        {
-          header: 'Importer des données depuis Google Drive',
-          width: '40vw',
-          modal: true,
-        }
-      ),
+      command: () => this.openImportModal(),
     },
     {
       label: 'Se déconnecter',
-      command: () => { 
+      command: () => {
         this.authService.logout();
         this.router.navigate(['']);
       },
@@ -60,5 +57,16 @@ export class NavbarComponent {
 
   login() {
     this.authService.login();
+  }
+
+  openImportModal() {
+    this.dialog.open(
+      ImportModalComponent,
+      {
+        header: 'Importer des données depuis Google Drive',
+        width: '40vw',
+        modal: true,
+      }
+    );
   }
 }

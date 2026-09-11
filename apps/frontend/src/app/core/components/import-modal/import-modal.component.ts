@@ -9,6 +9,7 @@ import { IndexedDbAdminService } from 'app/core/services/indexed-db/indexed-db-a
 import { ImportState } from 'app/core/models/import-state';
 import { ImportTargetsComponent } from 'app/core/components/import-targets/import-targets.component';
 import { DriveFile } from 'app/core/models/drive-file';
+import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
 
 @Component({
   selector: 'app-import-modal',
@@ -20,6 +21,7 @@ export class ImportModalComponent {
   private readonly ref = inject(DynamicDialogRef);
   private readonly adminDbService = inject(IndexedDbAdminService);
   private readonly router = inject(Router);
+  private readonly autoSyncService = inject(AutoSyncService);
 
   isImporting = false;
   readonly importingStatus = toSignal(this.adminDbService.getImportState(), { initialValue: ImportState.NOT_IMPORTING });
@@ -56,6 +58,7 @@ export class ImportModalComponent {
     }
 
     this.adminDbService.import(this.selectedFile).subscribe(() => {
+      this.autoSyncService.clearConflict();
       this.router.navigate(['/']);
       this.ref.close();
     });
