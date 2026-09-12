@@ -27,24 +27,21 @@ export class IndexedDbService {
     return this.db.table(key).get({ id });
   }
 
-  add<T>(key: string, item: T): Promise<unknown> {
-    return this.db.table(key).add(item).then(result => {
-      this.syncMetadata.markDirty();
-      return result;
-    });
+  async add<T>(key: string, item: T): Promise<unknown> {
+    const result = await this.db.table(key).add(item);
+    this.syncMetadata.markDirty();
+    return result;
   }
 
-  delete(key: string, id: IndexableType): Promise<unknown> {
-    return this.db.table(key).delete(id).then(result => {
-      this.syncMetadata.markDirty();
-      return result;
-    });
+  async delete(key: string, id: IndexableType): Promise<unknown> {
+    const result = await this.db.table(key).delete(id);
+    this.syncMetadata.markDirty();
+    return result;
   }
 
-  update<T extends UpdateSpec<unknown>>(key: string, id: IndexableType, item: T): Promise<unknown> {
-    return this.db.table(key).update(id, item).then(result => {
-      this.syncMetadata.markDirty();
-      return result;
-    });
+  async update<T extends UpdateSpec<unknown>>(key: string, id: IndexableType, item: T): Promise<unknown> {
+    const result = await this.db.table(key).update(id, item);
+    this.syncMetadata.markDirty();
+    return result;
   }
 }

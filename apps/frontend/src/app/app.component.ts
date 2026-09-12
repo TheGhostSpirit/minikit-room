@@ -9,5 +9,5 @@ import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  private readonly autoSyncService = inject(AutoSyncService);
+  readonly autoSyncService = inject(AutoSyncService);
 }
