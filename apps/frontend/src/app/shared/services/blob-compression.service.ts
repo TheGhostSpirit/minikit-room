@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { bindCallback, defer, Observable } from 'rxjs';
+import { defer, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 
 import { gzip, gunzip } from 'fflate';
@@ -36,15 +36,15 @@ export class BlobCompressionService {
   }
 
   private gzip(data: Uint8Array): Observable<Uint8Array> {
-    return bindCallback(gzip)(data).pipe(
-      map(([_, data]) => data)
-    );
+    return defer(() => new Promise<Uint8Array>((resolve, reject) => {
+      gzip(data, (err, compressed) => err ? reject(err) : resolve(compressed));
+    }));
   }
 
   private gunzip(data: Uint8Array): Observable<Uint8Array> {
-    return bindCallback(gunzip)(data).pipe(
-      map(([_, data]) => data)
-    );
+    return defer(() => new Promise<Uint8Array>((resolve, reject) => {
+      gunzip(data, (err, decompressed) => err ? reject(err) : resolve(decompressed));
+    }));
   }
 
 }
