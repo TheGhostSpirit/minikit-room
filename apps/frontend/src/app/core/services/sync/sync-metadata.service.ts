@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 const LAST_SYNCED_BACKUP_NAME_KEY = 'sync.lastSyncedBackupName';
 const DIRTY_KEY = 'sync.dirty';
@@ -10,8 +10,8 @@ const DIRTY_KEY = 'sync.dirty';
 })
 export class SyncMetadataService {
 
-  private readonly dirtyChangeSubject = new Subject<void>();
-  readonly dirtyChange$ = this.dirtyChangeSubject.asObservable();
+  private readonly dirtySubject = new BehaviorSubject<boolean>(this.isDirty());
+  readonly dirty$ = this.dirtySubject.asObservable();
 
   getLastSyncedBackupName(): string | null {
     return localStorage.getItem(LAST_SYNCED_BACKUP_NAME_KEY);
@@ -27,11 +27,12 @@ export class SyncMetadataService {
 
   markDirty() {
     localStorage.setItem(DIRTY_KEY, 'true');
-    this.dirtyChangeSubject.next();
+    this.dirtySubject.next(true);
   }
 
   clearDirty() {
     localStorage.removeItem(DIRTY_KEY);
+    this.dirtySubject.next(false);
   }
 
 }

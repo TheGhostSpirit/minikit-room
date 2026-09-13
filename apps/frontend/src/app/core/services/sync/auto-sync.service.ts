@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 
 import { BehaviorSubject, EMPTY, interval, timer } from 'rxjs';
-import { catchError, debounceTime, finalize, switchMap, tap } from 'rxjs/operators';
+import { catchError, debounceTime, filter, finalize, switchMap, tap } from 'rxjs/operators';
 import { MessageService } from 'primeng/api';
 
 import { GoogleAuthService } from 'app/core/services/google/google-auth.service';
@@ -30,8 +30,8 @@ export class AutoSyncService {
   readonly syncing$ = this.syncingSubject.asObservable();
 
   constructor() {
-    this.syncMetadata.dirtyChange$
-      .pipe(debounceTime(PUSH_DEBOUNCE_MS))
+    this.syncMetadata.dirty$
+      .pipe(filter(dirty => dirty), debounceTime(PUSH_DEBOUNCE_MS))
       .subscribe(() => this.push());
 
     interval(PULL_INTERVAL_MS).subscribe(() => this.pull());

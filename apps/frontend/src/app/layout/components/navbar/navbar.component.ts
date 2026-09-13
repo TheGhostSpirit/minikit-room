@@ -13,6 +13,7 @@ import { GoogleAuthService } from 'app/core/services/google/google-auth.service'
 import { ImportModalComponent } from 'app/core/components/import-modal/import-modal.component';
 import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
 import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
+import { SyncMetadataService } from 'app/core/services/sync/sync-metadata.service';
 
 interface SyncStatusView {
   icon: IconDefinition;
@@ -33,6 +34,7 @@ export class NavbarComponent {
   private readonly router = inject(Router);
   private readonly dialog = inject(DialogService);
   private readonly autoSyncService = inject(AutoSyncService);
+  private readonly syncMetadata = inject(SyncMetadataService);
 
   defaultProfilePicture = f.faUser;
   exportIcon = f.faCloudArrowUp;
@@ -40,18 +42,22 @@ export class NavbarComponent {
   logoutIcon = f.faRightFromBracket;
   conflictIcon = f.faTriangleExclamation;
   syncingIcon = f.faRotate;
+  dirtyIcon = f.faClock;
   upToDateIcon = f.faCircleCheck;
 
   readonly profile = toSignal(this.authService.profile$, { initialValue: null });
 
   readonly syncStatus = toSignal(
-    combineLatest([this.autoSyncService.conflict$, this.autoSyncService.syncing$]).pipe(
-      map(([conflict, syncing]): SyncStatusView => {
+    combineLatest([this.autoSyncService.conflict$, this.autoSyncService.syncing$, this.syncMetadata.dirty$]).pipe(
+      map(([conflict, syncing, dirty]): SyncStatusView => {
         if (conflict) {
           return { icon: this.conflictIcon, label: 'Conflit de synchronisation', spin: false, modifierClass: 'navbar-popover-status--conflict' };
         }
         if (syncing) {
           return { icon: this.syncingIcon, label: 'Synchronisation en cours', spin: true, modifierClass: 'navbar-popover-status--syncing' };
+        }
+        if (dirty) {
+          return { icon: this.dirtyIcon, label: 'Modifications en attente de synchronisation', spin: false, modifierClass: 'navbar-popover-status--dirty' };
         }
         return { icon: this.upToDateIcon, label: 'À jour', spin: false, modifierClass: 'navbar-popover-status--ok' };
       }),
