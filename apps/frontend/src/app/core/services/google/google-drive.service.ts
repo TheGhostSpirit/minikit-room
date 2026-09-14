@@ -86,6 +86,13 @@ export class GoogleDriveService {
     );
   }
 
+  deleteFile(id: string): Observable<unknown> {
+    return this.httpClient.delete(
+      `https://www.googleapis.com/drive/v3/files/${id}`,
+      { context: new HttpContext().set(USE_GOOGLE_AUTH, true) }
+    );
+  }
+
   findFolder(name: string): Observable<DriveFile | undefined> {
     return this.httpClient.get<{ files: DriveFile[] }>(
       'https://www.googleapis.com/drive/v3/files',

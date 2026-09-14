@@ -15,7 +15,6 @@ export class GoogleAuthService {
 
   private readonly oAuthService = inject(OAuthService);
   private readonly _profile = new BehaviorSubject<User | null>(null);
-  private _accessToken = '';
 
   constructor() {
     this.initConfiguration();
@@ -24,13 +23,31 @@ export class GoogleAuthService {
   private async initConfiguration() {
     this.oAuthService.configure(environment.auth.google);
     this.oAuthService.setupAutomaticSilentRefresh();
+
+    this.oAuthService.events.subscribe((event) => {
+      switch (event.type) {
+        case 'token_received':
+        case 'silently_refreshed':
+          this.updateProfile();
+          break;
+        case 'silent_refresh_error':
+        case 'silent_refresh_timeout':
+        case 'session_terminated':
+          this.logout();
+          break;
+      }
+    });
+
     await this.oAuthService.loadDiscoveryDocumentAndTryLogin();
     if (this.oAuthService.hasValidIdToken()) {
-      this._accessToken = this.oAuthService.getAccessToken();
-      this._profile.next(
-        GoogleUser.fromObject(this.oAuthService.getIdentityClaims()).convertToGenericUser()
-      );
+      this.updateProfile();
     }
+  }
+
+  private updateProfile() {
+    this._profile.next(
+      GoogleUser.fromObject(this.oAuthService.getIdentityClaims()).convertToGenericUser()
+    );
   }
 
   login() {
@@ -41,7 +58,6 @@ export class GoogleAuthService {
     this.oAuthService.revokeTokenAndLogout();
     this.oAuthService.logOut();
     this._profile.next(null);
-    this._accessToken = '';
   }
 
   get profile$(): Observable<User | null> {
@@ -49,7 +65,7 @@ export class GoogleAuthService {
   }
 
   get accessToken() {
-    return this._accessToken;
+    return this.oAuthService.hasValidAccessToken() ? this.oAuthService.getAccessToken() : '';
   }
 
 }

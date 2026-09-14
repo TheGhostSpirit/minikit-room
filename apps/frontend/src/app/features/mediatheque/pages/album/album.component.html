@@ -44,7 +44,7 @@
         pTextarea
         rows="10"
         [autoResize]="true"
-        [ngModel]="selectedImage().legend"
+        [ngModel]="selectedImage()?.legend ?? ''"
         (ngModelChange)="updateLegend($event)"
       ></textarea>
     </div>

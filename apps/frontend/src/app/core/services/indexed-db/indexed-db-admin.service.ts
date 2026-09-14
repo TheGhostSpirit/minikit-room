@@ -8,9 +8,10 @@ import { map, switchMap, tap } from 'rxjs/operators';
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
 import { BlobCompressionService } from 'app/shared/services/blob-compression.service';
-import { DriveFile, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
+import { DriveFile, getBackupFilesToPrune, getMostRecentBackupFiles, getNewBackupFileName } from 'app/core/models/drive-file';
 import { ImportState } from 'app/core/models/import-state';
 import { ExportState } from 'app/core/models/export-state';
+import { SyncMetadataService } from 'app/core/services/sync/sync-metadata.service';
 
 import { environment } from 'environments/environment';
 
@@ -22,6 +23,7 @@ export class IndexedDbAdminService {
   private readonly db = new Dexie(environment.database.name);
   private readonly driveService = inject(GoogleDriveService);
   private readonly blobCompressionService = inject(BlobCompressionService);
+  private readonly syncMetadata = inject(SyncMetadataService);
 
   private readonly importState = new BehaviorSubject<ImportState>(ImportState.NOT_IMPORTING);
   private readonly exportState = new BehaviorSubject<ExportState>(ExportState.NOT_EXPORTING);
@@ -48,8 +50,25 @@ export class IndexedDbAdminService {
         ),
     ]).pipe(
       tap(() => this.exportState.next(ExportState.UPLOADING)),
-      switchMap(([folderId, blob])  => this.driveService.uploadFile(blob, getNewBackupFileName(), folderId)),
-      tap(() => this.exportState.next(ExportState.FINISHED)),
+      switchMap(([folderId, blob]) => {
+        const name = getNewBackupFileName();
+        return this.driveService.uploadFile(blob, name, folderId).pipe(
+          switchMap(() => this.driveService.listFilesInFolder(folderId)),
+          switchMap(files => {
+            const filesToPrune = getBackupFilesToPrune(files, environment.drive.maxBackups);
+            if (!filesToPrune.length) {
+              return of(name);
+            }
+            return forkJoin(filesToPrune.map(file => this.driveService.deleteFile(file.id)))
+              .pipe(map(() => name));
+          }),
+        );
+      }),
+      tap((name) => {
+        this.syncMetadata.setLastSyncedBackupName(name);
+        this.syncMetadata.clearDirty();
+        this.exportState.next(ExportState.FINISHED);
+      }),
     );
   }
 
@@ -61,7 +80,11 @@ export class IndexedDbAdminService {
         switchMap((blob) => this.blobCompressionService.decompress(blob)),
         tap(() => this.importState.next(ImportState.IMPORTING)),
         switchMap((blob) => defer(() => importInto(this.db, blob, { overwriteValues: true }))),
-        tap(() => this.importState.next(ImportState.FINISHED)),
+        tap(() => {
+          this.syncMetadata.setLastSyncedBackupName(fileToImport.name);
+          this.syncMetadata.clearDirty();
+          this.importState.next(ImportState.FINISHED);
+        }),
       );
   }
 

@@ -1,4 +1,4 @@
-import { Component, computed, DestroyRef, effect, inject, signal } from '@angular/core';
+import { Component, computed, DestroyRef, effect, inject, Signal, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
@@ -8,6 +8,7 @@ import * as f from '@fortawesome/free-solid-svg-icons';
 import { sharedDeclarations, sharedImports } from 'app/shared/shared.config';
 import { AlbumService } from 'app/features/mediatheque/services/album.service';
 import { BlobUrlService } from 'app/shared/services/blob-url.service';
+import { AlbumImage } from 'app/features/mediatheque/models/album';
 
 @Component({
   selector: 'app-album',
@@ -41,7 +42,7 @@ export class AlbumComponent {
 
   readonly selectedImageIndex = signal(0);
 
-  readonly selectedImage = computed(() =>
+  readonly selectedImage: Signal<AlbumImage | undefined>  = computed(() =>
     this.images()[this.selectedImageIndex()]
   );
 
