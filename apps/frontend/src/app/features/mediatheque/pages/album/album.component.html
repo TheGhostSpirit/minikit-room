@@ -28,10 +28,10 @@
         [(activeIndex)]="selectedImageIndex"
       >
         <ng-template #item let-url>
-          <img [src]="url" class="w-[600px] h-[600px] object-cover" />
+          <img [src]="url" class="w-[600px] h-[600px] object-contain bg-black/5" />
         </ng-template>
         <ng-template #thumbnail let-url>
-          <img [src]="url" class="h-16 w-16 object-cover" />
+          <img [src]="url" class="h-16 w-16 object-contain bg-black/5" />
         </ng-template>
       </p-galleria>
     </div>
