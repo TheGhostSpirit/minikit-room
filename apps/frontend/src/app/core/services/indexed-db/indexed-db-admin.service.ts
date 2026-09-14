@@ -3,7 +3,7 @@ import { inject, Injectable } from '@angular/core';
 import { Dexie } from 'dexie';
 import { exportDB, importInto } from 'dexie-export-import';
 import { BehaviorSubject, defer, forkJoin, iif, Observable, of } from 'rxjs';
-import { map, switchMap, tap } from 'rxjs/operators';
+import { catchError, map, switchMap, tap } from 'rxjs/operators';
 
 import { DB_INDEXES } from 'app/core/database';
 import { GoogleDriveService } from 'app/core/services/google/google-drive.service';
@@ -52,6 +52,7 @@ export class IndexedDbAdminService {
       tap(() => this.exportState.next(ExportState.UPLOADING)),
       switchMap(([folderId, blob]) => {
         const name = getNewBackupFileName();
+        console.log(`[Backup] uploading ${name}, size: ${(blob.size / (1024 * 1024)).toFixed(2)} MB`);
         return this.driveService.uploadFile(blob, name, folderId).pipe(
           switchMap(() => this.driveService.listFilesInFolder(folderId)),
           switchMap(files => {
@@ -68,6 +69,10 @@ export class IndexedDbAdminService {
         this.syncMetadata.setLastSyncedBackupName(name);
         this.syncMetadata.clearDirty();
         this.exportState.next(ExportState.FINISHED);
+      }),
+      catchError(error => {
+        console.error('[Backup] export failed', error);
+        throw error;
       }),
     );
   }
