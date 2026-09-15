@@ -1,5 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
+import { switchMap } from 'rxjs';
 
 import * as f from '@fortawesome/free-solid-svg-icons';
 
@@ -21,7 +22,11 @@ export class PixelthequeComponent {
 
   private readonly gameService = inject(GameService);
 
-  games = toSignal(this.gameService.list(), { initialValue: [] as Game[] });
+  private readonly gamesRefresh = signal(0);
+  games = toSignal(
+    toObservable(this.gamesRefresh).pipe(switchMap(() => this.gameService.list())),
+    { initialValue: [] as Game[] }
+  );
   search = signal('');
   filteredGames = computed(() =>
     this.games().filter(game =>
@@ -34,6 +39,6 @@ export class PixelthequeComponent {
   }
 
   delete(id: number) {
-    this.gameService.delete(id).subscribe();
+    this.gameService.delete(id).subscribe(() => this.gamesRefresh.update(refresh => refresh + 1));
   }
 }
