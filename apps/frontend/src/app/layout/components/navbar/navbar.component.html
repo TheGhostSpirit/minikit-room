@@ -1,7 +1,7 @@
-<div class="navbar-menu-wrapper">
-  <p-menubar class="navbar-menu-inner">
+<div class="fixed top-0 left-0 z-[1] w-screen">
+  <p-menubar class="flex h-navbar border-transparent max-w-layout mx-auto">
     <ng-template #start>
-      <img src="assets/home/logo.png" alt="Minikit Room" class="navbar-menu-logo">
+      <img src="assets/home/logo.png" alt="Minikit Room" class="h-navbar">
     </ng-template>
     <ng-template #end>
       @let p = profile();
@@ -9,14 +9,14 @@
         <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="popover.toggle($event)" />
         <p-popover #popover>
           @let status = syncStatus();
-          <div class="navbar-popover">
-            <div class="navbar-popover-status" [class]="status.modifierClass">
+          <div class="flex flex-col min-w-56">
+            <div class="flex items-center gap-2 font-semibold" [class]="status.colorClass">
               <fa-icon [icon]="status.icon" [animation]="status.spin ? 'spin' : undefined" />
               <span>{{ status.label }}</span>
             </div>
             <p-divider />
-            <span class="navbar-popover-title">Synchronisation manuelle</span>
-            <div class="navbar-popover-actions">
+            <span class="mb-2 text-sm font-semibold text-center text-muted-color">Synchronisation manuelle</span>
+            <div class="flex justify-center gap-3">
               <p-button
                 severity="secondary"
                 [rounded]="true"

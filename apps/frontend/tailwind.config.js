@@ -7,7 +7,14 @@ module.exports = {
     './src/**/*.{html,ts}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        navbar: '4rem',
+      },
+      maxWidth: {
+        layout: '1920px',
+      },
+    },
   },
   plugins: [PrimeUI],
 }

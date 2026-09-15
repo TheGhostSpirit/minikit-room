@@ -8,6 +8,5 @@ import { SidenavComponent } from 'app/layout/components/sidenav/sidenav.componen
   selector: 'app-layout',
   imports: [RouterOutlet, NavbarComponent, SidenavComponent],
   templateUrl: './layout.component.html',
-  styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {}

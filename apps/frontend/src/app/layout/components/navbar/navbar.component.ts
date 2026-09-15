@@ -19,7 +19,7 @@ interface SyncStatusView {
   icon: IconDefinition;
   label: string;
   spin: boolean;
-  modifierClass: string;
+  colorClass: string;
 }
 
 @Component({
@@ -27,7 +27,6 @@ interface SyncStatusView {
   imports: [...sharedImports, ...sharedDeclarations],
   providers: [...sharedProviders],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
   private readonly authService = inject(GoogleAuthService);
@@ -51,18 +50,18 @@ export class NavbarComponent {
     combineLatest([this.autoSyncService.conflict$, this.autoSyncService.syncing$, this.syncMetadata.dirty$]).pipe(
       map(([conflict, syncing, dirty]): SyncStatusView => {
         if (conflict) {
-          return { icon: this.conflictIcon, label: 'Conflit de synchronisation', spin: false, modifierClass: 'navbar-popover-status--conflict' };
+          return { icon: this.conflictIcon, label: 'Conflit de synchronisation', spin: false, colorClass: 'text-yellow-500' };
         }
         if (syncing) {
-          return { icon: this.syncingIcon, label: 'Synchronisation en cours', spin: true, modifierClass: 'navbar-popover-status--syncing' };
+          return { icon: this.syncingIcon, label: 'Synchronisation en cours', spin: true, colorClass: 'text-muted-color' };
         }
         if (dirty) {
-          return { icon: this.dirtyIcon, label: 'Modifications en attente de synchronisation', spin: false, modifierClass: 'navbar-popover-status--dirty' };
+          return { icon: this.dirtyIcon, label: 'Modifications en attente de synchronisation', spin: false, colorClass: 'text-blue-500' };
         }
-        return { icon: this.upToDateIcon, label: 'À jour', spin: false, modifierClass: 'navbar-popover-status--ok' };
+        return { icon: this.upToDateIcon, label: 'À jour', spin: false, colorClass: 'text-green-500' };
       }),
     ),
-    { initialValue: { icon: this.upToDateIcon, label: 'À jour', spin: false, modifierClass: 'navbar-popover-status--ok' } },
+    { initialValue: { icon: this.upToDateIcon, label: 'À jour', spin: false, colorClass: 'text-green-500' } },
   );
 
   login() {
