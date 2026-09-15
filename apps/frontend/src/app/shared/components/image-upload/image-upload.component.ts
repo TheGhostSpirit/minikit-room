@@ -19,8 +19,11 @@ export class ImageUploadComponent {
   readonly imagesUploaded = output<[File, string][]>();
 
   upload(event: FileSelectEvent) {
-    const multiple = this.multiple();
-    multiple ? this.uploadImages(event) : this.uploadImage(event);
+    if (this.multiple()) {
+      this.uploadImages(event);
+    } else {
+      this.uploadImage(event);
+    }
   }
 
   uploadImage(event: FileSelectEvent) {

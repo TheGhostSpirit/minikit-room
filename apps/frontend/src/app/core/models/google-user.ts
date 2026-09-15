@@ -1,9 +1,9 @@
 import { User } from 'app/core/models/user';
 
 export class GoogleUser {
-  name: string = '';
-  email: string = '';
-  picture: string = '';
+  name = '';
+  email = '';
+  picture = '';
 
   static fromObject(source: unknown): GoogleUser {
     return Object.assign(new GoogleUser(), source);

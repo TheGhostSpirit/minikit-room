@@ -32,7 +32,7 @@ export class GameFormComponent {
     const game = this.game();
     this.form = this.buildForm(game);
     const cover = game?.cover;
-    this.coverUrl = !!cover ? this.blobUrlScope.create(cover) : DEFAULT_URL;
+    this.coverUrl = cover ? this.blobUrlScope.create(cover) : DEFAULT_URL;
   });
 
   private buildForm(game: Game | undefined) {
