@@ -7,7 +7,7 @@ import { zlibSync, unzlibSync, strToU8, strFromU8 } from 'fflate';
 })
 export class ObjectCompressionService {
 
-  compress(object: Object): string {
+  compress(object: object): string {
     const json = JSON.stringify(object);
     const bytes = strToU8(json);
     const compressedBytes = zlibSync(bytes);

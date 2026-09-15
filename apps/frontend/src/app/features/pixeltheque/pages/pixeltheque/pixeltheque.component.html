@@ -43,9 +43,9 @@
         <td>{{ game.format }}</td>
         <td>{{ game.rating }} / 5</td>
         <td>
-          <a (click)="delete(game.id)" class="cursor-pointer">
+          <button type="button" (click)="delete(game.id)" class="cursor-pointer">
             <fa-icon [icon]="icons.trash" />
-          </a>
+          </button>
         </td>
       </tr>
     </ng-template>

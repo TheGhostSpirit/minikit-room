@@ -28,10 +28,10 @@
         [(activeIndex)]="selectedImageIndex"
       >
         <ng-template #item let-url>
-          <img [src]="url" class="w-[600px] h-[600px] object-contain bg-black/5" />
+          <img [src]="url" alt="" class="w-[600px] h-[600px] object-contain bg-black/5" />
         </ng-template>
         <ng-template #thumbnail let-url>
-          <img [src]="url" class="h-16 w-16 object-contain bg-black/5" />
+          <img [src]="url" alt="" class="h-16 w-16 object-contain bg-black/5" />
         </ng-template>
       </p-galleria>
     </div>
@@ -39,8 +39,9 @@
     <p-divider layout="vertical" />
 
     <div class="w-1/2 flex flex-col gap-2">
-      <label class="font-bold">Légende</label>
+      <label for="legend" class="font-bold">Légende</label>
       <textarea
+        id="legend"
         pTextarea
         rows="10"
         [autoResize]="true"

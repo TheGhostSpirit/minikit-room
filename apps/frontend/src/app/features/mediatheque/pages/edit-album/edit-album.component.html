@@ -39,7 +39,7 @@
         cdkDrag
         class="relative w-64 h-64 rounded-lg overflow-hidden border border-[var(--p-secondary-color)] cursor-move"
       >
-        <img class="w-full h-full object-cover" [src]="imageThumbnails()[i]" />
+        <img class="w-full h-full object-cover" [src]="imageThumbnails()[i]" [alt]="image.legend" />
         <p-button
           class="absolute"
           [style.top.px]="4"
