@@ -2,6 +2,7 @@
 import PrimeUI from 'tailwindcss-primeui';
 
 module.exports = {
+  darkMode: ['selector', '.app-dark'],
   content: [
     './src/**/*.{html,ts}'
   ],
