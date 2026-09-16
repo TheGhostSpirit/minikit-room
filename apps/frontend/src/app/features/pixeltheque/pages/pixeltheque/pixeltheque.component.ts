@@ -12,7 +12,6 @@ import { GameService } from 'app/features/pixeltheque/services/game.service';
   selector: 'app-pixeltheque',
   imports: [...sharedImports, ...sharedDeclarations],
   templateUrl: './pixeltheque.component.html',
-  styleUrl: './pixeltheque.component.scss'
 })
 export class PixelthequeComponent {
   icons = {

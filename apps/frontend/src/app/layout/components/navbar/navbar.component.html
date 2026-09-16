@@ -1,51 +1,12 @@
-<div class="navbar-menu-wrapper">
-  <p-menubar class="navbar-menu-inner">
+<div class="fixed top-0 left-0 z-[1] w-screen">
+  <p-menubar class="flex h-navbar border-transparent max-w-layout mx-auto">
     <ng-template #start>
-      <img src="assets/home/logo.png" alt="Minikit Room" class="navbar-menu-logo">
+      <img src="assets/home/logo.png" alt="Minikit Room" class="h-navbar">
     </ng-template>
     <ng-template #end>
       @let p = profile();
       @if (p) {
-        <p-avatar shape="circle" class="cursor-pointer" [image]="p.picture" (click)="popover.toggle($event)" />
-        <p-popover #popover>
-          @let status = syncStatus();
-          <div class="navbar-popover">
-            <div class="navbar-popover-status" [class]="status.modifierClass">
-              <fa-icon [icon]="status.icon" [animation]="status.spin ? 'spin' : undefined" />
-              <span>{{ status.label }}</span>
-            </div>
-            <p-divider />
-            <span class="navbar-popover-title">Synchronisation manuelle</span>
-            <div class="navbar-popover-actions">
-              <p-button
-                severity="secondary"
-                [rounded]="true"
-                title="Forcer l'export vers Google Drive"
-                (click)="openExportModal(); popover.hide()"
-              >
-                <fa-icon [icon]="exportIcon" pButtonIcon />
-              </p-button>
-              <p-button
-                severity="secondary"
-                [rounded]="true"
-                title="Forcer l'import depuis Google Drive"
-                (click)="openImportModal(); popover.hide()"
-              >
-                <fa-icon [icon]="importIcon" pButtonIcon />
-              </p-button>
-            </div>
-            <p-divider />
-            <p-button
-              severity="danger"
-              [text]="true"
-              title="Se déconnecter"
-              (click)="logout(); popover.hide()"
-            >
-              <fa-icon [icon]="logoutIcon" pButtonIcon />
-              <span pButtonLabel>Se déconnecter</span>
-            </p-button>
-          </div>
-        </p-popover>
+        <app-navbar-popover [picture]="p.picture" />
       }
       @else {
         <p-avatar shape="circle" class="cursor-pointer" (click)="login()">

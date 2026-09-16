@@ -1,4 +1,4 @@
-<div class="pixeltheque-wrapper">
+<div>
   <p-toolbar class="mb-8">
     <ng-template #start>
       <div>
@@ -34,7 +34,7 @@
     <ng-template #body let-game>
       <tr>
         <td>
-          <a [routerLink]="'/games/edit/' + game.id" class="pixeltheque-link-edit">
+          <a [routerLink]="'/games/edit/' + game.id" class="cursor-pointer underline text-primary-500">
             {{ game.name }}
           </a>
         </td>

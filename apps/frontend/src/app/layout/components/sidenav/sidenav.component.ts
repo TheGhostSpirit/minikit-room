@@ -11,7 +11,6 @@ import { sharedImports } from 'app/shared/shared.config';
   selector: 'app-sidenav',
   imports: [...sharedImports],
   templateUrl: './sidenav.component.html',
-  styleUrl: './sidenav.component.scss'
 })
 export class SidenavComponent {
 

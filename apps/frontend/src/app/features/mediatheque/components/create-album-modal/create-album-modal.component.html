@@ -7,7 +7,7 @@
   <div class="flex flex-col gap-2">
     <app-image-upload label="Ajouter images" [blobUrlScope]="blobUrlScope" (imagesUploaded)="onUpload($event)" [multiple]="true" />
     @if (images.length > 0) {
-      <span class="text-sm text-gray-500">{{ images.length }} élément(s) sélectionné(s)</span>
+      <span class="text-sm text-muted-color">{{ images.length }} élément(s) sélectionné(s)</span>
     }
   </div>
 </form>

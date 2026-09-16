@@ -1,0 +1,45 @@
+<p-avatar shape="circle" class="cursor-pointer" [image]="picture()" (click)="popover.toggle($event)" />
+<p-popover #popover>
+  @let status = syncStatus();
+  <div class="flex flex-col min-w-56">
+    <div class="flex items-center gap-2 font-semibold" [class]="status.colorClass">
+      <fa-icon [icon]="status.icon" [animation]="status.spin ? 'spin' : undefined" />
+      <span>{{ status.label }}</span>
+    </div>
+    <p-divider />
+    <span class="mb-2 text-sm font-semibold text-center text-muted-color">Synchronisation manuelle</span>
+    <div class="flex justify-center gap-3">
+      <p-button
+        severity="secondary"
+        [rounded]="true"
+        title="Forcer l'export vers Google Drive"
+        (click)="openExportModal(); popover.hide()"
+      >
+        <fa-icon [icon]="exportIcon" pButtonIcon />
+      </p-button>
+      <p-button
+        severity="secondary"
+        [rounded]="true"
+        title="Forcer l'import depuis Google Drive"
+        (click)="openImportModal(); popover.hide()"
+      >
+        <fa-icon [icon]="importIcon" pButtonIcon />
+      </p-button>
+    </div>
+    <p-divider />
+    <div class="flex items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-muted-color">Mode sombre</span>
+      <p-toggleswitch [ngModel]="darkMode()" (onChange)="toggleDarkMode()" />
+    </div>
+    <p-divider />
+    <p-button
+      severity="danger"
+      [text]="true"
+      title="Se déconnecter"
+      (click)="logout(); popover.hide()"
+    >
+      <fa-icon [icon]="logoutIcon" pButtonIcon />
+      <span pButtonLabel>Se déconnecter</span>
+    </p-button>
+  </div>
+</p-popover>

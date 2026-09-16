@@ -28,6 +28,7 @@ import { DrawerModule } from 'primeng/drawer';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { SplitterModule } from 'primeng/splitter';
+import { ToggleSwitchModule } from 'primeng/toggleswitch';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -65,6 +66,7 @@ export const sharedImports = [
   TimelineModule,
   CardModule,
   SplitterModule,
+  ToggleSwitchModule,
 ];
 
 export const sharedDeclarations = [
