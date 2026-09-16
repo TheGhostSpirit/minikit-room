@@ -14,6 +14,7 @@ import { ImportModalComponent } from 'app/core/components/import-modal/import-mo
 import { ExportModalComponent } from 'app/core/components/export-modal/export-modal.component';
 import { AutoSyncService } from 'app/core/services/sync/auto-sync.service';
 import { SyncMetadataService } from 'app/core/services/sync/sync-metadata.service';
+import { ThemeService } from 'app/core/services/theme/theme.service';
 
 interface SyncStatusView {
   icon: IconDefinition;
@@ -34,6 +35,7 @@ export class NavbarComponent {
   private readonly dialog = inject(DialogService);
   private readonly autoSyncService = inject(AutoSyncService);
   private readonly syncMetadata = inject(SyncMetadataService);
+  private readonly themeService = inject(ThemeService);
 
   defaultProfilePicture = f.faUser;
   exportIcon = f.faCloudArrowUp;
@@ -45,6 +47,7 @@ export class NavbarComponent {
   upToDateIcon = f.faCircleCheck;
 
   readonly profile = toSignal(this.authService.profile$, { initialValue: null });
+  readonly darkMode = toSignal(this.themeService.dark$, { initialValue: this.themeService.isDark() });
 
   readonly syncStatus = toSignal(
     combineLatest([this.autoSyncService.conflict$, this.autoSyncService.syncing$, this.syncMetadata.dirty$]).pipe(
@@ -63,6 +66,10 @@ export class NavbarComponent {
     ),
     { initialValue: { icon: this.upToDateIcon, label: 'À jour', spin: false, colorClass: 'text-green-500' } },
   );
+
+  toggleDarkMode() {
+    this.themeService.toggle();
+  }
 
   login() {
     this.authService.login();

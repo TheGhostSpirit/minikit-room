@@ -35,6 +35,11 @@
               </p-button>
             </div>
             <p-divider />
+            <div class="flex items-center justify-between gap-3">
+              <span class="text-sm font-semibold text-muted-color">Mode sombre</span>
+              <p-toggleswitch [ngModel]="darkMode()" (onChange)="toggleDarkMode()" />
+            </div>
+            <p-divider />
             <p-button
               severity="danger"
               [text]="true"
