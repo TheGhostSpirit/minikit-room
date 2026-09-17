@@ -37,8 +37,8 @@ const extractTable = (document: Document, querySelector: string, cosmeticType: C
   return tableRows.map(row => {
     return {
       id: uuid(),
-      name: row.children[4].textContent.trim(),
-      group: row.children[5].textContent.trim(),
+      name: row.children[4].textContent?.trim(),
+      group: row.children[5].textContent?.trim(),
       type: cosmeticType,
       icon: cosmeticType === 'Records'
         ? ''

@@ -17,9 +17,9 @@ export const extract = (document: Document): Cosmetic[] => {
   return itemCards.map(card => {
     return {
       id: uuid(),
-      name: card.children[1].children[0].textContent.trim(),
-      group: card.children[1].children[2].children[1].textContent.trim(),
-      type: card.children[1].children[2].children[0].textContent.trim(),
+      name: card.children[1].children[0].textContent?.trim(),
+      group: card.children[1].children[2].children[1].textContent?.trim(),
+      type: card.children[1].children[2].children[0].textContent?.trim(),
       icon: getAbsoluteUrl(card.children[0].getAttribute('src') ?? ''),
     } as Cosmetic;
   });
