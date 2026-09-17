@@ -1,2498 +1,1666 @@
 [
   {
-    "name": "Blue Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fcb408b9-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Brown Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/053f5338-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Dark Blue Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/15425206-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/19376b48-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Happi Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f2f3d0de-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Lab Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e5df751a-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Orange Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1e39404b-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Purple Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/218c102a-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/25482529-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Smoke Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/28cb38fc-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "White Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2c3182af-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Clothing",
-    "group": "All Maps",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2fcf1505-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Christmas Shirt",
-    "group": "Christmas",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/56b21592-9fa4-11ee-aecd-001a4a15145e.png"
-  },
-  {
-    "name": "Elf Outfit",
-    "group": "Christmas",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/86e9df4a-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Reindeer Shirt",
-    "group": "Christmas",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/50861ba3-9fa4-11ee-aecd-001a4a15145e.png"
-  },
-  {
-    "name": "Santa Outfit",
-    "group": "Christmas",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/80ee0e10-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Snowman Outfit",
-    "group": "Christmas",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b0cf674b-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Bunny Shirt",
-    "group": "Easter",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f2f314b5-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Killer Bunny  Shirt",
-    "group": "Easter",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f7d230e2-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Bunny Shirt",
-    "group": "Easter",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/edbe7bea-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Black Pumpkin Shirt",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/df9bf86a-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Grave Digger Shirt",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/836012ff-84d1-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Orange Pumpkin Shirt",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d9771165-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Reaper Shirt",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ec10ae69-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Skeleton Outfit",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c8bbbc84-71a7-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Zombie Shirt",
-    "group": "Halloween",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e7316d5d-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Camo Shirt",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/eac9a893-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Hail Nessa Shirt",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f21b8e5d-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Monster Muscle Cafe",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/21ecf143-0549-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Skeleton Lightning",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f9494390-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Smiley Runes",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4f0678c6-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Sphynxtopus",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/58c854ee-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Tie-Dye",
-    "group": "Hardcore",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5fcd8154-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
     "name": "#TeamSmiley",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a9da79b6-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "BBQ Pig",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cf70f965-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Boo Black",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/41014c3a-7e55-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Boo White",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/393e8eee-7e55-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Camping Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7dee2b1d-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Chainmail Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0d11b0c0-3639-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Clown Clothing",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5719dbf1-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Doctor Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6a4ee2ec-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Forest Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/778f010e-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Free Hugs",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/327d5238-7e55-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Hang in There",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e66e7a28-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Oni Green",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0222a958-7e55-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Oni Red",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f285cfee-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pigman",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dcc35dd1-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Protect Forests",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b92b8664-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Puppet Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/65bc7d33-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Run Pig",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d4093f7b-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "SwampTours Shirt",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1197be5a-3639-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Whos Next",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5acd619e-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Wickerman",
-    "group": "Map/Monster Exclusive",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b11bd074-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ghostie Jersey",
-    "group": "Special",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ee5a605b-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Meep Clothing",
-    "group": "Special",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0d77b3cd-7e5e-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Private Test",
-    "group": "Special",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/289b4f23-7e5e-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "St. Patrick's Clothing",
-    "group": "St Patrick's",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1a8acf97-c508-11ed-b6cd-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "BBQ Grill Master",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a92362a1-5c1b-11f0-abca-001a4a15145e.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "BBQ Pig",
+    "type": "Clothing"
+  },
+  {
+    "name": "Black Pumpkin Shirt",
+    "type": "Clothing"
   },
   {
     "name": "Black&White Floral",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/91404141-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Blue Bunny Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Blue Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Blue Mosaic",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c79ae7ba-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Blue&White Floral",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/965326f7-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Boo Black",
+    "type": "Clothing"
+  },
+  {
+    "name": "Boo White",
+    "type": "Clothing"
+  },
+  {
+    "name": "Brown Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Camo Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Camping Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Chainmail Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Christmas Shirt",
+    "type": "Clothing"
   },
   {
     "name": "Citrus 1",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7c701078-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Citrus 2",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/80dc29ce-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Clown Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Dark Blue Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Diamond Black",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8588d5ce-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Diamond White",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8a7dc58f-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Doctor Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Elf Outfit",
+    "type": "Clothing"
   },
   {
     "name": "Flower Mosaic",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cf615942-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Forest Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Free Hugs",
+    "type": "Clothing"
   },
   {
     "name": "Ghostie BBQ",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ad2e48f6-5c1b-11f0-abca-001a4a15145e.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Ghostie Jersey",
+    "type": "Clothing"
+  },
+  {
+    "name": "Grave Digger Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Green Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Hail Nessa Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Hang in There",
+    "type": "Clothing"
+  },
+  {
+    "name": "Happi Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Killer Bunny  Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Lab Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Mandala",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d47759e9-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Meep Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Monster Muscle Cafe",
+    "type": "Clothing"
   },
   {
     "name": "Nameless Varsity",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c4d3c56c-5c1b-11f0-abca-001a4a15145e.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Oni Green",
+    "type": "Clothing"
+  },
+  {
+    "name": "Oni Red",
+    "type": "Clothing"
+  },
+  {
+    "name": "Orange Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Orange Mosaic",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cb9295ad-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Orange Pumpkin Shirt",
+    "type": "Clothing"
   },
   {
     "name": "Orange&White Flower",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ac0f53c3-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Palm Tree",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d92b4b62-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Pigman",
+    "type": "Clothing"
   },
   {
     "name": "Pigman Varsity",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bb2e5eca-5c1b-11f0-abca-001a4a15145e.png"
+    "type": "Clothing"
   },
   {
     "name": "Pink Fiona",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/be05acc4-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Pink Hibiscus",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c36fe623-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Private Test",
+    "type": "Clothing"
+  },
+  {
+    "name": "Protect Forests",
+    "type": "Clothing"
+  },
+  {
+    "name": "Puppet Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Purple Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Reaper Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Red Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Red&White Floral",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9ae83ea2-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Red&White Flower",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b0bc9b96-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Red&Yellow Flower",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b5c09e1e-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "Reindeer Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Run Pig",
+    "type": "Clothing"
+  },
+  {
+    "name": "Santa Outfit",
+    "type": "Clothing"
+  },
+  {
+    "name": "Skeleton Lightning",
+    "type": "Clothing"
+  },
+  {
+    "name": "Skeleton Outfit",
+    "type": "Clothing"
+  },
+  {
+    "name": "Smiley Runes",
+    "type": "Clothing"
+  },
+  {
+    "name": "Smoke Clothing",
+    "type": "Clothing"
+  },
+  {
+    "name": "Snowman Outfit",
+    "type": "Clothing"
+  },
+  {
+    "name": "Sphynxtopus",
+    "type": "Clothing"
+  },
+  {
+    "name": "St. Patrick's Clothing",
+    "type": "Clothing"
   },
   {
     "name": "Sunset",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/df338b52-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
+  },
+  {
+    "name": "SwampTours Shirt",
+    "type": "Clothing"
+  },
+  {
+    "name": "Tie-Dye",
+    "type": "Clothing"
   },
   {
     "name": "Tricolor Flower",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a5f7f93b-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Waterfall",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e3790fba-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Yellow&White Floral",
-    "group": "Summer",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a095ca51-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Tuxedo",
-    "group": "Supporter Edition",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e1cf900f-6dbe-11ee-b6cd-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
     "name": "Valentine's Love Clothing",
-    "group": "Valentine",
-    "type": "Clothing",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/223c3f1c-abb8-11ed-853f-001a4a0514ac.png"
+    "type": "Clothing"
   },
   {
-    "name": "Blue Heart Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3b1a700a-018d-11ee-979a-001a4a15145e.png"
+    "name": "Waterfall",
+    "type": "Clothing"
   },
   {
-    "name": "Green Alien Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/566ada99-018d-11ee-979a-001a4a15145e.png"
+    "name": "White Clothing",
+    "type": "Clothing"
   },
   {
-    "name": "Green Heart Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4e5a43c2-018d-11ee-979a-001a4a15145e.png"
+    "name": "Whos Next",
+    "type": "Clothing"
   },
   {
-    "name": "Pink Alien Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/59df0430-018d-11ee-979a-001a4a15145e.png"
+    "name": "Wickerman",
+    "type": "Clothing"
   },
   {
-    "name": "Pink Heart Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5274ae54-018d-11ee-979a-001a4a15145e.png"
+    "name": "Yellow Bunny Shirt",
+    "type": "Clothing"
   },
   {
-    "name": "Red Heart Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/408a7b22-018d-11ee-979a-001a4a15145e.png"
+    "name": "Yellow Clothing",
+    "type": "Clothing"
   },
   {
-    "name": "Yellow Heart Glasses",
-    "group": "All Maps",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/46c40c66-018d-11ee-979a-001a4a15145e.png"
+    "name": "Yellow&White Floral",
+    "type": "Clothing"
   },
   {
-    "name": "Carrot nose",
-    "group": "Christmas",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/601f14fe-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Tree Glasses",
-    "group": "Christmas",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7c61d517-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Reindeer Nose",
-    "group": "Christmas",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/68b53499-9fa4-11ee-aecd-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Bunny Mask",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/db35842a-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Killer Bunny Mask",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e81d2712-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Pink Bunny Mask",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e0be011f-1c49-11f0-ad26-001a4a15145e.png"
-  },
-  {
-    "name": "Rabbit Mask Blue",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1e38ca01-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Rabbit Mask Brown",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2602f6a6-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Rabbit Mask Pink",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2c9e1abb-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Rabbit Mask White",
-    "group": "Easter",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/18ec065c-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Einstein Moustache",
-    "group": "Halloween",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d485b77c-71a7-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Hallowee Mask 1",
-    "group": "Halloween",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2f721628-71a8-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Hallowee Mask 2",
-    "group": "Halloween",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2967bb62-71a8-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Hallowee Mask 3",
-    "group": "Halloween",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/211a5aae-71a8-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Spider Glasses",
-    "group": "Halloween",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1e9c9f3e-84d1-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Dahmer Glasses",
-    "group": "Hardcore",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/63daf697-018b-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Hockey Mask",
-    "group": "Hardcore",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5c75d1d3-018b-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Pixelated Shades",
-    "group": "Hardcore",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6e062f7f-018b-11ee-979a-001a4a15145e.png"
+    "name": "Zombie Shirt",
+    "type": "Clothing"
   },
   {
     "name": "Aviator Glasses",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/84e86912-7e54-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
   },
   {
     "name": "Aztec Mask Blue",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/af1dcc27-3638-11ee-b6cd-001a4a0514ac.png"
+    "type": "Face"
   },
   {
     "name": "Aztec Mask Green",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a750af6d-3638-11ee-b6cd-001a4a0514ac.png"
+    "type": "Face"
   },
   {
     "name": "Aztec Mask Orange",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a246c0a3-3638-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Monocle Black",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0ba0f073-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Monocle Bronze",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/144c9d04-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Monocle Copper",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1fc63a75-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Monocle Gold",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/26b6169d-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Mustache Mask",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6e6091e0-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Oni Mask",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/733b160a-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Plague Doctor Mask",
-    "group": "Map/Monster Exclusive",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/19012262-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "VR Headset Black",
-    "group": "Special",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/54234339-7e5e-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "VR Headset Gold",
-    "group": "Special",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3303f3ca-a9e8-11ee-aecd-001a4a15145e.png"
-  },
-  {
-    "name": "VR Headset White",
-    "group": "Special",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4cc47586-7e5e-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "St. Patrick's Beard",
-    "group": "St Patrick's",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2132b1fd-c508-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Icepop Glasses",
-    "group": "Summer",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3f07e07c-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Snorkel Mask",
-    "group": "Summer",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/764917aa-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Watermelon Icepop Glasses",
-    "group": "Summer",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/30110eb0-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Cyberpunk Visor",
-    "group": "Supporter Edition",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cbbd4d11-6dbe-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Googly Eyes",
-    "group": "Supporter Edition",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d97df0d6-6dbe-11ee-b6cd-001a4a0514ac.png"
+    "type": "Face"
   },
   {
     "name": "Black Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0bbd6c8e-abb8-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Blue Bunny Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Blue Heart Glasses",
+    "type": "Face"
   },
   {
     "name": "Blue Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f1f5bac2-abb7-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Carrot nose",
+    "type": "Face"
+  },
+  {
+    "name": "Christmas Tree Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Cyberpunk Visor",
+    "type": "Face"
+  },
+  {
+    "name": "Dahmer Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Einstein Moustache",
+    "type": "Face"
   },
   {
     "name": "Golden Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1278b9d4-abb8-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Googly Eyes",
+    "type": "Face"
+  },
+  {
+    "name": "Green Alien Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Green Heart Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Hallowee Mask 1",
+    "type": "Face"
+  },
+  {
+    "name": "Hallowee Mask 2",
+    "type": "Face"
+  },
+  {
+    "name": "Hallowee Mask 3",
+    "type": "Face"
+  },
+  {
+    "name": "Hockey Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Icepop Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Killer Bunny Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Monocle Black",
+    "type": "Face"
+  },
+  {
+    "name": "Monocle Bronze",
+    "type": "Face"
+  },
+  {
+    "name": "Monocle Copper",
+    "type": "Face"
+  },
+  {
+    "name": "Monocle Gold",
+    "type": "Face"
+  },
+  {
+    "name": "Mustache Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Oni Mask",
+    "type": "Face"
   },
   {
     "name": "Orange Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f8508f29-abb7-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Pink Alien Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Pink Bunny Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Pink Heart Glasses",
+    "type": "Face"
   },
   {
     "name": "Pink Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ff158fb6-abb7-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Pixelated Shades",
+    "type": "Face"
+  },
+  {
+    "name": "Plague Doctor Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Rabbit Mask Blue",
+    "type": "Face"
+  },
+  {
+    "name": "Rabbit Mask Brown",
+    "type": "Face"
+  },
+  {
+    "name": "Rabbit Mask Pink",
+    "type": "Face"
+  },
+  {
+    "name": "Rabbit Mask White",
+    "type": "Face"
+  },
+  {
+    "name": "Red Heart Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "Red Reindeer Nose",
+    "type": "Face"
   },
   {
     "name": "Red Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ebe0beaa-abb7-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
+  },
+  {
+    "name": "Snorkel Mask",
+    "type": "Face"
+  },
+  {
+    "name": "Spider Glasses",
+    "type": "Face"
+  },
+  {
+    "name": "St. Patrick's Beard",
+    "type": "Face"
+  },
+  {
+    "name": "VR Headset Black",
+    "type": "Face"
+  },
+  {
+    "name": "VR Headset Gold",
+    "type": "Face"
+  },
+  {
+    "name": "VR Headset White",
+    "type": "Face"
+  },
+  {
+    "name": "Watermelon Icepop Glasses",
+    "type": "Face"
   },
   {
     "name": "White Rose",
-    "group": "Valentine",
-    "type": "Face",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0561cf8a-abb8-11ed-853f-001a4a0514ac.png"
+    "type": "Face"
   },
   {
-    "name": "Blue Flashlight Bulky",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8fd0044b-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Flashlight Thick",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/acbdde2b-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Flashlight Thin",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bd7363c8-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Flashlight Bulky",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9ad220e0-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Flashlight Thick",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b45d64bb-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Flashlight Thin",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cc017d3a-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Flashlight Bulky",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9620895f-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Flashlight Thick",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b0aa498e-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Flashlight Thin",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c230b976-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Flashlight Bulky",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a334721a-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Flashlight Thick",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b89061e6-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Flashlight Thin",
-    "group": "All Maps",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d06eae84-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Christmas Flashlight",
-    "group": "Christmas",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5cf4ed43-9fa4-11ee-aecd-001a4a15145e.png"
-  },
-  {
-    "name": "Icicle Flashlight",
-    "group": "Christmas",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b8230403-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Yule Log Flashlight",
-    "group": "Christmas",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bfcdd42c-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Carrot Flashlight",
-    "group": "Easter",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f209d437-d58b-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Ghostie",
-    "group": "Halloween",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f09babcf-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pumpkin",
-    "group": "Halloween",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f720d9c4-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Gold Flashlight",
-    "group": "Hardcore",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/82ead496-018b-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Rusty Flashlight",
-    "group": "Hardcore",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/792b3a3a-018b-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Silver Flashlight",
-    "group": "Hardcore",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7e10544b-018b-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Tutorial Flashlight",
-    "group": "Special",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dc974b6c-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Blue Pool Noodle",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/27cec81e-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Ice Cream Cone Flashlight",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f11ca654-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Pool Noodle",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1c0aaae0-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Shell Flashlight",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e91c0f18-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Spatula Flashlight",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ed3c7acd-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Yellow Pool Noodle",
-    "group": "Summer",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/21740bd7-5c1c-11f0-abca-001a4a15145e.png"
+    "name": "Yellow Heart Glasses",
+    "type": "Face"
   },
   {
     "name": "Blue Bouquet Flashlight",
-    "group": "Valentine",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f255dc28-ebae-11ef-a4e4-001a4a15145e.png"
+    "type": "Flashlight"
   },
   {
-    "name": "Pink Bouquet Flashlight",
-    "group": "Valentine",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f5e050e9-ebae-11ef-a4e4-001a4a15145e.png"
+    "name": "Blue Flashlight Bulky",
+    "type": "Flashlight"
   },
   {
-    "name": "Red Bouquet Flashlight",
-    "group": "Valentine",
-    "type": "Flashlight",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fa99253e-ebae-11ef-a4e4-001a4a15145e.png"
+    "name": "Blue Flashlight Thick",
+    "type": "Flashlight"
   },
   {
-    "name": "Feather Glowstick",
-    "group": "All Maps",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dce2fb95-7dcc-11ed-853f-001a4a0514ac.png"
+    "name": "Blue Flashlight Thin",
+    "type": "Flashlight"
   },
   {
-    "name": "Fish Glowstick",
-    "group": "All Maps",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d8072aff-7dcc-11ed-853f-001a4a0514ac.png"
+    "name": "Blue Pool Noodle",
+    "type": "Flashlight"
   },
   {
-    "name": "Leaf Glowstick",
-    "group": "All Maps",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e070e5a5-7dcc-11ed-853f-001a4a0514ac.png"
+    "name": "Carrot Flashlight",
+    "type": "Flashlight"
   },
   {
-    "name": "Candy Cane Glowstick",
-    "group": "Christmas",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/902faacf-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Tree Glowstick",
-    "group": "Christmas",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/82a608d5-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Gingerbread Glowstick",
-    "group": "Christmas",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cbd2574e-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Snowflake Glowstick",
-    "group": "Christmas",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8b0fb369-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Egg Glowstick",
-    "group": "Easter",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3a051760-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Bat Glowstick",
-    "group": "Halloween",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/11dd5a97-7e5b-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ghostie Glowstick",
-    "group": "Halloween",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/71de343a-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Pumpkin Glowstick",
-    "group": "Halloween",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6b17aa96-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Spider Glowstick",
-    "group": "Halloween",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/776cae4a-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Bone Glowstick",
-    "group": "Hardcore",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3ebc5705-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pentagram Glowstick",
-    "group": "Hardcore",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2756e49e-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Skull Glowstick",
-    "group": "Hardcore",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/36e88129-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Cross Glowstick",
-    "group": "Special",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d30e00ca-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Heart Glowstick",
-    "group": "Special",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d83032b9-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Lollipop Glowstick",
-    "group": "Special",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e485af61-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Star Glowstick",
-    "group": "Special",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dcee7317-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Shamrock Glowstick",
-    "group": "St Patrick's",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/25dfe2e8-c508-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Icecream Glowstick",
-    "group": "Summer",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/573c5b26-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Icelolly Glowstick",
-    "group": "Summer",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4ae2173a-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Jellyfish Glowstick",
-    "group": "Summer",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/503b4424-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Palm Tree Glowstick",
-    "group": "Summer",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/616aa9f7-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Shell Glowstick",
-    "group": "Summer",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5d466736-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Heart Arrow Glowstick",
-    "group": "Valentine",
-    "type": "Glowsticks",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/db55dddb-ebae-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Black Beanie",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/59f8fdd9-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Bike",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d6b8369b-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Black Cowboy Hat",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d4642397-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Motorcycle",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c12de813-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Black Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8852e7b9-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Beanie",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/61a344eb-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Blue Bike",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dff7b1b9-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Motorcycle",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c6ad2ce1-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8198b1b0-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Camo",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b3cf19a0-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Cowboy Hat Tan",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cf38e5c0-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Digital Camo",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b02100ea-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Beanie",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8b3eede5-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Bike",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e559908b-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Motorcycle",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cad8a983-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Plaid",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9453243b-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/91433a87-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Lab Cap",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b92564a0-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Mint Stripe",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a3bf988c-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Orange Grunge",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cbb02813-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Orange Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9d383330-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Pink Beanie",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/692a67fd-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pink Stripe",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9e88e09d-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pokemon Cap",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c300180b-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Purple Grunge",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c7fb96ae-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Bike",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/eabae141-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Motorcycle",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cea71659-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Plaid",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8f70c946-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b03de68a-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Tiger Cap",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a89f6171-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Wasp Cap",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ac59d84c-7dcc-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b4c1ca1d-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Tennis",
-    "group": "All Maps",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bc344794-018c-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Black Santa Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/344e5b8c-dccd-11f0-bf10-001a4a15145e.png"
-  },
-  {
-    "name": "Christmas Beanie",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/437b1c6b-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Earmuffs",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6cc58c7a-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Headband",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7534d97b-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Tree Lights Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3b15eb24-dccd-11f0-bf10-001a4a15145e.png"
-  },
-  {
-    "name": "Christmas Twirl Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/500b0346-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Ushanka",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/28d5cc78-dccd-11f0-bf10-001a4a15145e.png"
-  },
-  {
-    "name": "Elf Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/24fc0d0e-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Gnome Pants Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6575fd61-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Santa Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2c887b6a-dccd-11f0-bf10-001a4a15145e.png"
-  },
-  {
-    "name": "Mistletoe Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ac30c202-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Reindeer Antlers",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/34e8db6c-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Santa Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f6a7c842-7e5c-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Snowman Hat",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/59c5528a-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Turkey",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/495e6873-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ushanka Down",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/395b3542-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ushanka Tied",
-    "group": "Christmas",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3e2b24c4-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Brown Bunny",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9bb97e80-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pink Bunny",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/981d46eb-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Bunny w/Blue",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a06c08ff-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Bunny w/Pink",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a4ecb441-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Lamb w/Blue",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a9d75272-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Lamb w/Pink",
-    "group": "Easter",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/af1302e6-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Witch & Belt",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bcb8ee32-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Witch Brown Belt",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c16bc86b-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Brown Witch Black Belt",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c5cbd6f3-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Cat Ears",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d25957dd-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Creepy Smile Pumpkin",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ae8fa629-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Devil Horns",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cc0ec59b-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Einstein Hair",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ceaed049-71a7-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Frowning Pumpkin",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b87dec24-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Jack' O Creepy Smile",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f7e1354e-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Jack' O Frowning",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0359471c-84d1-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Jack' O Smiling",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f3f5b5a8-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Jack' O Surprised",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fcc03c4e-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Smiling Pumpkin",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/990e5a25-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Spider Beret",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c12bd6e6-71a7-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Surprised Pumpkin",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b278ab51-7e5a-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Uncarved Pumpkin",
-    "group": "Halloween",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/efa5eb4b-7e59-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Blue Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/09895230-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fedf75c4-7e56-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Maroon Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f3ead91f-7e56-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Orange Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/19a77bb9-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Purple Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/11408c8c-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/03247a62-7e57-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Horns",
-    "group": "Hardcore",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ef93f822-7e56-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Anchor Sailor Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c047c7ea-7e52-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Frog Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8ba93910-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Fur Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dbb609ea-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Helm Sailor Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ca4278b8-7e52-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Military Boonie",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0b566a13-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Military Cap",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0045d79b-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Paper Boat Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e3a52d0f-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Rice Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/36c6e877-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Safari Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/26e62b1f-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Safety Helmet",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ae114b5a-0190-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Steampunk Tophat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f3896633-7e52-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Tengai Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4237d995-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Tinfoil Hat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7bf36763-7e54-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Tophat",
-    "group": "Map/Monster Exclusive",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ee194666-7e53-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Anniversary Hat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3b2aeb52-7e5e-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Tophat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8973aac5-3639-11ee-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Bowler Hat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c7dec834-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Caesar Diadem",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2c43fa5c-bd24-11ed-bfcf-001a4a15145e.png"
-  },
-  {
-    "name": "Clown Tophat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/bf0f8407-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Dunce Hat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ccce4f3f-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pig Mask",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8b2ee341-c38c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Texas Hat",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b936081e-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Tiara",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fa0a3db3-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Vamal'ah Helmet",
-    "group": "Special",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c33bb93f-7e5d-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "St. Patrick's Hat",
-    "group": "St Patrick's",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/13a5ae25-c508-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "BBQ Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8d1b9d76-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Beer Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/69bea724-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/447b46d4-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Straw Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2cdb54dd-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Blue Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/482224f8-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Blue Flamingo",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/00c2db18-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Straw Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/31aa9355-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Dolphin Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/ee6f13c6-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Fishing Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d4bd0aea-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Green Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4c9e196a-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Green Flamingo",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0aca9d38-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Green Straw Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/37ddfda5-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Hotdog Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/70bbf987-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ice Cream Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/64b3eb3e-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ice Cream Cone Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5fa3b82f-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Nameless Varsity Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dea4fde6-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Pigman Varsity Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e585381c-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Pink Flamingo",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/06c70649-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Purple Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5064cbe0-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/558777af-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Straw Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3c98798b-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Shark Cap",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f36736d1-5c1b-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Umbrella Hat",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6d613a30-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "White Bandana",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5a178103-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Yellow Flamingo",
-    "group": "Summer",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0f74e6c4-5c1c-11f0-abca-001a4a15145e.png"
-  },
-  {
-    "name": "Pink Ribbon",
-    "group": "Valentine",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e312c450-ebae-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Rose Crown",
-    "group": "Valentine",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/eb0f79ba-ebae-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Valentine's Heart Hat",
-    "group": "Valentine",
-    "type": "Head",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1dc42e6c-abb8-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Black Lantern",
-    "group": "All Maps",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6090a556-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Blue Lantern",
-    "group": "All Maps",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/64442c9b-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Green Lantern",
-    "group": "All Maps",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8225b0e6-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Red Lantern",
-    "group": "All Maps",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/681d74e9-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Yellow Lantern",
-    "group": "All Maps",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6c7b5783-018d-11ee-979a-001a4a15145e.png"
-  },
-  {
-    "name": "Christmas Pig Bauble Lantern",
-    "group": "Christmas",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/9f6ed94e-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Christmas Pig Pudding Lantern",
-    "group": "Christmas",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/a77c5449-8240-11ed-853f-001a4a0514ac.png"
-  },
-  {
-    "name": "Egg Lantern",
-    "group": "Easter",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/079c6533-d58c-11ed-b6cd-001a4a0514ac.png"
-  },
-  {
-    "name": "Ghost Paper Lantern",
-    "group": "Halloween",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4f14714c-84d0-11ef-a4e4-001a4a15145e.png"
+    "name": "Christmas Flashlight",
+    "type": "Flashlight"
   },
   {
     "name": "Ghostie",
-    "group": "Halloween",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fc88bd6c-7e5a-11ed-853f-001a4a0514ac.png"
+    "type": "Flashlight"
   },
   {
-    "name": "Jack'o Lantern",
-    "group": "Halloween",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/031c65db-7e5b-11ed-853f-001a4a0514ac.png"
+    "name": "Gold Flashlight",
+    "type": "Flashlight"
   },
   {
-    "name": "Pumpkin Paper Lantern",
-    "group": "Halloween",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/58a3f13c-84d0-11ef-a4e4-001a4a15145e.png"
+    "name": "Green Flashlight Bulky",
+    "type": "Flashlight"
   },
   {
-    "name": "Skull",
-    "group": "Halloween",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0a4cbcda-7e5b-11ed-853f-001a4a0514ac.png"
+    "name": "Green Flashlight Thick",
+    "type": "Flashlight"
   },
   {
-    "name": "Miner Lantern",
-    "group": "Map/Monster Exclusive",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b1f9d1de-018e-11ee-979a-001a4a15145e.png"
+    "name": "Green Flashlight Thin",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Ice Cream Cone Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Icicle Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Pink Bouquet Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Pumpkin",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Red Bouquet Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Red Flashlight Bulky",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Red Flashlight Thick",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Red Flashlight Thin",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Red Pool Noodle",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Rusty Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Shell Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Silver Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Spatula Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Tutorial Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Yellow Flashlight Bulky",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Yellow Flashlight Thick",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Yellow Flashlight Thin",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Yellow Pool Noodle",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Yule Log Flashlight",
+    "type": "Flashlight"
+  },
+  {
+    "name": "Bat Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Bone Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Candy Cane Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Christmas Tree Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Cross Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Egg Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Feather Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Fish Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Ghostie Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Gingerbread Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Heart Arrow Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Heart Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Icecream Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Icelolly Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Jellyfish Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Leaf Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Lollipop Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Palm Tree Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Pentagram Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Pumpkin Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Shamrock Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Shell Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Skull Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Snowflake Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Spider Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Star Glowstick",
+    "type": "Glowsticks"
+  },
+  {
+    "name": "Anchor Sailor Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Anniversary Hat",
+    "type": "Head"
+  },
+  {
+    "name": "BBQ Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Beer Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Black Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "Black Beanie",
+    "type": "Head"
+  },
+  {
+    "name": "Black Bike",
+    "type": "Head"
+  },
+  {
+    "name": "Black Cowboy Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Black Motorcycle",
+    "type": "Head"
+  },
+  {
+    "name": "Black Santa Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Black Straw Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Black Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "Black Tophat",
+    "type": "Head"
+  },
+  {
+    "name": "Black Witch & Belt",
+    "type": "Head"
+  },
+  {
+    "name": "Black Witch Brown Belt",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Beanie",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Bike",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Flamingo",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Motorcycle",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Straw Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Blue Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "Bowler Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Brown Bunny",
+    "type": "Head"
+  },
+  {
+    "name": "Brown Witch Black Belt",
+    "type": "Head"
+  },
+  {
+    "name": "Caesar Diadem",
+    "type": "Head"
+  },
+  {
+    "name": "Camo",
+    "type": "Head"
+  },
+  {
+    "name": "Cat Ears",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Beanie",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Earmuffs",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Headband",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Tree Lights Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Twirl Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Christmas Ushanka",
+    "type": "Head"
+  },
+  {
+    "name": "Clown Tophat",
+    "type": "Head"
+  },
+  {
+    "name": "Cowboy Hat Tan",
+    "type": "Head"
+  },
+  {
+    "name": "Creepy Smile Pumpkin",
+    "type": "Head"
+  },
+  {
+    "name": "Devil Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Digital Camo",
+    "type": "Head"
+  },
+  {
+    "name": "Dolphin Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Dunce Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Einstein Hair",
+    "type": "Head"
+  },
+  {
+    "name": "Elf Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Fishing Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Frog Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Frowning Pumpkin",
+    "type": "Head"
+  },
+  {
+    "name": "Fur Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Gnome Pants Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Green Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "Green Beanie",
+    "type": "Head"
+  },
+  {
+    "name": "Green Bike",
+    "type": "Head"
+  },
+  {
+    "name": "Green Flamingo",
+    "type": "Head"
+  },
+  {
+    "name": "Green Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Green Motorcycle",
+    "type": "Head"
+  },
+  {
+    "name": "Green Plaid",
+    "type": "Head"
+  },
+  {
+    "name": "Green Santa Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Green Straw Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Green Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "Helm Sailor Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Hotdog Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Ice Cream Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Ice Cream Cone Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Jack' O Creepy Smile",
+    "type": "Head"
+  },
+  {
+    "name": "Jack' O Frowning",
+    "type": "Head"
+  },
+  {
+    "name": "Jack' O Smiling",
+    "type": "Head"
+  },
+  {
+    "name": "Jack' O Surprised",
+    "type": "Head"
+  },
+  {
+    "name": "Lab Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Maroon Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Military Boonie",
+    "type": "Head"
+  },
+  {
+    "name": "Military Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Mint Stripe",
+    "type": "Head"
+  },
+  {
+    "name": "Mistletoe Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Nameless Varsity Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Orange Grunge",
+    "type": "Head"
+  },
+  {
+    "name": "Orange Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Orange Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "Paper Boat Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Pig Mask",
+    "type": "Head"
+  },
+  {
+    "name": "Pigman Varsity Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Pink Beanie",
+    "type": "Head"
+  },
+  {
+    "name": "Pink Bunny",
+    "type": "Head"
+  },
+  {
+    "name": "Pink Flamingo",
+    "type": "Head"
+  },
+  {
+    "name": "Pink Ribbon",
+    "type": "Head"
+  },
+  {
+    "name": "Pink Stripe",
+    "type": "Head"
+  },
+  {
+    "name": "Pokemon Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Purple Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "Purple Grunge",
+    "type": "Head"
+  },
+  {
+    "name": "Purple Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Red Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "Red Bike",
+    "type": "Head"
+  },
+  {
+    "name": "Red Horns",
+    "type": "Head"
+  },
+  {
+    "name": "Red Motorcycle",
+    "type": "Head"
+  },
+  {
+    "name": "Red Plaid",
+    "type": "Head"
+  },
+  {
+    "name": "Red Straw Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Red Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "Reindeer Antlers",
+    "type": "Head"
+  },
+  {
+    "name": "Rice Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Rose Crown",
+    "type": "Head"
+  },
+  {
+    "name": "Safari Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Safety Helmet",
+    "type": "Head"
+  },
+  {
+    "name": "Santa Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Shark Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Smiling Pumpkin",
+    "type": "Head"
+  },
+  {
+    "name": "Snowman Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Spider Beret",
+    "type": "Head"
+  },
+  {
+    "name": "St. Patrick's Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Steampunk Tophat",
+    "type": "Head"
+  },
+  {
+    "name": "Surprised Pumpkin",
+    "type": "Head"
+  },
+  {
+    "name": "Tengai Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Texas Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Tiara",
+    "type": "Head"
+  },
+  {
+    "name": "Tiger Cap",
+    "type": "Head"
+  },
+  {
+    "name": "Tinfoil Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Turkey",
+    "type": "Head"
+  },
+  {
+    "name": "Umbrella Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Uncarved Pumpkin",
+    "type": "Head"
+  },
+  {
+    "name": "Ushanka Down",
+    "type": "Head"
+  },
+  {
+    "name": "Ushanka Tied",
+    "type": "Head"
+  },
+  {
+    "name": "Valentine's Heart Hat",
+    "type": "Head"
+  },
+  {
+    "name": "Vamal'ah Helmet",
+    "type": "Head"
+  },
+  {
+    "name": "Wasp Cap",
+    "type": "Head"
+  },
+  {
+    "name": "White Bandana",
+    "type": "Head"
+  },
+  {
+    "name": "White Bunny w/Blue",
+    "type": "Head"
+  },
+  {
+    "name": "White Bunny w/Pink",
+    "type": "Head"
+  },
+  {
+    "name": "White Horns",
+    "type": "Head"
+  },
+  {
+    "name": "White Lamb w/Blue",
+    "type": "Head"
+  },
+  {
+    "name": "White Lamb w/Pink",
+    "type": "Head"
+  },
+  {
+    "name": "White Tennis",
+    "type": "Head"
+  },
+  {
+    "name": "White Tophat",
+    "type": "Head"
+  },
+  {
+    "name": "Yellow Flamingo",
+    "type": "Head"
+  },
+  {
+    "name": "Yellow Tennis",
+    "type": "Head"
   },
   {
     "name": "Beachball Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/31991836-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
+  },
+  {
+    "name": "Black Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Blue Lantern",
+    "type": "Lantern"
   },
   {
     "name": "Bucket Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/35cdb51a-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
   },
   {
     "name": "Burger Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/45090baa-5c1c-11f0-abca-001a4a15145e.png"
+    "type": "Lantern"
+  },
+  {
+    "name": "Christmas Pig Bauble Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Christmas Pig Pudding Lantern",
+    "type": "Lantern"
   },
   {
     "name": "Clam Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3a1b6e0d-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
+  },
+  {
+    "name": "Egg Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Ghost Paper Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Ghostie",
+    "type": "Lantern"
+  },
+  {
+    "name": "Green Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Jack'o Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Miner Lantern",
+    "type": "Lantern"
   },
   {
     "name": "Palm Tree Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/44c3f788-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
   },
   {
     "name": "Pineapple Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/3f0eeda5-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
+  },
+  {
+    "name": "Pumpkin Paper Lantern",
+    "type": "Lantern"
+  },
+  {
+    "name": "Red Lantern",
+    "type": "Lantern"
   },
   {
     "name": "Sandcastle Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/48b41a7f-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
+  },
+  {
+    "name": "Skull",
+    "type": "Lantern"
   },
   {
     "name": "Sun Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4e9a5cec-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
   },
   {
     "name": "Tiki Torch Lantern",
-    "group": "Summer",
-    "type": "Lantern",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/52d06f8d-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Lantern"
   },
   {
-    "name": "Anesthesia",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/65151711-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Cruiser",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d66000b1-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Dream",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0ef2ca5f-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Eternally Pristine",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/02db3949-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Guitar Room",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/151e1e00-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Heaven May Cry",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/cec66fa3-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Kodama",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fd8700ad-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Kurayami",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f0bf8767-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Peace among the dead",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4b1d13a3-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Phantom Flare",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f624b090-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Piano Room",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/25d69893-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Pigman Comes",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/513edd79-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Rouse",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/46105771-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Sepia Garden",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/dd951e96-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "She Is Coming",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5acb75b2-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Solitude Of Corpses",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2e909e1c-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Strange Room",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6a750ff6-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Sweet Ginevra",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/07eb7286-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "True Secrets",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/341b4e04-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "We Are Safe",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1a9bb22b-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "What lurks in the dark",
-    "group": "All Maps",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/5fe95c78-1fbd-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Poinsettia",
-    "group": "Christmas",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e94f0c46-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "White Candle",
-    "group": "Christmas",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/deee2141-b3e0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Skelley Music Disc",
-    "group": "Halloween",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/4185aaf4-84d0-11ef-a4e4-001a4a15145e.png"
-  },
-  {
-    "name": "Hardcore Oderine",
-    "group": "Hardcore",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/b9416b0a-1fbc-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Hardcore See you in Cuba",
-    "group": "Hardcore",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/c6f6abf8-1fbc-11ef-bd6f-001a4a0514ac.png"
+    "name": "Yellow Lantern",
+    "type": "Lantern"
   },
   {
     "name": "Ahiahi Music Disc",
-    "group": "Summer",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/65afaad4-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Records"
+  },
+  {
+    "name": "Anesthesia",
+    "type": "Records"
   },
   {
     "name": "Awakea Music Disc",
-    "group": "Summer",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6a59246b-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Hohonu Music Disc",
-    "group": "Summer",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/6dc4c9f1-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Kakahiaka Music Disc",
-    "group": "Summer",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/728294b5-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Po Music Disc",
-    "group": "Summer",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/7688b806-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Records"
   },
   {
     "name": "Blood of Midnight",
-    "group": "Supporter Edition",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/854e1371-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Records"
+  },
+  {
+    "name": "Cruiser",
+    "type": "Records"
   },
   {
     "name": "Darling Caravella",
-    "group": "Supporter Edition",
-    "type": "Records",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/8ef7f709-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "type": "Records"
   },
   {
-    "name": "Black SmartWatch",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f15e89eb-018d-11ee-979a-001a4a15145e.png"
+    "name": "Dream",
+    "type": "Records"
   },
   {
-    "name": "Black/Blue Bracelet",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/190bd749-018e-11ee-979a-001a4a15145e.png"
+    "name": "Eternally Pristine",
+    "type": "Records"
   },
   {
-    "name": "Black/Grey Bracelet",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/11cf9f48-018e-11ee-979a-001a4a15145e.png"
+    "name": "Guitar Room",
+    "type": "Records"
   },
   {
-    "name": "Black/Red Bracelet",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1ca861db-018e-11ee-979a-001a4a15145e.png"
+    "name": "Hardcore Oderine",
+    "type": "Records"
   },
   {
-    "name": "Blue SmartWatch",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f4d8af76-018d-11ee-979a-001a4a15145e.png"
+    "name": "Hardcore See you in Cuba",
+    "type": "Records"
   },
   {
-    "name": "Red SmartWatch",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f84c78fe-018d-11ee-979a-001a4a15145e.png"
+    "name": "Heaven May Cry",
+    "type": "Records"
   },
   {
-    "name": "Rosegold SmartWatch",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/054eb308-018e-11ee-979a-001a4a15145e.png"
+    "name": "Hohonu Music Disc",
+    "type": "Records"
   },
   {
-    "name": "Silver SmartWatch",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0e62290c-018e-11ee-979a-001a4a15145e.png"
+    "name": "Kakahiaka Music Disc",
+    "type": "Records"
   },
   {
-    "name": "Yellow/Blue Bracelet",
-    "group": "All Maps",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1572ac4c-018e-11ee-979a-001a4a15145e.png"
+    "name": "Kodama",
+    "type": "Records"
   },
   {
-    "name": "Christmas Bead Bracelet",
-    "group": "Christmas",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d50f54da-b3e0-11ef-a4e4-001a4a15145e.png"
+    "name": "Kurayami",
+    "type": "Records"
   },
   {
-    "name": "Christmas light bracelet",
-    "group": "Christmas",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/632904e6-9fa4-11ee-aecd-001a4a15145e.png"
+    "name": "Peace among the dead",
+    "type": "Records"
   },
   {
-    "name": "Snowflake Watch",
-    "group": "Christmas",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/90ddc02c-7e5d-11ed-853f-001a4a0514ac.png"
+    "name": "Phantom Flare",
+    "type": "Records"
   },
   {
-    "name": "Bunny Watch Blue",
-    "group": "Easter",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/caa3b671-d58b-11ed-b6cd-001a4a0514ac.png"
+    "name": "Piano Room",
+    "type": "Records"
   },
   {
-    "name": "Bunny Watch Green",
-    "group": "Easter",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d326259e-d58b-11ed-b6cd-001a4a0514ac.png"
+    "name": "Pigman Comes",
+    "type": "Records"
   },
   {
-    "name": "Bunny Watch Pink",
-    "group": "Easter",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/d984f723-d58b-11ed-b6cd-001a4a0514ac.png"
+    "name": "Po Music Disc",
+    "type": "Records"
   },
   {
-    "name": "Bunny Watch Purple",
-    "group": "Easter",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e3efe56d-d58b-11ed-b6cd-001a4a0514ac.png"
+    "name": "Poinsettia",
+    "type": "Records"
   },
   {
-    "name": "Bunny Watch Yellow",
-    "group": "Easter",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/e9d8f4a8-d58b-11ed-b6cd-001a4a0514ac.png"
+    "name": "Rouse",
+    "type": "Records"
   },
   {
-    "name": "Pumpkin Bracelet",
-    "group": "Halloween",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2463f0c7-84d1-11ef-a4e4-001a4a15145e.png"
+    "name": "Sepia Garden",
+    "type": "Records"
   },
   {
-    "name": "Black Watch",
-    "group": "Hardcore",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/674a0287-3639-11ee-b6cd-001a4a0514ac.png"
+    "name": "She Is Coming",
+    "type": "Records"
   },
   {
-    "name": "White Watch",
-    "group": "Hardcore",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/90b7d5a3-018b-11ee-979a-001a4a15145e.png"
+    "name": "Skelley Music Disc",
+    "type": "Records"
   },
   {
-    "name": "Blue Glow Band",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0b57fd66-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "Solitude Of Corpses",
+    "type": "Records"
   },
   {
-    "name": "Blue Shell Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/fcfecc23-1fb4-11ef-bd6f-001a4a0514ac.png"
+    "name": "Strange Room",
+    "type": "Records"
   },
   {
-    "name": "Brown/Orange Bead Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2de35756-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "Sweet Ginevra",
+    "type": "Records"
   },
   {
-    "name": "Colorful Bead Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2003a687-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "True Secrets",
+    "type": "Records"
   },
   {
-    "name": "Green Glow Band",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/0f6c9baf-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "We Are Safe",
+    "type": "Records"
   },
   {
-    "name": "Monochrome Bead Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/26f79a04-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "What lurks in the dark",
+    "type": "Records"
   },
   {
-    "name": "Purple Shell Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/01850119-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Rainbow Shell Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/05b4d82b-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Red Glow Band",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/145e2c5b-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Ruby Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/18a21adc-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Shell Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f8e44d41-1fb4-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Topaz Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/1c53f78e-1fb5-11ef-bd6f-001a4a0514ac.png"
-  },
-  {
-    "name": "Tricolor Bead Bracelet",
-    "group": "Summer",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/2a4ac728-1fb5-11ef-bd6f-001a4a0514ac.png"
+    "name": "White Candle",
+    "type": "Records"
   },
   {
     "name": "Black Punk Wristband",
-    "group": "Supporter Edition",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f7849916-6dbe-11ee-b6cd-001a4a0514ac.png"
+    "type": "Wrist"
+  },
+  {
+    "name": "Black SmartWatch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Black Watch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Black/Blue Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Black/Grey Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Black/Red Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Blue Glow Band",
+    "type": "Wrist"
+  },
+  {
+    "name": "Blue Shell Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Blue SmartWatch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Brown/Orange Bead Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Bunny Watch Blue",
+    "type": "Wrist"
+  },
+  {
+    "name": "Bunny Watch Green",
+    "type": "Wrist"
+  },
+  {
+    "name": "Bunny Watch Pink",
+    "type": "Wrist"
+  },
+  {
+    "name": "Bunny Watch Purple",
+    "type": "Wrist"
+  },
+  {
+    "name": "Bunny Watch Yellow",
+    "type": "Wrist"
+  },
+  {
+    "name": "Christmas Bead Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Christmas light bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Colorful Bead Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Green Glow Band",
+    "type": "Wrist"
+  },
+  {
+    "name": "Monochrome Bead Bracelet",
+    "type": "Wrist"
   },
   {
     "name": "Pink Punk Wristband",
-    "group": "Supporter Edition",
-    "type": "Wrist",
-    "icon": "https://labyrinthinetool.de/img/cosmetics/f1624cce-6dbe-11ee-b6cd-001a4a0514ac.png"
+    "type": "Wrist"
+  },
+  {
+    "name": "Pumpkin Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Purple Shell Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Rainbow Shell Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Red Glow Band",
+    "type": "Wrist"
+  },
+  {
+    "name": "Red SmartWatch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Rosegold SmartWatch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Ruby Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Shell Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Silver SmartWatch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Snowflake Watch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Topaz Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "Tricolor Bead Bracelet",
+    "type": "Wrist"
+  },
+  {
+    "name": "White Watch",
+    "type": "Wrist"
+  },
+  {
+    "name": "Yellow/Blue Bracelet",
+    "type": "Wrist"
   }
 ]
