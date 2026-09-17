@@ -5,5 +5,6 @@ import { Context } from 'models/context';
 
 export const fetchCosmeticsPage = async (context: Context = CONFIG.defaultContext): Promise<string> => {
   const response = await fetch(context.urlToScrap);
-  return response.text();
+  const raw = await response.text();
+  return context.parseResponse ? context.parseResponse(raw) : raw;
 };
