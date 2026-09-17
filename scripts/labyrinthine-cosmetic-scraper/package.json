@@ -2,7 +2,8 @@
   "name": "@mkr/labyrinthine-cosmetic-scraper",
   "version": "0.0.0",
   "scripts": {
-    "start": "tsx src/index.ts"
+    "start": "tsx src/index.ts",
+    "snapshot": "tsx src/tasks/update-snapshot.ts"
   },
   "devDependencies": {
     "@types/jsdom": "^27",
