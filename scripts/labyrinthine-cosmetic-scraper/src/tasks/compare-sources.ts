@@ -1,14 +1,6 @@
 import { CONFIG } from 'config';
-import { Context } from 'models/context';
-import { extractData } from 'steps/extract';
-import { fetchCosmeticsPage } from 'steps/fetch';
-import { CosmeticIdentity, getCosmeticKey, sortCosmeticIdentities, toCosmeticIdentity } from 'utils';
-
-const scrapeIdentities = async (context: Context): Promise<CosmeticIdentity[]> => {
-  const page = await fetchCosmeticsPage(context);
-  const cosmetics = extractData(page, context);
-  return sortCosmeticIdentities(cosmetics.map(toCosmeticIdentity));
-};
+import { CosmeticIdentity, diffCosmeticIdentities, getCosmeticKey } from 'models/cosmetic-identity';
+import { scrapeCosmeticIdentities } from 'steps/scrape-identities';
 
 const printDiff = (
   leftLabel: string,
@@ -16,11 +8,7 @@ const printDiff = (
   rightLabel: string,
   right: CosmeticIdentity[]
 ): void => {
-  const leftByKey = new Map(left.map(cosmetic => [getCosmeticKey(cosmetic), cosmetic]));
-  const rightByKey = new Map(right.map(cosmetic => [getCosmeticKey(cosmetic), cosmetic]));
-
-  const onlyInLeft = left.filter(cosmetic => !rightByKey.has(getCosmeticKey(cosmetic)));
-  const onlyInRight = right.filter(cosmetic => !leftByKey.has(getCosmeticKey(cosmetic)));
+  const { onlyInFirst: onlyInLeft, onlyInSecond: onlyInRight } = diffCosmeticIdentities(left, right);
 
   console.log(`--- ${leftLabel} (${left.length} items)`);
   console.log(`+++ ${rightLabel} (${right.length} items)`);
@@ -45,8 +33,8 @@ const printDiff = (
 (async() => {
 
   const [labytool, fandom] = await Promise.all([
-    scrapeIdentities(CONFIG.contexts.labytool),
-    scrapeIdentities(CONFIG.contexts.fandom),
+    scrapeCosmeticIdentities(CONFIG.contexts.labytool),
+    scrapeCosmeticIdentities(CONFIG.contexts.fandom),
   ]);
 
   printDiff('labytool', labytool, 'fandom', fandom);

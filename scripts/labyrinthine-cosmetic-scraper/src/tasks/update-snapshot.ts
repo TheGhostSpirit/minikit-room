@@ -1,16 +1,11 @@
 import { writeFile } from 'node:fs/promises';
 
-import { extractData } from 'steps/extract';
-import { fetchCosmeticsPage } from 'steps/fetch';
-import { getSnapshotPath, sortCosmeticIdentities, toCosmeticIdentity } from 'utils';
+import { scrapeCosmeticIdentities } from 'steps/scrape-identities';
+import { getSnapshotPath } from 'utils';
 
 (async() => {
 
-  const cosmeticsPage = await fetchCosmeticsPage();
-
-  const cosmetics = extractData(cosmeticsPage);
-
-  const snapshot = sortCosmeticIdentities(cosmetics.map(toCosmeticIdentity));
+  const snapshot = await scrapeCosmeticIdentities();
 
   const snapshotPath = getSnapshotPath();
   await writeFile(snapshotPath, JSON.stringify(snapshot, null, 2));
