@@ -4,7 +4,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "snapshot": "tsx src/tasks/update-snapshot.ts",
-    "compare-sources": "tsx src/tasks/compare-sources.ts"
+    "compare": "tsx src/tasks/compare-sources.ts"
   },
   "devDependencies": {
     "@types/jsdom": "^27",

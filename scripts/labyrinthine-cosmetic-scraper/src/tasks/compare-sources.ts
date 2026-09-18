@@ -30,14 +30,41 @@ const printDiff = (
   console.log(`Summary: ${onlyInLeft.length} only in ${leftLabel}, ${onlyInRight.length} only in ${rightLabel}.`);
 };
 
+type SourceName = keyof typeof CONFIG.contexts;
+
+const sourceNames = Object.keys(CONFIG.contexts) as SourceName[];
+
+const isSourceName = (name: string): name is SourceName =>
+  (sourceNames as string[]).includes(name);
+
+const parseArgs = (): [SourceName, SourceName] => {
+  const [left, right] = process.argv.slice(2);
+
+  if (!left || !right) {
+    throw new Error('Usage: compare-sources <source> <source>');
+  }
+
+  if (!isSourceName(left) || !isSourceName(right)) {
+    throw new Error(`Unknown source. Available sources: ${sourceNames.join(', ')}`);
+  }
+
+  if (left === right) {
+    throw new Error('Please provide two different sources to compare.');
+  }
+
+  return [left, right];
+};
+
 (async() => {
 
-  const [labytool, fandom] = await Promise.all([
-    scrapeCosmeticIdentities(CONFIG.contexts.labytool),
-    scrapeCosmeticIdentities(CONFIG.contexts.fandom),
+  const [leftName, rightName] = parseArgs();
+
+  const [left, right] = await Promise.all([
+    scrapeCosmeticIdentities(CONFIG.contexts[leftName]),
+    scrapeCosmeticIdentities(CONFIG.contexts[rightName]),
   ]);
 
-  printDiff('labytool', labytool, 'fandom', fandom);
+  printDiff(leftName, left, rightName, right);
 
   return 0;
 })();
