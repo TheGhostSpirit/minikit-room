@@ -22,6 +22,7 @@ export const extract = (raw: string): Cosmetic[] => {
 
   return items
     .filter(item => item.kind !== 'blueprint')
+    .filter(item => item.category !== 'console-edition')
     .map(item => {
       return {
         id: uuid(),

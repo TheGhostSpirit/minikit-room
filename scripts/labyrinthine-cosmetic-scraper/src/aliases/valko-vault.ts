@@ -64,7 +64,6 @@ const groupAliases = new Map<CosmeticGroup, string[]>([
   [
     'Special',
     [
-      'console-edition',
       'level',
       'misc',
       'ticket-shop',
