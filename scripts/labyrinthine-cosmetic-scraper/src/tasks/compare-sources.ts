@@ -1,5 +1,6 @@
 import { CONFIG } from 'config';
 import { CosmeticIdentity, diffCosmeticIdentities, getCosmeticKey } from 'models/cosmetic-identity';
+import { readSnapshot } from 'steps/read-snapshot';
 import { scrapeCosmeticIdentities } from 'steps/scrape-identities';
 
 const printDiff = (
@@ -30,12 +31,15 @@ const printDiff = (
   console.log(`Summary: ${onlyInLeft.length} only in ${leftLabel}, ${onlyInRight.length} only in ${rightLabel}.`);
 };
 
-type SourceName = keyof typeof CONFIG.contexts;
+type SourceName = keyof typeof CONFIG.contexts | 'snapshot';
 
-const sourceNames = Object.keys(CONFIG.contexts) as SourceName[];
+const sourceNames = [...Object.keys(CONFIG.contexts), 'snapshot'] as SourceName[];
 
 const isSourceName = (name: string): name is SourceName =>
   (sourceNames as string[]).includes(name);
+
+const loadSourceIdentities = (name: SourceName): Promise<CosmeticIdentity[]> =>
+  name === 'snapshot' ? readSnapshot() : scrapeCosmeticIdentities(CONFIG.contexts[name]);
 
 const parseArgs = (): [SourceName, SourceName] => {
   const [left, right] = process.argv.slice(2);
@@ -60,8 +64,8 @@ const parseArgs = (): [SourceName, SourceName] => {
   const [leftName, rightName] = parseArgs();
 
   const [left, right] = await Promise.all([
-    scrapeCosmeticIdentities(CONFIG.contexts[leftName]),
-    scrapeCosmeticIdentities(CONFIG.contexts[rightName]),
+    loadSourceIdentities(leftName),
+    loadSourceIdentities(rightName),
   ]);
 
   printDiff(leftName, left, rightName, right);

@@ -1,12 +1,10 @@
-import { readFile } from 'node:fs/promises';
-
 import { Cosmetic } from '@mkr/shared/labyrinthine';
 
-import { CosmeticIdentity, diffCosmeticIdentities, sortCosmeticIdentities, toCosmeticIdentity } from 'models/cosmetic-identity';
-import { getSnapshotPath } from 'utils';
+import { diffCosmeticIdentities, sortCosmeticIdentities, toCosmeticIdentity } from 'models/cosmetic-identity';
+import { readSnapshot } from 'steps/read-snapshot';
 
 export const verifySnapshot = async (cosmetics: Cosmetic[]): Promise<void> => {
-  const snapshot: CosmeticIdentity[] = JSON.parse(await readFile(getSnapshotPath(), 'utf-8'));
+  const snapshot = await readSnapshot();
   const current = sortCosmeticIdentities(cosmetics.map(toCosmeticIdentity));
 
   const { onlyInFirst: removed, onlyInSecond: added } = diffCosmeticIdentities(snapshot, current);
