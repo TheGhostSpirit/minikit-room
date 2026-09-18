@@ -1,3 +1,4 @@
+import { JSDOM } from 'jsdom';
 import { v4 as uuid } from 'uuid';
 
 import { Cosmetic, CosmeticType } from '@mkr/shared/labyrinthine';
@@ -5,7 +6,9 @@ import { Cosmetic, CosmeticType } from '@mkr/shared/labyrinthine';
 import { CONFIG } from 'config';
 import { debugTree } from 'extractors/utils';
 
-export const extract = (document: Document): Cosmetic[] => {
+export const extract = (raw: string): Cosmetic[] => {
+  const document = new JSDOM(raw).window.document;
+
   return [
     ...extractTable(document, '#tpt-1 tbody', 'Head'),
     ...extractTable(document, '#tpt-2 tbody', 'Clothing'),

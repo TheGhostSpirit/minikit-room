@@ -4,11 +4,13 @@ import { Extractors } from 'models/extractors';
 import { AliasResolver } from 'models/alias-resolver';
 import { resolveAliases as fandomAliasResolver } from 'aliases/fandom';
 import { resolveAliases as labytoolAliasResolver } from 'aliases/labytool';
+import { resolveAliases as valkoVaultAliasResolver } from 'aliases/valko-vault';
 import { printUnresolvedAliases } from 'aliases/utils';
 
 const aliasResolverMap = new Map<Extractors, AliasResolver>([
   [Extractors.FANDOM, fandomAliasResolver],
   [Extractors.LABYTOOL, labytoolAliasResolver],
+  [Extractors.VALKOVAULT, valkoVaultAliasResolver],
 ]);
 
 export const resolveAliases = (cosmetics: Cosmetic[], extractor: Extractors): Cosmetic[] => {

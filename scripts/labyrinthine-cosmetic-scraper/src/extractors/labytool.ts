@@ -1,10 +1,12 @@
+import { JSDOM } from 'jsdom';
 import { v4 as uuid } from 'uuid';
 
 import { Cosmetic } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 
-export const extract = (document: Document): Cosmetic[] => {
+export const extract = (raw: string): Cosmetic[] => {
+  const document = new JSDOM(raw).window.document;
   const baseUrl = CONFIG.defaultContext.urlToScrap;
   const itemCardQuery = document.querySelectorAll('div.card');
 

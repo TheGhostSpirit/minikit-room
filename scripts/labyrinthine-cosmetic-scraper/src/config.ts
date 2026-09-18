@@ -16,7 +16,11 @@ export const CONFIG = {
     labytool: {
       urlToScrap: 'https://labyrinthinetool.de/cosmetics-all',
       extractor: Extractors.LABYTOOL,
-    }
+    },
+    valkovault: {
+      urlToScrap: 'https://the-valko-vault.com/api/cosmetics',
+      extractor: Extractors.VALKOVAULT,
+    },
   },
   exportPath: process.env.EXPORT_PATH,
   debug: false,
