@@ -1,7 +1,6 @@
 import { JSDOM } from 'jsdom';
-import { v4 as uuid } from 'uuid';
 
-import { Cosmetic } from '@mkr/shared/labyrinthine';
+import { Cosmetic, computeCosmeticId } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 
@@ -17,12 +16,13 @@ export const extract = (raw: string): Cosmetic[] => {
   };
 
   return itemCards.map(card => {
-    return {
-      id: uuid(),
+    const identity = {
       name: card.children[1].children[0].textContent?.trim(),
       group: card.children[1].children[2].children[1].textContent?.trim(),
       type: card.children[1].children[2].children[0].textContent?.trim(),
       icon: getAbsoluteUrl(card.children[0].getAttribute('src') ?? ''),
-    } as Cosmetic;
+    } as Omit<Cosmetic, 'id'>;
+
+    return { id: computeCosmeticId(identity), ...identity } as Cosmetic;
   });
 };

@@ -1,6 +1,4 @@
-import { v4 as uuid } from 'uuid';
-
-import { Cosmetic } from '@mkr/shared/labyrinthine';
+import { Cosmetic, computeCosmeticId } from '@mkr/shared/labyrinthine';
 import { CONFIG } from 'config';
 
 const baseUrl = new URL(CONFIG.contexts.valkovault.urlToScrap).origin;
@@ -24,12 +22,13 @@ export const extract = (raw: string): Cosmetic[] => {
     .filter(item => item.kind !== 'blueprint')
     .filter(item => item.category !== 'console-edition')
     .map(item => {
-      return {
-        id: uuid(),
+      const identity = {
         name: item.name,
         group: item.category,
         type: item.type,
         icon: new URL(item.imagePath, baseUrl).href,
-      } as Cosmetic;
+      } as Omit<Cosmetic, 'id'>;
+
+      return { id: computeCosmeticId(identity), ...identity } as Cosmetic;
     });
 };
