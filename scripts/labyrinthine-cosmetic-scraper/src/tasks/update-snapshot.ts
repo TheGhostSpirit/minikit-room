@@ -1,11 +1,11 @@
 import { writeFile } from 'node:fs/promises';
 
-import { scrapeCosmeticIdentities } from 'steps/scrape-identities';
+import { scrapeCosmeticSnapshotEntries } from 'steps/scrape-identities';
 import { getSnapshotPath } from 'utils';
 
 (async() => {
 
-  const snapshot = await scrapeCosmeticIdentities();
+  const snapshot = await scrapeCosmeticSnapshotEntries();
 
   const snapshotPath = getSnapshotPath();
   await writeFile(snapshotPath, JSON.stringify(snapshot, null, 2));

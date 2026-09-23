@@ -16,7 +16,7 @@ const printDiff = (
   console.log('');
 
   if (onlyInLeft.length === 0 && onlyInRight.length === 0) {
-    console.log('No differences: both sources list the exact same cosmetics (by name + type).');
+    console.log('No differences: both sources list the exact same cosmetics (by name + type + group).');
     return;
   }
 

@@ -1,19 +1,18 @@
-import { Cosmetic as GenericCosmetic, computeCosmeticId } from '@mkr/shared/labyrinthine';
+import { Cosmetic as GenericCosmetic } from '@mkr/shared/labyrinthine';
 
 export interface Cosmetic extends GenericCosmetic {
   found?: boolean;
   selected?: boolean;
 }
 
-export type CosmeticIdentifier = Pick<Cosmetic, 'name' | 'type' | 'group' | 'icon'>;
+export type CosmeticIdentifier = Pick<Cosmetic, 'id'>;
 
 export class CosmeticUtils {
   static toCosmeticIdentifier(cosmetic: Cosmetic): CosmeticIdentifier {
-    const { name, type, group, icon } = cosmetic;
-    return { name, type, group, icon };
+    return { id: cosmetic.id };
   }
 
   static isSameCosmetic(cosmetic1: CosmeticIdentifier | Cosmetic, cosmetic2: CosmeticIdentifier | Cosmetic): boolean {
-    return computeCosmeticId(cosmetic1) === computeCosmeticId(cosmetic2);
+    return cosmetic1.id === cosmetic2.id;
   }
 }

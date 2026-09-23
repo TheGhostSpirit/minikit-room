@@ -1,9 +1,9 @@
 import { readFile } from 'node:fs/promises';
 
-import { CosmeticIdentity } from 'models/cosmetic-identity';
+import { CosmeticSnapshotEntry } from 'models/cosmetic-identity';
 import { getSnapshotPath } from 'utils';
 
-export const readSnapshot = async (): Promise<CosmeticIdentity[]> => {
+export const readSnapshot = async (): Promise<CosmeticSnapshotEntry[]> => {
   const raw = await readFile(getSnapshotPath(), 'utf-8');
-  return JSON.parse(raw) as CosmeticIdentity[];
+  return JSON.parse(raw) as CosmeticSnapshotEntry[];
 };

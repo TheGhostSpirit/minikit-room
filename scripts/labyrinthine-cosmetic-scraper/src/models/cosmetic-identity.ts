@@ -1,15 +1,23 @@
 import { Cosmetic } from '@mkr/shared/labyrinthine';
 
-export type CosmeticIdentity = Pick<Cosmetic, 'name' | 'type'>;
+export type CosmeticIdentity = Pick<Cosmetic, 'name' | 'type' | 'group'>;
 
-export interface CosmeticIdentityDiff {
-  onlyInFirst: CosmeticIdentity[];
-  onlyInSecond: CosmeticIdentity[];
+export type CosmeticSnapshotEntry = CosmeticIdentity & Pick<Cosmetic, 'id'>;
+
+export interface Diff<T> {
+  onlyInFirst: T[];
+  onlyInSecond: T[];
 }
 
-export const toCosmeticIdentity = ({ name, type }: Cosmetic): CosmeticIdentity => ({
+export const toCosmeticIdentity = ({ name, type, group }: Cosmetic): CosmeticIdentity => ({
   name,
-  type
+  type,
+  group
+});
+
+export const toCosmeticSnapshotEntry = (cosmetic: Cosmetic): CosmeticSnapshotEntry => ({
+  ...toCosmeticIdentity(cosmetic),
+  id: cosmetic.id
 });
 
 export const sortCosmeticIdentities = <T extends CosmeticIdentity>(cosmetics: T[]): T[] => {
@@ -17,18 +25,20 @@ export const sortCosmeticIdentities = <T extends CosmeticIdentity>(cosmetics: T[
   return [...cosmetics].sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 };
 
-export const getCosmeticKey = (cosmetic: Pick<CosmeticIdentity, 'name' | 'type'>): string =>
-  `${cosmetic.type}::${cosmetic.name}`;
+export const getCosmeticKey = (cosmetic: CosmeticIdentity): string =>
+  `${cosmetic.type}::${cosmetic.name}::${cosmetic.group}`;
+
+export const diffByKey = <T>(first: T[], second: T[], key: (item: T) => string): Diff<T> => {
+  const firstKeys = new Set(first.map(key));
+  const secondKeys = new Set(second.map(key));
+
+  return {
+    onlyInFirst: first.filter(item => !secondKeys.has(key(item))),
+    onlyInSecond: second.filter(item => !firstKeys.has(key(item))),
+  };
+};
 
 export const diffCosmeticIdentities = (
   first: CosmeticIdentity[],
   second: CosmeticIdentity[]
-): CosmeticIdentityDiff => {
-  const firstKeys = new Set(first.map(getCosmeticKey));
-  const secondKeys = new Set(second.map(getCosmeticKey));
-
-  return {
-    onlyInFirst: first.filter(cosmetic => !secondKeys.has(getCosmeticKey(cosmetic))),
-    onlyInSecond: second.filter(cosmetic => !firstKeys.has(getCosmeticKey(cosmetic))),
-  };
-};
+): Diff<CosmeticIdentity> => diffByKey(first, second, getCosmeticKey);
