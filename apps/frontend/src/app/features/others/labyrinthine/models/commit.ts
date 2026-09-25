@@ -1,12 +1,9 @@
-import { Cosmetic, CosmeticUtils } from 'app/features/others/labyrinthine/models/cosmetic';
+import { Cosmetic, CosmeticIdentifier, CosmeticUtils } from 'app/features/others/labyrinthine/models/cosmetic';
 
 export interface Commit {
   id?: number;
   date: string;
-  cosmetics: {
-    name: string;
-    type: string;
-  }[];
+  cosmetics: CosmeticIdentifier[];
 }
 
 export const createCommit = (cosmetics: Cosmetic[]): Commit => {

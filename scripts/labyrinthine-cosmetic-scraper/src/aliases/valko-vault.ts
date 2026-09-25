@@ -1,0 +1,126 @@
+import { CosmeticGroup, CosmeticType } from '@mkr/shared/labyrinthine';
+
+const groupAliases = new Map<CosmeticGroup, string[]>([
+  [
+    'All Maps',
+    [
+      'all-maps',
+    ],
+  ],
+  [
+    'Christmas',
+    [
+      'christmas',
+    ],
+  ],
+  [
+    'Easter',
+    [
+      'easter',
+    ],
+  ],
+  [
+    'Halloween',
+    [
+      'halloween',
+    ],
+  ],
+  [
+    'Hardcore',
+    [
+      'hardcore',
+    ],
+  ],
+  [
+    'Map/Monster Exclusive',
+    [
+      'map-exclu',
+    ],
+  ],
+  [
+    `St Patrick's`,
+    [
+      'st-patrick',
+    ],
+  ],
+  [
+    'Summer',
+    [
+      'summer',
+    ],
+  ],
+  [
+    'Supporter Edition',
+    [
+      'supporter-edition',
+    ],
+  ],
+  [
+    'Valentine',
+    [
+      'valentine',
+    ],
+  ],
+  [
+    'Special',
+    [
+      'level',
+      'misc',
+      'ticket-shop',
+      'vr',
+    ],
+  ],
+]);
+
+const typeAliases = new Map<CosmeticType, string[]>([
+  [
+    'Head',
+    [
+      'head',
+    ],
+  ],
+  [
+    'Clothing',
+    [
+      'clothing',
+    ],
+  ],
+  [
+    'Wrist',
+    [
+      'wrist',
+    ],
+  ],
+  [
+    'Flashlight',
+    [
+      'flashlight',
+    ],
+  ],
+  [
+    'Lantern',
+    [
+      'lantern',
+    ],
+  ],
+  [
+    'Glowsticks',
+    [
+      'glowstick',
+    ],
+  ],
+  [
+    'Face',
+    [
+      'face',
+    ],
+  ],
+  [
+    'Records',
+    [
+      'music-disc',
+    ],
+  ],
+]);
+
+export const resolveAliases = { typeAliases, groupAliases };

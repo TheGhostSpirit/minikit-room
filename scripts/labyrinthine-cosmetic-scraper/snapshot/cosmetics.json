@@ -1,0 +1,2498 @@
+[
+  {
+    "name": "#TeamSmiley",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "aa7b17b3763d230ffe27ce31586b5396aec5de48c008ed02763bd9322d557464"
+  },
+  {
+    "name": "BBQ Grill Master",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "a5d3031e4ba7230528082fb0209f05c7c89265e3c94279d244cd23b8f92f4cb9"
+  },
+  {
+    "name": "BBQ Pig",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "818b75ed78881c27525321ca248f056067cd4cc5910daf8694ca0639a7ee515a"
+  },
+  {
+    "name": "Black Pumpkin Shirt",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "ca20397de9c469faa0fe58d76fc1de75cc271f453d1febea539bd0673438bf05"
+  },
+  {
+    "name": "Black&White Floral",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "935ec4c0b6d1ba219c770b96bea6779dad221df29d9838cfde88373b70c6cde0"
+  },
+  {
+    "name": "Blue Bunny Shirt",
+    "type": "Clothing",
+    "group": "Easter",
+    "id": "ebacfbd262b16662aa3e2ef972705b0c3cc70cc2fc00e038151d1f2c8b62acd9"
+  },
+  {
+    "name": "Blue Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "4e835e763e7e6efbdb6261bebddc8bc05aadf624f329c259b61261c4a5e738df"
+  },
+  {
+    "name": "Blue Mosaic",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "0a989327904d2eb8261a4122c69065109c554883d1adaaf73fce79182ad0be04"
+  },
+  {
+    "name": "Blue&White Floral",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "6507cb6667a98ed56910a8d0a576b0f4c5fd4d1b04934190d77b671f1e2dce11"
+  },
+  {
+    "name": "Boo Black",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "57a3145e5c38523a4e889ab1129c33f0c410c355396b14954455bba062b6a808"
+  },
+  {
+    "name": "Boo White",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "dba5ab7a4289f57a860bb5faefbcf5e5ae8a3b5622d8ac75b727270eb9444ac0"
+  },
+  {
+    "name": "Brown Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "02113f334e56eeeef4a61b31c184b3b4e844e0c13faeecaafaee89c0efeb6723"
+  },
+  {
+    "name": "Camo Shirt",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "98c81a2c8861aa4d76bb543f91dce88e684ee4a09ca7f724cef221835d5f226b"
+  },
+  {
+    "name": "Camping Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "682dbdc758e5189c0000e9f2fb01b94ac58aa147264fbdb576c16d620efba815"
+  },
+  {
+    "name": "Chainmail Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "7693f4ce60ee6574ab11c3b843f0e97e63c4e827ca8c135a543321bbe4bca7d7"
+  },
+  {
+    "name": "Christmas Shirt",
+    "type": "Clothing",
+    "group": "Christmas",
+    "id": "19ac90bd566f1d535caea3dbcdc5cc68e71e89954d0ef8f627a6e697fac1f3ab"
+  },
+  {
+    "name": "Citrus 1",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "07786089b234dad7a77125fdbab32d4950d7b668ad115387f9d513d40af0e8b7"
+  },
+  {
+    "name": "Citrus 2",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "98cef84f782d17473fdda8a046dd522ea084ecc6c5b9c55828b53fbdc0cc682b"
+  },
+  {
+    "name": "Clown Clothing",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "76ede365b65c7cdd547fffd871b7c671e7f3848645ee44e8951663a2fee71e20"
+  },
+  {
+    "name": "Dark Blue Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "a82e4626b4161b9be7abda6f30e5a829c536fa0f8aba23f2af381e9151a653ba"
+  },
+  {
+    "name": "Diamond Black",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "ac9c99a8cc6b5ec591e5a3e223b931d19cc83289cedb914a0643c4739910ba58"
+  },
+  {
+    "name": "Diamond White",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "d9c958b57ea91705515daee24d6b245dba174278278d14d673994d7b121b80c5"
+  },
+  {
+    "name": "Doctor Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "686ddbcb350aaab1b933b8fdc1e066e5f2c3448b31c897650bd1c730732e2f7f"
+  },
+  {
+    "name": "Elf Outfit",
+    "type": "Clothing",
+    "group": "Christmas",
+    "id": "b72ebd27d34ab4350edc1a4a383b22bb37cda6ea077d7c025b664a1b906d56c0"
+  },
+  {
+    "name": "Flower Mosaic",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "5ad03b2a4b5b368d9207e9c1c5950c5c6b6773169581502fdc85a8ed6e4bd079"
+  },
+  {
+    "name": "Forest Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "3d6860615ca3e978fa18ff7a2f7e730d9fb6a643dcb8e125bdb14880f8827981"
+  },
+  {
+    "name": "Free Hugs",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "fa6188e4eb4ac290e300ae5a7e7783eb02c8a53169955860240c73af80f45f76"
+  },
+  {
+    "name": "Ghostie BBQ",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "9aed1a66d7e7de146a64a6ec47ceb77e8c5f7594d99733d8b48207472633280e"
+  },
+  {
+    "name": "Ghostie Jersey",
+    "type": "Clothing",
+    "group": "Special",
+    "id": "bea9867f302f28eafb3d4eed6ceb4c196a6e8b17f6115433c56ecba757c91b61"
+  },
+  {
+    "name": "Grave Digger Shirt",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "4f0aa237ed30d82e6e8348ec602674d9f2e10ccbe29a2bde758f058c9ad366f1"
+  },
+  {
+    "name": "Green Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "47c9869dcf562fd8c1012e0e13879c6578c0f00de6ae516885b8546b834ffb3d"
+  },
+  {
+    "name": "Hail Nessa Shirt",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "d9988ec30f841446123aa26176387090cf598c6a9558a75f4d45ffee6ebe2dd8"
+  },
+  {
+    "name": "Hang in There",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "9d1e06fb3b048f585bc691a453d5f6a25a1644523e1df7b04b9b364706410d99"
+  },
+  {
+    "name": "Happi Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "1da540212c24af01556db11679f6eb7ccdae74258f3fd54625ee4acfc1eb4d6d"
+  },
+  {
+    "name": "Killer Bunny  Shirt",
+    "type": "Clothing",
+    "group": "Easter",
+    "id": "7b309748e74e58427a1295aedaef17b71d3843ec7deea12f9c109bfaf3e54e5e"
+  },
+  {
+    "name": "Lab Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "1af58e06e95bf2895b3d6dac43c5e8d1ed1f2a51f3880b082d1011b076f441ad"
+  },
+  {
+    "name": "Mandala",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "47412643b146b7ba2bae0562cffe668afba0a97bbe1b73de43189128fd33a91d"
+  },
+  {
+    "name": "Meep Clothing",
+    "type": "Clothing",
+    "group": "Special",
+    "id": "0ff095a764a3ba026efd87afd3878feac4954c4aeedb706b5f7deb9c6e07760a"
+  },
+  {
+    "name": "Monster Muscle Cafe",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "a561233f14a8a74e766cb091c4a68ec899f86b99a88c99951d9583afc0551fb6"
+  },
+  {
+    "name": "Nameless Varsity",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "7ba68a3bb97d7cc2ebb350c6d1cd4009cce3f427bbd58e8d2a269f799e55d5cc"
+  },
+  {
+    "name": "Oni Green",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "c4b80c10d923f873a076916a5b8b20070446a889a79f16753bc06abfe48853e8"
+  },
+  {
+    "name": "Oni Red",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "f29ac415cb0c842008c94c2dd42d86ed58617694b1c05b64d771a6ff0a7fe6de"
+  },
+  {
+    "name": "Orange Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "6ad82fc2f53cedc771d1e4f879b6aae5f5513adad900ea8ae5c01eba1d306e3f"
+  },
+  {
+    "name": "Orange Mosaic",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "5520b3643920245d1467508ff381898af961b1f5e6d243435044c17d3ffb0478"
+  },
+  {
+    "name": "Orange Pumpkin Shirt",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "687f042f4a7e8d8b68f6f2335950f432d19a8c2a01f38234c9f436b93be3d01a"
+  },
+  {
+    "name": "Orange&White Flower",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "76f5ebde32ff7930f43d1b73a2e8f130026b14155c55cf69bf222f6f553143f7"
+  },
+  {
+    "name": "Palm Tree",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "2157a21179e6f30af96ffee919e6c0953b96df283dedf90bfa2ac37d02d2f8f1"
+  },
+  {
+    "name": "Pigman",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "af2450e339ede4886adbff5112e20161fba9117375b992590cd9bba8177fd656"
+  },
+  {
+    "name": "Pigman Varsity",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "37d42746ebbfd387331da227fc1ae3f2bab73ab25a426975d9d8204b71111d7e"
+  },
+  {
+    "name": "Pink Fiona",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "8601334946d7b0b2c9e288eafaaa63ad58eb9f73f379e987b309e68a4dba83c5"
+  },
+  {
+    "name": "Pink Hibiscus",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "269ec755401636f6e233b233568c2de41439226bc1484f5ad7cbaa7fa0601703"
+  },
+  {
+    "name": "Private Test",
+    "type": "Clothing",
+    "group": "Special",
+    "id": "81cfcb02417fb27926a9249b735e072841bcd0821f900b9dd03cf18396984cd1"
+  },
+  {
+    "name": "Protect Forests",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "ba84aaee251bfc7c0b236b2ad0eae6e811d843e98bc62a4a2d8eba13a8c926fe"
+  },
+  {
+    "name": "Puppet Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "5d320d1ab08b7de6e9111a5c676f86fb777f29ba2c3f8a96facd091d080ebc07"
+  },
+  {
+    "name": "Purple Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "d21a5289993ce70c0715d761a963d894772b45f8762c12090b8e655b574728cc"
+  },
+  {
+    "name": "Reaper Shirt",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "488cea4effb1427e296d9f45396233e13ef0cf3ccdac15dc71805f27f2477ddc"
+  },
+  {
+    "name": "Red Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "d0b2a3bc0bb06c54a308411d2b4abecd42b20e61da51f7296a669f72746925b4"
+  },
+  {
+    "name": "Red&White Floral",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "a1616dc6450aebc640a19d1590ea2ab63df101c74274c90b4b13f22a3129c052"
+  },
+  {
+    "name": "Red&White Flower",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "aa6f4314a10218038413b6db437dda06ef5ddddbf8974f36aab7e21c8a4c8b9e"
+  },
+  {
+    "name": "Red&Yellow Flower",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "57a1d2b2dc6a97dd1a888aec7aa7b50d3020611d5bc5b3379f97f8fb9f79795e"
+  },
+  {
+    "name": "Reindeer Shirt",
+    "type": "Clothing",
+    "group": "Christmas",
+    "id": "ac313ba8a21e805171a4f9735f3dbbe408a56647424c87d076ac6cb25b92fdea"
+  },
+  {
+    "name": "Run Pig",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "ef0ce427ee2037cfc98c0c1e45feeb242a3557e4800b42243d485cae0dafb47a"
+  },
+  {
+    "name": "Santa Outfit",
+    "type": "Clothing",
+    "group": "Christmas",
+    "id": "2034af478c5810a8d3bafbb103a4d2396d45bd76f5c613d8c5410c89d52450fd"
+  },
+  {
+    "name": "Skeleton Lightning",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "2278ee1cb6f1ef291213b909dd0adea34f439d3e2301ab85ce4c559e52a0699d"
+  },
+  {
+    "name": "Skeleton Outfit",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "030be54999ccd2c58089f20ab93596d36d0ad29f3fbf6600207680232d5ffcc7"
+  },
+  {
+    "name": "Smiley Runes",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "968dcf7f01ba36deef2e9127a6d4c4ffac956b75cfbf4a8830d9c1ce44d4d5f6"
+  },
+  {
+    "name": "Smoke Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "0bee418d9bacda24c14a18d80b875d9bd90b0efeb21794562ac849ce6515b352"
+  },
+  {
+    "name": "Snowman Outfit",
+    "type": "Clothing",
+    "group": "Christmas",
+    "id": "5eb4d70be45d2a397f0efe99c968f8b31a7b88bd1efe189b7d367a7d42b5bbbc"
+  },
+  {
+    "name": "Sphynxtopus",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "b2e5a3cc3b6b51732f32ca47a1f1dcc61575e8664fea949f22baad390baf6515"
+  },
+  {
+    "name": "St. Patrick's Clothing",
+    "type": "Clothing",
+    "group": "St Patrick's",
+    "id": "dc523706391b31adf60b6460646057235f51a7ab35462120bb4e9a9fa141b1d6"
+  },
+  {
+    "name": "Sunset",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "575aae20316a5af3db1f600f6bc16bab67327da911bd14f379335d9c3c9e83cf"
+  },
+  {
+    "name": "SwampTours Shirt",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "f12a5f4d13bdddc9f57e75906baf4be453cb5bce4b9cfd20f7afcce0e2542bc8"
+  },
+  {
+    "name": "Tie-Dye",
+    "type": "Clothing",
+    "group": "Hardcore",
+    "id": "8b4b21e16bd9d40500a35828009b5876a713d3fdd2ac3c0d9b70a9c8073dc4a4"
+  },
+  {
+    "name": "Tricolor Flower",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "986653ec18ac82d630f59c2cf4c1a73dd2665e34732b43334c24a8035a02ebe0"
+  },
+  {
+    "name": "Tuxedo",
+    "type": "Clothing",
+    "group": "Supporter Edition",
+    "id": "a8571dbfd04e0bb50fcf5505af3c8e4352b8a00d92f761f3f1564e7e9cc4aba2"
+  },
+  {
+    "name": "Valentine's Love Clothing",
+    "type": "Clothing",
+    "group": "Valentine",
+    "id": "3054cb571a1781034d794454e83e64753aa04b649a5fd7681b8ed5861e55b591"
+  },
+  {
+    "name": "Waterfall",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "652e04c71544694978f47c16a98dfcb2e96f0def0b6d39cbefe5d06e660594c9"
+  },
+  {
+    "name": "White Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "f8b1a1402f2d7bbe7391e6f256a0a8253bf5b18eeab768450f0d76459ba8b647"
+  },
+  {
+    "name": "Whos Next",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "1cd4e03e8671311b5c4c787d3f4d3558ad51afaa3b8be71919ccf1fc421ebf86"
+  },
+  {
+    "name": "Wickerman",
+    "type": "Clothing",
+    "group": "Map/Monster Exclusive",
+    "id": "45b032f608df8a45842818d87d0e7caaf33339889980f31580ad9a727d86c9e9"
+  },
+  {
+    "name": "Yellow Bunny Shirt",
+    "type": "Clothing",
+    "group": "Easter",
+    "id": "54e2078933e5939a29f0a516cb635e2422fa5b7733dfab41bafbf5c9f8227ee8"
+  },
+  {
+    "name": "Yellow Clothing",
+    "type": "Clothing",
+    "group": "All Maps",
+    "id": "42b091e0b73197600763de7bf1dc3491252c56ce41646c6127d44d2911f545e8"
+  },
+  {
+    "name": "Yellow&White Floral",
+    "type": "Clothing",
+    "group": "Summer",
+    "id": "049156ab0f861cdb87a69d7e833f3af34f1499e54e64e35c852c8cf33217ec02"
+  },
+  {
+    "name": "Zombie Shirt",
+    "type": "Clothing",
+    "group": "Halloween",
+    "id": "98f91e99dc5a53ae3e48c1e9e0c4a8b741568dc8181fd40169195909814a1810"
+  },
+  {
+    "name": "Aviator Glasses",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "4d7ee15ffbce95e23ab072ebb83ac8ff9fc62b750c003bfff9a2560fcf45b54f"
+  },
+  {
+    "name": "Aztec Mask Blue",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "ac31aadf5f8898dfbd3f63d5a1f5c832b8c6172d8a29fecf8c65e6382e8eaf52"
+  },
+  {
+    "name": "Aztec Mask Green",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "aa840e1a75b07dd5e0a318007a3b1aa4ea15226872157325401711f12fa6dffa"
+  },
+  {
+    "name": "Aztec Mask Orange",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "ec66107127523e5ec427b6c2132f51a95a9e7a04b6fbd66af52d3cf621025db2"
+  },
+  {
+    "name": "Black Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "d8d2f70b5727fed8bde10764c287f42744106e6080de8deba53ce328af543daa"
+  },
+  {
+    "name": "Blue Bunny Mask",
+    "type": "Face",
+    "group": "Easter",
+    "id": "0d7e2b649ec0fa560cf08b67fc472841d09576b1b7bdde086413ebd303851601"
+  },
+  {
+    "name": "Blue Heart Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "8c629b422d936529b3c2d01d298cef8019b6a654396ad05f9a13c62d477c377c"
+  },
+  {
+    "name": "Blue Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "edf765327ef6748140b335d6f2ec244c09163237514354c3e868a7e76dea2b24"
+  },
+  {
+    "name": "Carrot nose",
+    "type": "Face",
+    "group": "Christmas",
+    "id": "847b0ae07499f36376adbdfbbb43215bde32efbfb19429864a5fb164823da77c"
+  },
+  {
+    "name": "Christmas Tree Glasses",
+    "type": "Face",
+    "group": "Christmas",
+    "id": "c7b4f65dc6c9f4c93345d43552187e03909eddbfc221d7cff62dc5d9e47e2798"
+  },
+  {
+    "name": "Cyberpunk Visor",
+    "type": "Face",
+    "group": "Supporter Edition",
+    "id": "c7e9f0ac5f1e28fb54e438478c8863fbadf26543b8a4908aef7501e92816be6a"
+  },
+  {
+    "name": "Dahmer Glasses",
+    "type": "Face",
+    "group": "Hardcore",
+    "id": "70a2ef5caed994554ee49d1591ba1734022ebb55fcd75b563900b9fd6f95c675"
+  },
+  {
+    "name": "Einstein Moustache",
+    "type": "Face",
+    "group": "Halloween",
+    "id": "9960ac784715dd22454bdbc7ef422773677653cab854d0d50f4af3db3804f11c"
+  },
+  {
+    "name": "Golden Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "31e9a360e9ab4422853e3cb1b12c3f56308d0abce1ae3ac635f2b8370d3ad257"
+  },
+  {
+    "name": "Googly Eyes",
+    "type": "Face",
+    "group": "Supporter Edition",
+    "id": "856186b8d338d97c64754d53a4737d8911945dc6354332d7501f951521f6c38f"
+  },
+  {
+    "name": "Green Alien Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "38dd005b734dfdeae9e9052adc7a31e521fa2e953b5f9a44818cdf28cd09f5ac"
+  },
+  {
+    "name": "Green Heart Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "fee212303a0a28cf14ca5ac0a6117ced3238620a8f511abfa3de09bbf2b04a91"
+  },
+  {
+    "name": "Hallowee Mask 1",
+    "type": "Face",
+    "group": "Halloween",
+    "id": "3ca5ac52a2cae2a64699797495a6d8c8aebf9b795d686af709243170986c2170"
+  },
+  {
+    "name": "Hallowee Mask 2",
+    "type": "Face",
+    "group": "Halloween",
+    "id": "415320f1331f26f7b6350a40603e61e9ac1e5a625deb12d1aa442d75b0b42de1"
+  },
+  {
+    "name": "Hallowee Mask 3",
+    "type": "Face",
+    "group": "Halloween",
+    "id": "16c2264263221a6839bd1b011ab4857c47d240348d66cba4e67b7b675484da34"
+  },
+  {
+    "name": "Hockey Mask",
+    "type": "Face",
+    "group": "Hardcore",
+    "id": "2355890a3edbb90ce7f7005273e01dbdaf91bb52be4113f0931e6dc3006b33db"
+  },
+  {
+    "name": "Icepop Glasses",
+    "type": "Face",
+    "group": "Summer",
+    "id": "8eab7c88a069be084c87d004949d7773b46e237d25178ab6de356981cdb8f6fb"
+  },
+  {
+    "name": "Killer Bunny Mask",
+    "type": "Face",
+    "group": "Easter",
+    "id": "66006184c305ad856b21fb71a9613f2cd8e03f7558b94e16dd296ebc4e5035eb"
+  },
+  {
+    "name": "Monocle Black",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "e97a6865506e66ccc7d83c9275a58557b5eea136b13b3b8fdbca5e50656fdc9d"
+  },
+  {
+    "name": "Monocle Bronze",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "92d6a32a5a89c543339d4f82e3da930fd67aa9cc7ade74818bcfeab836c51404"
+  },
+  {
+    "name": "Monocle Copper",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "f92601efd5a7c645b55a7a5b0f211fa97df68435d385bbce3cc4c26d8ce31abd"
+  },
+  {
+    "name": "Monocle Gold",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "fa846044fc08ad22bac1fa0e8af3b15640d44612bf4246b0808a294ba49f8c52"
+  },
+  {
+    "name": "Mustache Mask",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "b1c9c6bb489db368fd479be5877fb63e670cbc7a5874ed493a3ec05d456171c4"
+  },
+  {
+    "name": "Oni Mask",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "790c48f84e5a1d2cd679f6aa6168985bee2e666e6ca014af0231c4b5b8eacba3"
+  },
+  {
+    "name": "Orange Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "c4fb2cfdbaf875f71e3a5ad5c6030f927d766cac5473b1394df9a3f8f804465c"
+  },
+  {
+    "name": "Pink Alien Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "3ed655db94af6c1861b5ac6e9eceedbfb1ea9571350c0e6e03de5db7bc516461"
+  },
+  {
+    "name": "Pink Bunny Mask",
+    "type": "Face",
+    "group": "Easter",
+    "id": "a57222c9cf38e6358d563975a00ff5e17f6f476c46eec332c3e8f0f3f956b6d3"
+  },
+  {
+    "name": "Pink Heart Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "d82fa4c7dcd0630612d01a5b4dac356616d4826154c287ca220920a90d341b6e"
+  },
+  {
+    "name": "Pink Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "04faa2bdd5d1a6cf26b93e92504396963f82c064dac7337f0255410a64f1f096"
+  },
+  {
+    "name": "Pixelated Shades",
+    "type": "Face",
+    "group": "Hardcore",
+    "id": "1de486f43b1a13aa30abec1e119b240cb3684c9339d82868a902e18dcf242dae"
+  },
+  {
+    "name": "Plague Doctor Mask",
+    "type": "Face",
+    "group": "Map/Monster Exclusive",
+    "id": "a5902768ea98d182982cd19f077c66b85870dd3670d059329313f167ca474be7"
+  },
+  {
+    "name": "Rabbit Mask Blue",
+    "type": "Face",
+    "group": "Easter",
+    "id": "074033f819792e64915e2fc81159281c456e89948351c872247457cc681edf84"
+  },
+  {
+    "name": "Rabbit Mask Brown",
+    "type": "Face",
+    "group": "Easter",
+    "id": "5ff9ecd5a0e99fee360abcb3ae58d2461a21938a683b6974825ed334867f6a44"
+  },
+  {
+    "name": "Rabbit Mask Pink",
+    "type": "Face",
+    "group": "Easter",
+    "id": "f5ea26ffce933d0590942c1e986ebc904f21b28c394ab60cc4556ea3bd6f52c1"
+  },
+  {
+    "name": "Rabbit Mask White",
+    "type": "Face",
+    "group": "Easter",
+    "id": "3179636f5fb2d8630a7e05d98c915fd82a3ccbd2259ecd3d6a684cdfe776f47b"
+  },
+  {
+    "name": "Red Heart Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "e919d35654e1dce3e5df5d1282f861567e2c973dc70cd2048d6fa20569e29edd"
+  },
+  {
+    "name": "Red Reindeer Nose",
+    "type": "Face",
+    "group": "Christmas",
+    "id": "c9a1da7f492babdd07aef8b32d60dad0482f7314f3a8c7b8c8c3ad10982d4bf9"
+  },
+  {
+    "name": "Red Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "957e9f41b4be69ef96bf05c65346e3a0d68c03cd1a2121513f756c46982fb664"
+  },
+  {
+    "name": "Snorkel Mask",
+    "type": "Face",
+    "group": "Summer",
+    "id": "6479b06689dc5b51e392ffd3336242c5655bf00778ea3d29eda266dbbe34ce48"
+  },
+  {
+    "name": "Spider Glasses",
+    "type": "Face",
+    "group": "Halloween",
+    "id": "2177e5016b5c95c36d22e66f832482abe9faa6e1e724fd979990cf42b068d9f3"
+  },
+  {
+    "name": "St. Patrick's Beard",
+    "type": "Face",
+    "group": "St Patrick's",
+    "id": "cf9f0892b255608e955130b628de50afa55fc6dedb138b5cbade5f8a84b7a912"
+  },
+  {
+    "name": "VR Headset Black",
+    "type": "Face",
+    "group": "Special",
+    "id": "9b47a7bacb3795f0f56d891342ba60c4fe13347d57ef1f66cb9b625754d49c19"
+  },
+  {
+    "name": "VR Headset Gold",
+    "type": "Face",
+    "group": "Special",
+    "id": "a9e6ee78345d79398b2c37821f73752476201b1472be8e541f910a7ffcaac606"
+  },
+  {
+    "name": "VR Headset White",
+    "type": "Face",
+    "group": "Special",
+    "id": "f572c4edf0b7c682094d3e84725cca22e78db38700a7f3e90224ca6259ac4c50"
+  },
+  {
+    "name": "Watermelon Icepop Glasses",
+    "type": "Face",
+    "group": "Summer",
+    "id": "b7d9901952787ef34d13e6febc032fbd02764867cbf95b41131d3ab1884ec608"
+  },
+  {
+    "name": "White Rose",
+    "type": "Face",
+    "group": "Valentine",
+    "id": "47386fc137c6925d3ed6970df05d7e1a5be3acae3ee0edda21288c06c56c3e99"
+  },
+  {
+    "name": "Yellow Heart Glasses",
+    "type": "Face",
+    "group": "All Maps",
+    "id": "acffe937ea536ca6693e02244a043485bd8c6c08c54aba5316ac110677bb6263"
+  },
+  {
+    "name": "Blue Bouquet Flashlight",
+    "type": "Flashlight",
+    "group": "Valentine",
+    "id": "2b45e4469989e6323349dc5763cd223284735848c2dbcc1b23d6a7e48cc007f5"
+  },
+  {
+    "name": "Blue Flashlight Bulky",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "33c104903e8b870fe0e45edb7dbc07b4b50ec7ee015dc69d1558880ceb479814"
+  },
+  {
+    "name": "Blue Flashlight Thick",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "05adf12bf0d04783b488dc27d71d844d00db3a4a7cc0bb3a0b46ed44451220d1"
+  },
+  {
+    "name": "Blue Flashlight Thin",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "63fe11e08a562e0a5869c7d98713654b6764a73fa8025d230561ef3b089e77db"
+  },
+  {
+    "name": "Blue Pool Noodle",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "59ec7c2529f606d8f38562d58efc21ec984690f28c99abf5658f9746e45e84fe"
+  },
+  {
+    "name": "Carrot Flashlight",
+    "type": "Flashlight",
+    "group": "Easter",
+    "id": "abb9da8597c0bf3f6315fd8b58420d8dee241fea39bc1533f368169604dff9cd"
+  },
+  {
+    "name": "Christmas Flashlight",
+    "type": "Flashlight",
+    "group": "Christmas",
+    "id": "cf948e734da3b585f673907ad46e491d1a816c070957923b1989ac1d993e8f46"
+  },
+  {
+    "name": "Ghostie",
+    "type": "Flashlight",
+    "group": "Halloween",
+    "id": "8f0795a05dc8ea7f5626f93443ff3d3ec33862518682b29112b378ace8933a63"
+  },
+  {
+    "name": "Gold Flashlight",
+    "type": "Flashlight",
+    "group": "Hardcore",
+    "id": "68c2b7799adc94ef3f532acb0ce9024312ab73726e89633a7dbd24b33e497506"
+  },
+  {
+    "name": "Green Flashlight Bulky",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "33fef982d78fcc707dabed8e54e8138c75ec96e479dc12e4b0caba15123df8ba"
+  },
+  {
+    "name": "Green Flashlight Thick",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "3c0c0fbc609077a2601f2f5567d09462c15cfb2f5e0fe66f9c2cd58d0d95129d"
+  },
+  {
+    "name": "Green Flashlight Thin",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "2798f8bee11b837e4d02869aad532cafd61b8bad46110799c0b274f31bb49698"
+  },
+  {
+    "name": "Ice Cream Cone Flashlight",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "5c642546b8d512f24a02e6140bdc36b7e2cac1859c921f5ace3bd33b2fce4680"
+  },
+  {
+    "name": "Icicle Flashlight",
+    "type": "Flashlight",
+    "group": "Christmas",
+    "id": "e8d1f9ef380e3458de443092596a840bde2d87cf1d655ad372fd34356b9cf16a"
+  },
+  {
+    "name": "Pink Bouquet Flashlight",
+    "type": "Flashlight",
+    "group": "Valentine",
+    "id": "dc11eb0c74699ffed2a5be58284cec86bbfe6508e760ff04c6c1f44817a45fdc"
+  },
+  {
+    "name": "Pumpkin",
+    "type": "Flashlight",
+    "group": "Halloween",
+    "id": "781f7d72beec8d660f6e6f495e5bcf9207ef660aa6e77e60313aa171ef324a65"
+  },
+  {
+    "name": "Red Bouquet Flashlight",
+    "type": "Flashlight",
+    "group": "Valentine",
+    "id": "ef492a950e83c227f8d4925129952972196baa26f7fed8175f3d7f93e1a7e9ea"
+  },
+  {
+    "name": "Red Flashlight Bulky",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "16248e36760f3fdf8412a99c948b000a696ab155b06245fbacb45ee64d62902c"
+  },
+  {
+    "name": "Red Flashlight Thick",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "9f7eb9bbbf85928a6dc32842b79c365257d2a165dae354dc06765e0ec4fea46c"
+  },
+  {
+    "name": "Red Flashlight Thin",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "5219baebf55e662e52b49b6338e62e4fb7b0d0ff43a28cf3ba20273a2a214b21"
+  },
+  {
+    "name": "Red Pool Noodle",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "763e06d5f4b788604e7af84cfc7c20033baad75a9566d835096a7e6e088b9a12"
+  },
+  {
+    "name": "Rusty Flashlight",
+    "type": "Flashlight",
+    "group": "Hardcore",
+    "id": "7ffe807c32845336e9dac08d0ff3505c94e381a529495342564bc392b986aa81"
+  },
+  {
+    "name": "Shell Flashlight",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "4ff7b475deca2f833e17a80b25e110591d113194db524c7cd7fc4599323f59eb"
+  },
+  {
+    "name": "Silver Flashlight",
+    "type": "Flashlight",
+    "group": "Hardcore",
+    "id": "a905389ab44cd62f67b62b6e8bbad221c8bb8488b6ca19d1c85211d7f3e9e464"
+  },
+  {
+    "name": "Spatula Flashlight",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "29b40f9ed0608e84dc5c6e750141f913ba53a1d10bf47761dc9247f822818e25"
+  },
+  {
+    "name": "Tutorial Flashlight",
+    "type": "Flashlight",
+    "group": "Special",
+    "id": "160b8abdcf52de4aff0cbcc8b0c7824d43018bf9b5f3afa84f28e65d55d3ff90"
+  },
+  {
+    "name": "Yellow Flashlight Bulky",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "f22e8ce129e9c8449ec534b5e4317227da4b72874fa274be08ce350f99781396"
+  },
+  {
+    "name": "Yellow Flashlight Thick",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "d57dde722863079fa5ad946b3888fda2cfe42f5af0a9065b7d78c85bd2fde7d6"
+  },
+  {
+    "name": "Yellow Flashlight Thin",
+    "type": "Flashlight",
+    "group": "All Maps",
+    "id": "b4fb13ff4fa1c46ac0c4f87f4585dfd48ed41a4930c7c7bac9c6e196372321c3"
+  },
+  {
+    "name": "Yellow Pool Noodle",
+    "type": "Flashlight",
+    "group": "Summer",
+    "id": "fee610664f6cfaea469c2e433bf0f4acfac6c962c621b8921dfff3cf59df889c"
+  },
+  {
+    "name": "Yule Log Flashlight",
+    "type": "Flashlight",
+    "group": "Christmas",
+    "id": "02b88301214de99de89df7dedb5ad83f1f56960ca4a43807b6a3beef00278f42"
+  },
+  {
+    "name": "Bat Glowstick",
+    "type": "Glowsticks",
+    "group": "Halloween",
+    "id": "16f36dfaf3457bbd8981e31059fc2d115802cc9ea118479118d79e6af01d2bc5"
+  },
+  {
+    "name": "Bone Glowstick",
+    "type": "Glowsticks",
+    "group": "Hardcore",
+    "id": "7fb017c0c69f9e0f7491d4d62c51e5e7c9092275a241785eba713da29814a555"
+  },
+  {
+    "name": "Candy Cane Glowstick",
+    "type": "Glowsticks",
+    "group": "Christmas",
+    "id": "f620360c2da29cca2965e40ff6300d9f77c343b30a7e35b42fc2918590fec1a9"
+  },
+  {
+    "name": "Christmas Tree Glowstick",
+    "type": "Glowsticks",
+    "group": "Christmas",
+    "id": "f117b6b905b4418ca59f2390a44fcda4361b99b2b9abf33eccc28fc43bfba597"
+  },
+  {
+    "name": "Cross Glowstick",
+    "type": "Glowsticks",
+    "group": "Special",
+    "id": "d9c013204fc79c73ccbc828e5bbbf1fbd43714adb0288e80c7e3f888cf7e5410"
+  },
+  {
+    "name": "Egg Glowstick",
+    "type": "Glowsticks",
+    "group": "Easter",
+    "id": "2e13747dd88bc8082f149ee4b9607540ad9012caba10ddd4c4b8c703a65e3dd9"
+  },
+  {
+    "name": "Feather Glowstick",
+    "type": "Glowsticks",
+    "group": "All Maps",
+    "id": "2e97a94a26d4e75c99ff88a4ac5a9e5cb79689fd6023192c779a2e622e2ee926"
+  },
+  {
+    "name": "Fish Glowstick",
+    "type": "Glowsticks",
+    "group": "All Maps",
+    "id": "66727e8b12074203f8b1d2e52dfc4d760c8bfe867ecf7bf12612d90f13f510ee"
+  },
+  {
+    "name": "Ghostie Glowstick",
+    "type": "Glowsticks",
+    "group": "Halloween",
+    "id": "ee0a351ad96c420e40024b48d579a986a2f7e257d6b2565aaf1c29471205dc3d"
+  },
+  {
+    "name": "Gingerbread Glowstick",
+    "type": "Glowsticks",
+    "group": "Christmas",
+    "id": "89c7c1b4d36ea9f455920f2f37e33be653a61681b1113d22dad63acf7c34358a"
+  },
+  {
+    "name": "Heart Arrow Glowstick",
+    "type": "Glowsticks",
+    "group": "Valentine",
+    "id": "70d92dedbda8644281860dcd0b61d1f1e82bd7f3aec7e3855598d4327b5c420c"
+  },
+  {
+    "name": "Heart Glowstick",
+    "type": "Glowsticks",
+    "group": "Special",
+    "id": "1500e031d8b7616afeaf5a1408f317c57b6481f9743680c99ffdf22c917ac127"
+  },
+  {
+    "name": "Icecream Glowstick",
+    "type": "Glowsticks",
+    "group": "Summer",
+    "id": "651e50874c45297ff1e5d426945f38707882483f53320d71df7dbeae6bf2b2c9"
+  },
+  {
+    "name": "Icelolly Glowstick",
+    "type": "Glowsticks",
+    "group": "Summer",
+    "id": "c5e74674a6c9ae36596452cbf09fe6210d0f64951891f45aa7420ea007a8b7ef"
+  },
+  {
+    "name": "Jellyfish Glowstick",
+    "type": "Glowsticks",
+    "group": "Summer",
+    "id": "f43f45ee908cb0eff52e8a180e5e9c3d763c2b988ee433a4bd2e61d45484e02b"
+  },
+  {
+    "name": "Leaf Glowstick",
+    "type": "Glowsticks",
+    "group": "All Maps",
+    "id": "010500c83154ffdca03abebd662252a2b83f9c56de093c2cdd7ac17ec04bf9d4"
+  },
+  {
+    "name": "Lollipop Glowstick",
+    "type": "Glowsticks",
+    "group": "Special",
+    "id": "dde99c932358186c73d6163658575ca88bee01182367046ef070b6f60ae80f20"
+  },
+  {
+    "name": "Palm Tree Glowstick",
+    "type": "Glowsticks",
+    "group": "Summer",
+    "id": "132f135b9f7ce4dc7c84efb50071968f01951d0cf8560cc7e79011f0ca861a5d"
+  },
+  {
+    "name": "Pentagram Glowstick",
+    "type": "Glowsticks",
+    "group": "Hardcore",
+    "id": "3ae59a80ce52d9e94e7cdd25013482d033592b7bd7d12640bd9f0f1e706ec8fc"
+  },
+  {
+    "name": "Pumpkin Glowstick",
+    "type": "Glowsticks",
+    "group": "Halloween",
+    "id": "54474e1941c2670337c745081095afedcc48463e4b479625e9ba00dd5ea322e7"
+  },
+  {
+    "name": "Shamrock Glowstick",
+    "type": "Glowsticks",
+    "group": "St Patrick's",
+    "id": "e8835d92f553f2f65272b17b708316b3972b3dfd99efa60373757bf50b7dbfec"
+  },
+  {
+    "name": "Shell Glowstick",
+    "type": "Glowsticks",
+    "group": "Summer",
+    "id": "f717f2b0b08f3f1b67ffd1829123eccd331400254e789dab54104b7d96fe82c1"
+  },
+  {
+    "name": "Skull Glowstick",
+    "type": "Glowsticks",
+    "group": "Hardcore",
+    "id": "087babe23da7a1c238746d9ca414d5e2bb20c5e9319057102a81a373cd927007"
+  },
+  {
+    "name": "Snowflake Glowstick",
+    "type": "Glowsticks",
+    "group": "Christmas",
+    "id": "3e84b47e66e08017bf499387488b033d15bcac7fd3a86402becc91a9a85a606b"
+  },
+  {
+    "name": "Spider Glowstick",
+    "type": "Glowsticks",
+    "group": "Halloween",
+    "id": "c21822128619b7d5a86073ed08402ae748cf1ad2a35b14605faa4ce7d862c06f"
+  },
+  {
+    "name": "Star Glowstick",
+    "type": "Glowsticks",
+    "group": "Special",
+    "id": "a88c769847f3024a819051e934a5e517df58d278cbe8939e9f380e8ea40fd6ad"
+  },
+  {
+    "name": "Anchor Sailor Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "060cf0feeddac3c82b40011c2df716bd66a984a19b2084e89fe284594e60c429"
+  },
+  {
+    "name": "Anniversary Hat",
+    "type": "Head",
+    "group": "Special",
+    "id": "79efc36a4d92c96ab598217716273475681f2d556622fe429e1c6ce4f9f6b8db"
+  },
+  {
+    "name": "BBQ Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "516ebb0eda0b457e3e96902a6485d7a33131d2394bb0f4e10d494d561f783dde"
+  },
+  {
+    "name": "Beer Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "cd89962c0f59ab181caec2ef1c6c5e51576021439c2e51f826857ddc2959f50b"
+  },
+  {
+    "name": "Black Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "f14b2ec63965497d0572f941a7d1f3bfd94355dd3492e9552fe1524736738312"
+  },
+  {
+    "name": "Black Beanie",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "fc8583b02617860c4fea19591d03f50608aae744b802f78258f6359c439139c5"
+  },
+  {
+    "name": "Black Bike",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "ed8b4b2f00319bf0ee28b58544d02c04adc432fa1d074afbd0485f791e299f86"
+  },
+  {
+    "name": "Black Cowboy Hat",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "45076a6261b87842cd56825796adfc1a5ca7d3f25cfbfc66e22ef2d4bf1aaf27"
+  },
+  {
+    "name": "Black Motorcycle",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "af111eb97a35782dd2f0e5d458767d3d1af0c649e7f128ea2ed35104dc1a2792"
+  },
+  {
+    "name": "Black Santa Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "020f246cbb405ac7a6f0768cf0e7ad854d91e8b83528632a4322182de27b3560"
+  },
+  {
+    "name": "Black Straw Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "8cbeec3bb6e1f9fb00b1eed674f10e889cb6905083917210aaa64fa74e6448a9"
+  },
+  {
+    "name": "Black Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "0f5dd1e2876aa32d8f92f2044af2049662169db5efdc7ad1851105cefbef22d4"
+  },
+  {
+    "name": "Black Tophat",
+    "type": "Head",
+    "group": "Special",
+    "id": "fc074d37a84a2a320d748bd3a18e1e597aabd47e3be08e63b00cf0474662abd9"
+  },
+  {
+    "name": "Black Witch & Belt",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "0694f4c32f8808cfb3d5525cdda4afb6b502cda5b881a0d177dbb0c90ff0a8dc"
+  },
+  {
+    "name": "Black Witch Brown Belt",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "0935f6b718194086df77e7a34f0eac3416f6a83125debb4da87a3ffa2cfed4f9"
+  },
+  {
+    "name": "Blue Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "2f88afcee0c9b43e5cfbe5854ba3fcd9e7756445779678a1659acfcfe09afee0"
+  },
+  {
+    "name": "Blue Beanie",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "9da246e07af1cda7f5177753a2d5e7b9ace95ded8fcbbb7cf9f714ca165dc9fd"
+  },
+  {
+    "name": "Blue Bike",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "b0ccecabee4695216383f0eaa343c75821851375e82f2db081fd964682851886"
+  },
+  {
+    "name": "Blue Flamingo",
+    "type": "Head",
+    "group": "Summer",
+    "id": "f328975d64b0a3498be5a7516a4fc055c91445256ee2cd39486afc7c60b7397d"
+  },
+  {
+    "name": "Blue Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "4baa487742bd8d01b559e5c11771e6bbc1895a70a8c19dd645e44db7e46d8610"
+  },
+  {
+    "name": "Blue Motorcycle",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "5471dbabdd502b979b34b59e173db78f1fc1036630306d4e45fd618a3f63de3d"
+  },
+  {
+    "name": "Blue Straw Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "7260c50626ca36c7e87b42fa1b73cf33c9b0fcf0127e6064a1c067ad179d9beb"
+  },
+  {
+    "name": "Blue Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "2f266879dfd40c47646e16c223f4af8221c2021e5055e288da8371e661c67a31"
+  },
+  {
+    "name": "Bowler Hat",
+    "type": "Head",
+    "group": "Special",
+    "id": "50013e8dd89c960c0e1f5f1d96c4d8df8f22fb1f558c7831e500b65b9a2f8a94"
+  },
+  {
+    "name": "Brown Bunny",
+    "type": "Head",
+    "group": "Easter",
+    "id": "9862beb169a2100bd35516e6a338d0e4111fa54e9dde870b4d2d3913abe369b9"
+  },
+  {
+    "name": "Brown Witch Black Belt",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "908e502b23eaf62009e805a127a2798b9f1411d57f6150f6e60c9220caff16c4"
+  },
+  {
+    "name": "Caesar Diadem",
+    "type": "Head",
+    "group": "Special",
+    "id": "38674dea4c8d6a610ccdfd397dda3263026406bcd0c06c947249599b548f1e5d"
+  },
+  {
+    "name": "Camo",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "d6f334352d2af02759b755a2e80ab5814e5e5148b9d8de0bfe74239cc2a82c54"
+  },
+  {
+    "name": "Cat Ears",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "c86654f6e5f9d71f7c5ae2d6fdf9cada08d4bf0bcb2a59da755300760252fd2b"
+  },
+  {
+    "name": "Christmas Beanie",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "2c42ffe30d8aaa22a334232d288e98022189ef0aced33d74c3c06ded637ce964"
+  },
+  {
+    "name": "Christmas Earmuffs",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "a893ed206c0a90a9658edc500b5cd6edb5588dcc483a458b3c40638a77cadf0b"
+  },
+  {
+    "name": "Christmas Headband",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "a86835522ced8e9afb45f363823920507d447bff4d8014e0a9651a5dd141c14f"
+  },
+  {
+    "name": "Christmas Tree Lights Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "3220333056640b99bcd2e41295842b7465a9343bedbfb9952817e2510bfdd24a"
+  },
+  {
+    "name": "Christmas Twirl Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "85d3e86606d3fe617ec34d31f2844584f8e1a1162df10e45bb9b485ab18b0715"
+  },
+  {
+    "name": "Christmas Ushanka",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "5eade30dd0670e019e896136213fd2bdefe388c453252eee9761f53a726bf21c"
+  },
+  {
+    "name": "Clown Tophat",
+    "type": "Head",
+    "group": "Special",
+    "id": "3e3794e0298f5141fee7811d95031f2f7a604b1cca10a0525b6270718c4105c8"
+  },
+  {
+    "name": "Cowboy Hat Tan",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "5ebde074e3ee56d27e163630d52b8d0c6db922146792c1cadd1be0175146616b"
+  },
+  {
+    "name": "Creepy Smile Pumpkin",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "b1a9fbb6e12a5121672901e1234f5327451651394fe86d978f2125f65e819463"
+  },
+  {
+    "name": "Devil Horns",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "b68df2605c15ee3c9154c43264885bf632be5b072b29fb4d7ed1f96183de8566"
+  },
+  {
+    "name": "Digital Camo",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "776ebddbf10f9a84b06baa67362ca723a6c48eeebdcbe0f8f87f56f6b73f2909"
+  },
+  {
+    "name": "Dolphin Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "e66258382e272d3f4d83655f14ddb25b42053e0f062fd05ad55d8df0201f678c"
+  },
+  {
+    "name": "Dunce Hat",
+    "type": "Head",
+    "group": "Special",
+    "id": "f8aa12fad9af524ac44fba9b03bf20bcfa426c3dfe40a8bb94b4326f57a1143b"
+  },
+  {
+    "name": "Einstein Hair",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "85ee867f6783b9cef85a0493b37ed1e9b5b340e90946a4f2fc9135ce80806155"
+  },
+  {
+    "name": "Elf Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "140983522b381bf83d0ab563294f4fefe06bb33d3374563ce4f9b2c3dae13a54"
+  },
+  {
+    "name": "Fishing Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "9ad7f10eb2a12af95eed183db3d215c42a83299bbb80c601e1127f010e3a28cd"
+  },
+  {
+    "name": "Frog Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "71ef8b2a4e1475dec187492d7a3f31390296847b3b0876f72c9b9356a55ffca5"
+  },
+  {
+    "name": "Frowning Pumpkin",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "3364b2912bf363600b1e838d4f4e577ed59e51492770fe3ff43f9dc56d09139a"
+  },
+  {
+    "name": "Fur Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "d7ee2840505453bfc2c9144c72b93d9620098691e77a48077c427285edade69b"
+  },
+  {
+    "name": "Gnome Pants Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "ab04e7adb9a54ea5e5673915d0e65aee48102e4aaceb976bcaff73d8d288731e"
+  },
+  {
+    "name": "Green Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "86e52266c39a2b64c65bc4e8072cc77f5169e00ef8725da4841864a22dafb8cc"
+  },
+  {
+    "name": "Green Beanie",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "6b70c1814055b2d564f8d53e72720b429b5ccc5bfffd5ae36d27bc6da02bae96"
+  },
+  {
+    "name": "Green Bike",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "56975368529d727ba59292b41dbc7c5b6f3c9e4275ab31bd2753a85be57d578c"
+  },
+  {
+    "name": "Green Flamingo",
+    "type": "Head",
+    "group": "Summer",
+    "id": "82a53b98787c9c5a105c1bec7982d374147ff56d59fdb14c4764529195e03f6a"
+  },
+  {
+    "name": "Green Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "2425f6778996a921fc51db5c2f211f9791867677f7f01bd23f37ff65e218e37d"
+  },
+  {
+    "name": "Green Motorcycle",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "49fa14c306d8183588b7d104ce15f08ee1323cec6988dfdd3f01172b604bbef4"
+  },
+  {
+    "name": "Green Plaid",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "da5af0f686b8bbfbc224725efec51cfcaf2126075076b517dc6419497da3e653"
+  },
+  {
+    "name": "Green Santa Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "e634268d0c6715efe35f84c8a7d521e8145f65821d333baae04e17ffc415521d"
+  },
+  {
+    "name": "Green Straw Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "630de20eee53718bb74d2d9b0ec7ece93c0bba5aa769b19281dfdcdc7246e3ca"
+  },
+  {
+    "name": "Green Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "a4d83c7a8a65ce17c4fad4c9f185cf642aee28d206658016983da13727bd4c58"
+  },
+  {
+    "name": "Helm Sailor Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "f1dc21dd1baa86405692ca12a0a3ac47f51c21ad28e0658359a9642793def0ea"
+  },
+  {
+    "name": "Hotdog Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "6850767038ab43621b4805e32bd7b84bf56e241e844d808105b48d411cb631fc"
+  },
+  {
+    "name": "Ice Cream Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "1739db78b4d45aea17598b85c2e74de6315fee940ad6b856dde310b74a922b0a"
+  },
+  {
+    "name": "Ice Cream Cone Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "ba06553269aabe09c6982e2e281cd4be9ee5c8d05dc34307a5099acc150b8a97"
+  },
+  {
+    "name": "Jack' O Creepy Smile",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "b6cb311d57b8103256c38e2b24cf6ce2bbdfbf77a92c3400af4ef1fd670f5694"
+  },
+  {
+    "name": "Jack' O Frowning",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "c28d5193773d06d062f76ee0511d7846573587c9fd681ce306546bfee76b47ba"
+  },
+  {
+    "name": "Jack' O Smiling",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "0905bfc067bae9b65d3f8ed6c13091e07657ceed2554bc13900174c38d0135ea"
+  },
+  {
+    "name": "Jack' O Surprised",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "c73b6407a16de5f6573182f9d46bff77e3bef89a2a4b471dcab2d5c23c1e8779"
+  },
+  {
+    "name": "Lab Cap",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "0b5f8528930164134448e53c2e61c8978f165daa58df9b113eacce97a5116716"
+  },
+  {
+    "name": "Maroon Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "10d2914bb467654c03cd1b56abec9f3d54fc9af0449366113a343b68528561ce"
+  },
+  {
+    "name": "Military Boonie",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "836120878df1983593182abb43cbb9cc9160b3e0ec8e0970b9bfee4b1facceed"
+  },
+  {
+    "name": "Military Cap",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "d82f55133df3b8bf825a627269674a922706331600226825c4845855a51afc07"
+  },
+  {
+    "name": "Mint Stripe",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "9677638394aa7b0d80942f3c173e794b707005a97974a506570ef0685408cae1"
+  },
+  {
+    "name": "Mistletoe Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "5ac79cf020e1cb5d4756f1856f6a0749fe7dca8edbfed1de4c7aea87e59f0a0b"
+  },
+  {
+    "name": "Nameless Varsity Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "e16e603a3015dbd3585e77e5075df4784b08dc778d3e0e28195388bedd87bb20"
+  },
+  {
+    "name": "Orange Grunge",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "f45e30d3a0b13472e037881f8af79f54d7d4115dde2a0c46bcb0efd49c2acd6c"
+  },
+  {
+    "name": "Orange Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "ba64cfd2348cd85187ecf8840b712a4f05de261a5acfba1559d30314de5c60dc"
+  },
+  {
+    "name": "Orange Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "923f90a951b722bdd0f2f995a561178064320b2f62a097594cbe83e9ef5febc2"
+  },
+  {
+    "name": "Paper Boat Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "dae03df744a7debc5a97868cdf1216a1b6889accbea66010b93234ee4fa59d7a"
+  },
+  {
+    "name": "Pig Mask",
+    "type": "Head",
+    "group": "Special",
+    "id": "1ff51e7da0f9a3b29849d21fd69681eedc1ce2a5279fdf20bb91468789f62bae"
+  },
+  {
+    "name": "Pigman Varsity Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "82daeb20a1f7c11ca0535a7a69938687f6db1fd22983099f7c507c2ef90ff496"
+  },
+  {
+    "name": "Pink Beanie",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "55f4d10495867c836c3aa107997d663bd37d51e3a1faa1d1e705eb9f48eecbb2"
+  },
+  {
+    "name": "Pink Bunny",
+    "type": "Head",
+    "group": "Easter",
+    "id": "97aa0694ebee354b59b4cbfb41fc726aa9dadab106641714c50b08baa1d74d4d"
+  },
+  {
+    "name": "Pink Flamingo",
+    "type": "Head",
+    "group": "Summer",
+    "id": "f282392f292e6ba03b46f44c8f48997c6a8da5d989a7b4588747f7c0a2d39203"
+  },
+  {
+    "name": "Pink Ribbon",
+    "type": "Head",
+    "group": "Valentine",
+    "id": "543089aa4171fa8f3a871141d815cfac472eb84fa1e0ee54efdfaf68bed562d2"
+  },
+  {
+    "name": "Pink Stripe",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "2cd0516555ff43f2dbb483d323473674babc66b3cea9208904a44ec8bc41c350"
+  },
+  {
+    "name": "Pokemon Cap",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "b6d069f53ce253ee2869d968f7b483fb8a8667dbbc0affcadfa4792f307a6fdd"
+  },
+  {
+    "name": "Purple Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "35251a54ecd42685a2924da3264102b6fe56012830af357521a44d980a263cb9"
+  },
+  {
+    "name": "Purple Grunge",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "7e65d9669c843bc040a8ad9c3665b394ef9538430c18aae1bf2e8bc678a8ffc5"
+  },
+  {
+    "name": "Purple Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "8a47a7eddccfa298cf684be1944d55c140519364e2c0b0869385e399e00163a8"
+  },
+  {
+    "name": "Red Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "ff8cc9d5b4a1def8bb20e460a3df1ca07136228352a32d2cf6a31c47566e4aa7"
+  },
+  {
+    "name": "Red Bike",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "20af52978a3b2559d060eda5a5806844006370f8d184e28dfba0f236da7aec36"
+  },
+  {
+    "name": "Red Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "104a3b265709f6505c54436500a21553fb66e4a90881c7a61f25a4b7c68d69f4"
+  },
+  {
+    "name": "Red Motorcycle",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "4588750f393f91a7ed7bfa8ad2c250f814d1a6932a642b8c7953fe524110e656"
+  },
+  {
+    "name": "Red Plaid",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "62c0a410ef8df164522aac967cf54c0ea70f13a72be1868a3006af7f33645e85"
+  },
+  {
+    "name": "Red Straw Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "227768b20c783c6bd6877638d2babbd8350410fa322a4660b233801a76b1f38c"
+  },
+  {
+    "name": "Red Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "bc2ebfe6673bb3006a0275e5d459b242061bcda8bd8096333ecdf0bca692a457"
+  },
+  {
+    "name": "Reindeer Antlers",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "7c5d5738ff3e06dfb163fe411f0483954cb5018de6d292c5c79dbcd9c70ffe7e"
+  },
+  {
+    "name": "Rice Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "8433e320cf79b0e871315e6f9d77bdf9af1afe1f4b1193e792298ac913fc0fb6"
+  },
+  {
+    "name": "Rose Crown",
+    "type": "Head",
+    "group": "Valentine",
+    "id": "33b99ef86a9b8f58ffac71846ccfc9cb2bc7ee5f977d0222910f2d26e43ea065"
+  },
+  {
+    "name": "Safari Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "9dffffd4da636c1f6a07e098bbf61d94bb903a302a0402d13e80ff28d249424b"
+  },
+  {
+    "name": "Safety Helmet",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "efd5c5255fa553a650d85160f97b39764382e3cdc4bc9e966541210335899bba"
+  },
+  {
+    "name": "Santa Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "7b463cbe5e147b6687ab211a10cdbe21a33f37ab982ee5b1f5d738718bd48fe6"
+  },
+  {
+    "name": "Shark Cap",
+    "type": "Head",
+    "group": "Summer",
+    "id": "3c5d90212e7ae6924b389ffe42b5e791d119af574d8623c189992797dd070c87"
+  },
+  {
+    "name": "Smiling Pumpkin",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "1193b13a71535623fcb45b30c05926b27b5d8cd8a5c37117ddf6a941d7ccfd57"
+  },
+  {
+    "name": "Snowman Hat",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "8691620be68c334c5356511fe0f8c543cb93325d8e25f0d25154a6eb9edd3a9a"
+  },
+  {
+    "name": "Spider Beret",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "78bbf4846cad37c708a7a1169e066159a764ba6f0297d64b72e668cfd3685022"
+  },
+  {
+    "name": "St. Patrick's Hat",
+    "type": "Head",
+    "group": "St Patrick's",
+    "id": "7cd27fe453659eb01bf4758f6a9947e4fba74067aa7fd525c0459295ddae801c"
+  },
+  {
+    "name": "Steampunk Tophat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "d2d4814fabcf2f512b937c2a3ef016a4726177d263526177e5e6f1bc13b28537"
+  },
+  {
+    "name": "Surprised Pumpkin",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "31b7a1d5499831847faaa5722a2b740e0756feefcdc6c57a616aab8eee9a2b52"
+  },
+  {
+    "name": "Tengai Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "92031af9e9a2e8cdf9873e356c3ca2df28bbe3ea9d2702e3fc53baa652b8d958"
+  },
+  {
+    "name": "Texas Hat",
+    "type": "Head",
+    "group": "Special",
+    "id": "f91487ff35337d8eee1fd20e3049c711942df0debf111eccfc6ab666349cad43"
+  },
+  {
+    "name": "Tiara",
+    "type": "Head",
+    "group": "Special",
+    "id": "bfc06804c761c1936f9b63e47ef877cf6cb95086d7088909c78956eccd0ea824"
+  },
+  {
+    "name": "Tiger Cap",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "d82e3b0df09694582be97b58cc0d276b23e732fcf0e3be7f943661b00b91c620"
+  },
+  {
+    "name": "Tinfoil Hat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "4f2f6d38a94ec514fef4e4be20be3ba37347a8ac007891d78b80a88769943811"
+  },
+  {
+    "name": "Turkey",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "e5a6fdbaec94f6a17333d31a9ae211ac419fa35287bcd1cfdcd067b46f3715a5"
+  },
+  {
+    "name": "Umbrella Hat",
+    "type": "Head",
+    "group": "Summer",
+    "id": "89956637fe32953cd3012c5e4869d36f79cac94865ee4719a45af7464dec1462"
+  },
+  {
+    "name": "Uncarved Pumpkin",
+    "type": "Head",
+    "group": "Halloween",
+    "id": "f108d2d4a71a2ecf2735902ee32ec6cd165d6cc89eebdfdee2244670c79bea7c"
+  },
+  {
+    "name": "Ushanka Down",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "5189726d41fc1b3ed3856a2160829a5ae5e16c1cfc382cc8b8fed2fb157c1ac1"
+  },
+  {
+    "name": "Ushanka Tied",
+    "type": "Head",
+    "group": "Christmas",
+    "id": "eb4bf69ed3cd783e0bb6f0f28d32f78f56503ae482df0ae4bcf3e1763f9df1f1"
+  },
+  {
+    "name": "Valentine's Heart Hat",
+    "type": "Head",
+    "group": "Valentine",
+    "id": "be5d6a22eb7db88f2d3083e179c4f14ba86cb301618c962a563eb4a79787ce51"
+  },
+  {
+    "name": "Vamal'ah Helmet",
+    "type": "Head",
+    "group": "Special",
+    "id": "f65bb62f9e82547caa791b59abb57cfb5f9502e112379ee82974c2d7cac60406"
+  },
+  {
+    "name": "Wasp Cap",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "c9f7e99b5a133924b70e5597cf7ee75637b7a345e9015204b317d63f8d4e89b7"
+  },
+  {
+    "name": "White Bandana",
+    "type": "Head",
+    "group": "Summer",
+    "id": "bb173ebf60daad314dee21f85ed5108ea435cc0cb11a389d29d76314be58571c"
+  },
+  {
+    "name": "White Bunny w/Blue",
+    "type": "Head",
+    "group": "Easter",
+    "id": "6ccdecd01d6c0d261a67b3d103b85c406891f44c879aa3674666d7a999a19c22"
+  },
+  {
+    "name": "White Bunny w/Pink",
+    "type": "Head",
+    "group": "Easter",
+    "id": "cd437377c94db6b10efe78f2080aa63780dc0e32e4ad1d8fa14c02a099fec48b"
+  },
+  {
+    "name": "White Horns",
+    "type": "Head",
+    "group": "Hardcore",
+    "id": "d061b0150641690f64747ecb6293c9f6029032d74de364d66069301aaf1f1b4b"
+  },
+  {
+    "name": "White Lamb w/Blue",
+    "type": "Head",
+    "group": "Easter",
+    "id": "30436adb143a9808fc8bc7ecefc22fd6fe2cb498ab53378056ae473ac8b98186"
+  },
+  {
+    "name": "White Lamb w/Pink",
+    "type": "Head",
+    "group": "Easter",
+    "id": "24fc94182a5afb79ed27b0d919535c2fc9b6f03e6c55f44833e96c550c0d611e"
+  },
+  {
+    "name": "White Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "1d3dec20cd31df93323f449b08d496705ec4ec9b45890f7c44374881147517d9"
+  },
+  {
+    "name": "White Tophat",
+    "type": "Head",
+    "group": "Map/Monster Exclusive",
+    "id": "f61fce459815fe43e2524d7b0eac762524f3684da2a3147dbe6d32b05b1e7557"
+  },
+  {
+    "name": "Yellow Flamingo",
+    "type": "Head",
+    "group": "Summer",
+    "id": "97b2b39bf220a82682b654ac8fe474d4153e5c55053fc8f80a2dd22428766c9c"
+  },
+  {
+    "name": "Yellow Tennis",
+    "type": "Head",
+    "group": "All Maps",
+    "id": "e08b88ad3f07dd83c94864feb48f4446a17bac9a498374bebec96ac3197267f6"
+  },
+  {
+    "name": "Beachball Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "8c324394d9d84872d196aee81812ccc969a23d4d38a100420640fcdf1c761aa3"
+  },
+  {
+    "name": "Black Lantern",
+    "type": "Lantern",
+    "group": "All Maps",
+    "id": "56d2ae9be9f93c28347a375780e00aa69db2d1778708ab859922489dabe68689"
+  },
+  {
+    "name": "Blue Lantern",
+    "type": "Lantern",
+    "group": "All Maps",
+    "id": "2919a8d0407299e9ba65357c242aa2452743db0e9ac83fb2c5fde73d65f4398f"
+  },
+  {
+    "name": "Bucket Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "730b50ab0f33e6c83933340085cb7daa6fb4a0a7fa55d139e0ebfba106691575"
+  },
+  {
+    "name": "Burger Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "416b1a5ae3bf25441213fecf7f37a21455098d0b2c5cc84bf4e381bbf514fe7d"
+  },
+  {
+    "name": "Christmas Pig Bauble Lantern",
+    "type": "Lantern",
+    "group": "Christmas",
+    "id": "8b826280e4acfc903ebf840693636d5b9efb9f30c7168eef2b9606ce78e53cb7"
+  },
+  {
+    "name": "Christmas Pig Pudding Lantern",
+    "type": "Lantern",
+    "group": "Christmas",
+    "id": "4101e412d0ff66277c64bfeea3fa8b793742336e024f5f2b597390a146687d33"
+  },
+  {
+    "name": "Clam Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "8130dbd9a64044491d4701a0db207d79695703543bdb28e49bf701821357972b"
+  },
+  {
+    "name": "Egg Lantern",
+    "type": "Lantern",
+    "group": "Easter",
+    "id": "a4cc55339ee9a678a5786489ef763d0f5e82738482fc9da481ddf998df52e79c"
+  },
+  {
+    "name": "Ghost Paper Lantern",
+    "type": "Lantern",
+    "group": "Halloween",
+    "id": "2112277bcb085656db0c3579035017c0fded1cccc227d9a5fefc6d3cb78dd312"
+  },
+  {
+    "name": "Ghostie",
+    "type": "Lantern",
+    "group": "Halloween",
+    "id": "102cf3c8de10b87bcddf7df430f7f8a5860839f05e9c9ae67d042fb043e4f4bc"
+  },
+  {
+    "name": "Green Lantern",
+    "type": "Lantern",
+    "group": "All Maps",
+    "id": "c0ccbbf44ca17aeca85fdc204627cbebfdbc65709bf5f5be6f5d37760367a581"
+  },
+  {
+    "name": "Jack'o Lantern",
+    "type": "Lantern",
+    "group": "Halloween",
+    "id": "4d6084d31054b5373a45609f11eb30ba813ef31bb314533f9a1039b8acba6c27"
+  },
+  {
+    "name": "Miner Lantern",
+    "type": "Lantern",
+    "group": "Map/Monster Exclusive",
+    "id": "032c6c7cd9463b0b5bab6ee9cb799582b12e746428783b896b2fc4ad7f908c4d"
+  },
+  {
+    "name": "Palm Tree Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "eefe82aeeb9dd5dad9bf9599ea11653dc759b851382269d7fadd86c773cf2873"
+  },
+  {
+    "name": "Pineapple Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "74097eaf6c8c9b1c92e836baab4ede6002d0e72ac8e56a2416512f5b52f47a61"
+  },
+  {
+    "name": "Pumpkin Paper Lantern",
+    "type": "Lantern",
+    "group": "Halloween",
+    "id": "aaf7dbbbbd71850f52c93079e8fa3ef1d07734cbd3fb090fcd084ca87d569de8"
+  },
+  {
+    "name": "Red Lantern",
+    "type": "Lantern",
+    "group": "All Maps",
+    "id": "9f37740eff24c96d5c5ea89656cd8480b63246289928704b76c324105e746558"
+  },
+  {
+    "name": "Sandcastle Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "a6e23309ace17f4603f27b155ade46db10862db41221f01290dde9ac729e2661"
+  },
+  {
+    "name": "Skull",
+    "type": "Lantern",
+    "group": "Halloween",
+    "id": "6a0646389f01ed1dba55a6b0f1f46c55cb1d87e7e9185124dbda007176746ad7"
+  },
+  {
+    "name": "Sun Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "1f86308d3310efb0d77135f72ae7607b804d4cfed85be546685af6a0db1d8ec9"
+  },
+  {
+    "name": "Tiki Torch Lantern",
+    "type": "Lantern",
+    "group": "Summer",
+    "id": "dfe17c4f7e40f46aca5c536bbd6635c59c1f07ae5bf9989c57960f75fa48b8d5"
+  },
+  {
+    "name": "Yellow Lantern",
+    "type": "Lantern",
+    "group": "All Maps",
+    "id": "00ddb84769463aac1ffd1e8326cc9a57cef5cae5e2f5c3294fcf462acc5156ac"
+  },
+  {
+    "name": "Ahiahi Music Disc",
+    "type": "Records",
+    "group": "Summer",
+    "id": "e822eb933ae10a1152f4f09af004404b29babd8aa60113012b009e8020c9317e"
+  },
+  {
+    "name": "Anesthesia",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "d1434c0118b1520eba0183ce3b87faf000ff78faae0d919cdd8d4d6fe7d4f775"
+  },
+  {
+    "name": "Awakea Music Disc",
+    "type": "Records",
+    "group": "Summer",
+    "id": "b593b5073ab685ce169847fbe346c7e19c347272d070c0105327de98d5958440"
+  },
+  {
+    "name": "Blood of Midnight",
+    "type": "Records",
+    "group": "Supporter Edition",
+    "id": "7d014bbc1aeac13b18ff46a6677a8b6c203105b512a0e19d027f36442c9d59f3"
+  },
+  {
+    "name": "Cruiser",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "2e857fa598816f8175b7c12328889cdf3b4a33f3183f3763c71a1e2632363602"
+  },
+  {
+    "name": "Darling Caravella",
+    "type": "Records",
+    "group": "Supporter Edition",
+    "id": "a13d8e7ea2025c480b0389ced2a5c1911d2228ace6a0eefb228434ac980f95c5"
+  },
+  {
+    "name": "Dream",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "3da5bc3daf37c666ec921528bdad69fdf71eaafd4d17ff32ada740b2a61a9859"
+  },
+  {
+    "name": "Eternally Pristine",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "a4a92e64ce214a211e9b94f1466af0e4bd3e3696de5eb22420809cdcb39cd2cb"
+  },
+  {
+    "name": "Guitar Room",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "e552a5118719817fc4cf8dc0bd2c808c645b63cc1bd211f1d1a02fbd0d89f4fa"
+  },
+  {
+    "name": "Hardcore Oderine",
+    "type": "Records",
+    "group": "Hardcore",
+    "id": "6151b8d495713d30e4fa0cc3f573684ced11c1aea451cfb8073289eca2445b5d"
+  },
+  {
+    "name": "Hardcore See you in Cuba",
+    "type": "Records",
+    "group": "Hardcore",
+    "id": "f2c312357a90383410472a0eef78a62ea7d500addb276e7373f15b8239274038"
+  },
+  {
+    "name": "Heaven May Cry",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "88fcb4869c90c51d93f7a51f02f9133ae26f978116c719dd66e91ebd4edc0204"
+  },
+  {
+    "name": "Hohonu Music Disc",
+    "type": "Records",
+    "group": "Summer",
+    "id": "013003672b27e2b43d1b79bedb9541c24de9b235489fd2ba443f132705df0661"
+  },
+  {
+    "name": "Kakahiaka Music Disc",
+    "type": "Records",
+    "group": "Summer",
+    "id": "7f0907109202de6ce9739b92cf522ec7cf786fa73481b7e011e53479c4602b36"
+  },
+  {
+    "name": "Kodama",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "c0dd6eb45a1cf6cf8386918f8acb9e255488260875dab30ea13f82b4dec2b721"
+  },
+  {
+    "name": "Kurayami",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "9305ba0149b0a5a354337bceabce753525caabc36dec6ce5297644dac97890c3"
+  },
+  {
+    "name": "Peace among the dead",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "5fcdba3aeb3327549335aa69ba10bc88f436d0891f69543c40d4ddcc138fe380"
+  },
+  {
+    "name": "Phantom Flare",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "f0be141118ac5b5786eedf87ea6ca4fbbbf6ff3a93296a0f9bff977d4b8b3c43"
+  },
+  {
+    "name": "Piano Room",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "2a02202b5d0a1f662687021579be63bbef6aecbad445d7e6d566d48ba7d763fa"
+  },
+  {
+    "name": "Pigman Comes",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "c0e975ecd0ad921cc52e65310bbb68ef45f9730644560ff6841c49af52b72425"
+  },
+  {
+    "name": "Po Music Disc",
+    "type": "Records",
+    "group": "Summer",
+    "id": "4622f4e5cf67d27036a9493f378771a782c5de53c9c8d85958f087f2b0e20d5e"
+  },
+  {
+    "name": "Poinsettia",
+    "type": "Records",
+    "group": "Christmas",
+    "id": "e202d16a89edbe9f8f811f58254d78469bc906f4dfc42dc8ae8e722c0e33d2f7"
+  },
+  {
+    "name": "Rouse",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "58eaec5b16b542df0d16b04ca29b56905ab533b9026ffa527b7b03f2ac75e184"
+  },
+  {
+    "name": "Sepia Garden",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "b5a43f2fa54a95b4285fc8eead9535e2628d9da57117fb183fe947e86220b6b2"
+  },
+  {
+    "name": "She Is Coming",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "235928a484e7a8ec1cee04a224b2431826bd02abf0c1bea712706e15bbe17be5"
+  },
+  {
+    "name": "Skelley Music Disc",
+    "type": "Records",
+    "group": "Halloween",
+    "id": "a87d319a4c4803b30d0f0d8096ab0af1bf72199bc84b0a0aefc2bb651f989ad1"
+  },
+  {
+    "name": "Solitude Of Corpses",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "df1cd32f3229aa08149e89c4ab175eea86f8c4fe9bd4335a6a3c88c9388802c7"
+  },
+  {
+    "name": "Strange Room",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "6b8e675e6352d74a99958270cde8e18d39cd3069268f319217ee722f99014912"
+  },
+  {
+    "name": "Sweet Ginevra",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "7f51ec49971ac1be51233ef7bf732bca1f52b80252fe00583c4af0d83336914c"
+  },
+  {
+    "name": "True Secrets",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "45d08022f6f1fb011d3db24df71306b725b58a1dfe8640d54c4b43df9ecfbd55"
+  },
+  {
+    "name": "We Are Safe",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "e8e4925c352f244c172335762e5c009d8dbf95cf81463a705e225f1a558112b1"
+  },
+  {
+    "name": "What lurks in the dark",
+    "type": "Records",
+    "group": "All Maps",
+    "id": "9a71865a6c832a7201269c8d0517a65505ad15c832dccf00f9d3016e69540bf5"
+  },
+  {
+    "name": "White Candle",
+    "type": "Records",
+    "group": "Christmas",
+    "id": "c74d1a61ea441eecd119584975e35af3f6b28affdef2ced5d637d15eeaf099e8"
+  },
+  {
+    "name": "Black Punk Wristband",
+    "type": "Wrist",
+    "group": "Supporter Edition",
+    "id": "d250ef119d4f2a08e0c8c041556054eb342c597337526c450ed6aabdd610f736"
+  },
+  {
+    "name": "Black SmartWatch",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "8e1126535e00fb380e315a5e5b04ebd29649fa2773aceb50a33313a823f1d468"
+  },
+  {
+    "name": "Black Watch",
+    "type": "Wrist",
+    "group": "Hardcore",
+    "id": "14e8dbd920ec366f2ddfe0c81f1d3dcf801ceabb582d1e6a2e3d0c74545c6734"
+  },
+  {
+    "name": "Black/Blue Bracelet",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "40da9648cb08891b35bc5891ffc7f2004966fd34f98967dfe70e526d1530e2bc"
+  },
+  {
+    "name": "Black/Grey Bracelet",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "61eff53fda4cd518f1207204cc2f8be88d6d1763339386c2ed70b44fb013a278"
+  },
+  {
+    "name": "Black/Red Bracelet",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "820328b1f37a31de244df60ac033a7c05e5cd3df02592aed6b110e1f944422bd"
+  },
+  {
+    "name": "Blue Glow Band",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "7f8f9cf1e0a63f86be37237221332b2940df76e42407718d9a8676a7e484e3fb"
+  },
+  {
+    "name": "Blue Shell Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "f7eab57a9f980b175e0475506f162857812e085ecaa0e151fe823c9f1ac9d63f"
+  },
+  {
+    "name": "Blue SmartWatch",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "b927f802b50bdf6b7c47114a94dea24fc30b0e18b3bcf9e87061c38ee00571ce"
+  },
+  {
+    "name": "Brown/Orange Bead Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "3ede92e9ecc0a11d2dec16ffc85f996983f399cd40d9d9c45f44ea4b6da3a4d6"
+  },
+  {
+    "name": "Bunny Watch Blue",
+    "type": "Wrist",
+    "group": "Easter",
+    "id": "2c3cb59224a95bf0cc37bbd358d0570477aae2b65ff595861587cb685921faf0"
+  },
+  {
+    "name": "Bunny Watch Green",
+    "type": "Wrist",
+    "group": "Easter",
+    "id": "e73f7895d6fbd3fe9668ddac1bfad7d8734a35f8f62239ea5ac92e3675a66f2b"
+  },
+  {
+    "name": "Bunny Watch Pink",
+    "type": "Wrist",
+    "group": "Easter",
+    "id": "2659778202fe9bd2674ccbdb239a24f23fd4865ae82b8f20665d7b9052a9d748"
+  },
+  {
+    "name": "Bunny Watch Purple",
+    "type": "Wrist",
+    "group": "Easter",
+    "id": "1ee9c632fc761017761600e4f0a21a47ddc43ae2037effd331de29b3bf8973eb"
+  },
+  {
+    "name": "Bunny Watch Yellow",
+    "type": "Wrist",
+    "group": "Easter",
+    "id": "72ffedf0285084ea5386987fce9d9fa1f26fe9f0aaf0dd5e60f8ff3fd87e5006"
+  },
+  {
+    "name": "Christmas Bead Bracelet",
+    "type": "Wrist",
+    "group": "Christmas",
+    "id": "980a7892e02bfa4699523ec8be114e949efd40955f8740127b50a43dfbcd5c60"
+  },
+  {
+    "name": "Christmas light bracelet",
+    "type": "Wrist",
+    "group": "Christmas",
+    "id": "44a11f9cf02966176960479b1b91049307dc69a23b7b40f15167ef56787d2aa1"
+  },
+  {
+    "name": "Colorful Bead Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "64a82b3213032de2f1ab3c18edc360b533a2f576e9d4fb1977984c526b69e2d5"
+  },
+  {
+    "name": "Green Glow Band",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "6045554d3571873aafaaf930250bf3797719ab5b6ffec3744c97ce8f0e5ec871"
+  },
+  {
+    "name": "Monochrome Bead Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "66de99eaf0cda0c6882cc8968f1895a2a4f27b193235305e84bf137c020fb7be"
+  },
+  {
+    "name": "Pink Punk Wristband",
+    "type": "Wrist",
+    "group": "Supporter Edition",
+    "id": "19a911e21d8100c6413a69f9e23356550dbf323b0856ba5d6b03ec462931a2f9"
+  },
+  {
+    "name": "Pumpkin Bracelet",
+    "type": "Wrist",
+    "group": "Halloween",
+    "id": "2ae81a1ed2ae508fec2d3aa561cd86f5247fabab99434655ac3d3f5dc614404d"
+  },
+  {
+    "name": "Purple Shell Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "31a1df4bff129acfb6cfd4f9e1ccc9e05a59832e707195e215797a27ae6a5dd9"
+  },
+  {
+    "name": "Rainbow Shell Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "8f99f2016e810313f8115cd8e73c47b0e2500f7919ca63c3bb01a911e41182b1"
+  },
+  {
+    "name": "Red Glow Band",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "f50ab3a8b6a2a8500d6e027589c70a8401f67bab2c175f3c7897ef1748d22f23"
+  },
+  {
+    "name": "Red SmartWatch",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "a6c3de3ffc4e53ef98613477085f10c2d6bf4a333bad934839cbafc993ad7896"
+  },
+  {
+    "name": "Rosegold SmartWatch",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "8e9f33065c65ffd6b244393cb04590657ca0512bae5c29d0d682b18dbd0d82c6"
+  },
+  {
+    "name": "Ruby Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "8a61a116880d70601bb8599339e7cbd7c8543190673fccf158d07700167f442f"
+  },
+  {
+    "name": "Shell Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "828aaa7681f2ce99236b704f0db964c46274434aa1a344b050cc9efb2a2b1c1c"
+  },
+  {
+    "name": "Silver SmartWatch",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "441d7755a1cfdaa567bd5104bb5950b296fd58ed6d127e7b534fdd3aa6388d91"
+  },
+  {
+    "name": "Snowflake Watch",
+    "type": "Wrist",
+    "group": "Christmas",
+    "id": "5b1f10e4f71597943d98430406981dad0d03e5f66a0ed28bff074c987342754d"
+  },
+  {
+    "name": "Topaz Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "43e714b874955ca56388ac3b0348a2bd177d2fcbc5dc6aae5ab8b21c7db825f8"
+  },
+  {
+    "name": "Tricolor Bead Bracelet",
+    "type": "Wrist",
+    "group": "Summer",
+    "id": "510b2d1ba19f38a9bc6ede1ef28e36ddc20131548346f34510fb13b5575d9313"
+  },
+  {
+    "name": "White Watch",
+    "type": "Wrist",
+    "group": "Hardcore",
+    "id": "48d0bc49574187e129f83389f27a5f16b2e7bd04b30d0a04108a67cce20180eb"
+  },
+  {
+    "name": "Yellow/Blue Bracelet",
+    "type": "Wrist",
+    "group": "All Maps",
+    "id": "c3fafec4886cdf11cd563147b749abc5bc3ff93098b45006bc5a56fef2fb2fef"
+  }
+]

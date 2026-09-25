@@ -1,10 +1,11 @@
-import { v4 as uuid } from 'uuid';
+import { JSDOM } from 'jsdom';
 
-import { Cosmetic } from '@mkr/shared/labyrinthine';
+import { Cosmetic, computeCosmeticId } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 
-export const extract = (document: Document): Cosmetic[] => {
+export const extract = (raw: string): Cosmetic[] => {
+  const document = new JSDOM(raw).window.document;
   const baseUrl = CONFIG.defaultContext.urlToScrap;
   const itemCardQuery = document.querySelectorAll('div.card');
 
@@ -15,12 +16,13 @@ export const extract = (document: Document): Cosmetic[] => {
   };
 
   return itemCards.map(card => {
-    return {
-      id: uuid(),
-      name: card.children[1].children[0].textContent.trim(),
-      group: card.children[1].children[2].children[1].textContent.trim(),
-      type: card.children[1].children[2].children[0].textContent.trim(),
+    const identity = {
+      name: card.children[1].children[0].textContent?.trim(),
+      group: card.children[1].children[2].children[1].textContent?.trim(),
+      type: card.children[1].children[2].children[0].textContent?.trim(),
       icon: getAbsoluteUrl(card.children[0].getAttribute('src') ?? ''),
-    } as Cosmetic;
+    } as Omit<Cosmetic, 'id'>;
+
+    return { id: computeCosmeticId(identity), ...identity } as Cosmetic;
   });
 };

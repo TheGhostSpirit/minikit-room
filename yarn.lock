@@ -2095,7 +2095,6 @@ __metadata:
     p-limit: "npm:^7.3.0"
     tsx: "npm:^4.21.0"
     typescript: "npm:^5.9.3"
-    uuid: "npm:^13.0.0"
   languageName: unknown
   linkType: soft
 
@@ -2104,6 +2103,7 @@ __metadata:
   resolution: "@mkr/shared@workspace:packages/shared"
   dependencies:
     "@types/node": "npm:^25.2.0"
+    js-sha256: "npm:^1.0.0"
     typescript: "npm:^5.9.3"
   languageName: unknown
   linkType: soft
@@ -5932,6 +5932,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-sha256@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "js-sha256@npm:1.0.0"
+  checksum: 10c0/24749f9ce929d3121324ba168f120802177939ca8b5411ef3ac69e6333b005a1be92279be50b41e24c1e30094d4eb6e231be7471e50fa5aa54a600f6fcd05612
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -8661,15 +8668,6 @@ __metadata:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: 10c0/02ba649de1b7ca8854bfe20a82f1dfbdda3fb57a22ab4a8972a63a34553cf7aa51bc9081cf7e001b035b88186d23689d69e71b510e610a09a4c66f68aa95b672
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "uuid@npm:13.0.0"
-  bin:
-    uuid: dist-node/bin/uuid
-  checksum: 10c0/950e4c18d57fef6c69675344f5700a08af21e26b9eff2bf2180427564297368c538ea11ac9fb2e6528b17fc3966a9fd2c5049361b0b63c7d654f3c550c9b3d67
   languageName: node
   linkType: hard
 

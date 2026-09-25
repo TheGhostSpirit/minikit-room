@@ -5,14 +5,14 @@ export interface Cosmetic extends GenericCosmetic {
   selected?: boolean;
 }
 
-export type CosmeticIdentifier = Pick<Cosmetic, 'name' | 'type'>;
+export type CosmeticIdentifier = Pick<Cosmetic, 'id'>;
 
 export class CosmeticUtils {
   static toCosmeticIdentifier(cosmetic: Cosmetic): CosmeticIdentifier {
-    return { name: cosmetic.name, type: cosmetic.type };
+    return { id: cosmetic.id };
   }
 
   static isSameCosmetic(cosmetic1: CosmeticIdentifier | Cosmetic, cosmetic2: CosmeticIdentifier | Cosmetic): boolean {
-    return cosmetic1.name === cosmetic2.name && cosmetic1.type === cosmetic2.type;
+    return cosmetic1.id === cosmetic2.id;
   }
 }

@@ -1,11 +1,13 @@
-import { v4 as uuid } from 'uuid';
+import { JSDOM } from 'jsdom';
 
-import { Cosmetic, CosmeticType } from '@mkr/shared/labyrinthine';
+import { Cosmetic, CosmeticType, computeCosmeticId } from '@mkr/shared/labyrinthine';
 
 import { CONFIG } from 'config';
 import { debugTree } from 'extractors/utils';
 
-export const extract = (document: Document): Cosmetic[] => {
+export const extract = (raw: string): Cosmetic[] => {
+  const document = new JSDOM(raw).window.document;
+
   return [
     ...extractTable(document, '#tpt-1 tbody', 'Head'),
     ...extractTable(document, '#tpt-2 tbody', 'Clothing'),
@@ -35,14 +37,15 @@ const extractTable = (document: Document, querySelector: string, cosmeticType: C
 
   const tableRows = removeHeaderRow([...tableRowsQuery.children]);
   return tableRows.map(row => {
-    return {
-      id: uuid(),
-      name: row.children[4].textContent.trim(),
-      group: row.children[5].textContent.trim(),
+    const identity = {
+      name: row.children[4].textContent?.trim(),
+      group: row.children[5].textContent?.trim(),
       type: cosmeticType,
       icon: cosmeticType === 'Records'
         ? ''
         : row.children[1].children[0].children[0].getAttribute('href'),
-    } as Cosmetic;
+    } as Omit<Cosmetic, 'id'>;
+
+    return { id: computeCosmeticId(identity), ...identity } as Cosmetic;
   });
 };
