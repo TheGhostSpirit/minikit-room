@@ -5,10 +5,11 @@
   <ng-template #content let-commit>
     <p-card class="mb-4 w-96">
       <div class="flex flex-col">
-        @for(cosmetic of commit.cosmetics; track cosmetic.name) {
+        @for(identifier of commit.cosmetics; track identifier.id) {
+        @let cosmetic = cosmeticsById().get(identifier.id);
         <div class="flex flex-row justify-around">
-          <span>{{ cosmetic.name }}</span>
-          <span class="text-primary">{{ cosmetic.type }}</span>
+          <span>{{ cosmetic?.name ?? identifier.id }}</span>
+          <span class="text-primary">{{ cosmetic?.type }}</span>
         </div>
         }
       </div>

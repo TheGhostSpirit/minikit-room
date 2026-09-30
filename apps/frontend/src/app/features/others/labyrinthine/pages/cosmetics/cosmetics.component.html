@@ -25,7 +25,7 @@
   </p-toolbar>
 
   <p-drawer header="Historique des commits" [(visible)]="isHistoryVisible" [fullScreen]="true">
-    <app-commit-history [commits]="commits()" />
+    <app-commit-history [commits]="commits()" [cosmetics]="rawCosmetics()" />
   </p-drawer>
 
   <p-drawer header="Comparaison" [(visible)]="isCompareVisible" [fullScreen]="true">

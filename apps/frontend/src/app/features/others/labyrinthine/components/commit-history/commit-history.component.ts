@@ -2,6 +2,7 @@ import { Component, computed, input } from '@angular/core';
 
 import { sharedImports } from 'app/shared/shared.config';
 import { Commit } from 'app/features/others/labyrinthine/models/commit';
+import { Cosmetic } from 'app/features/others/labyrinthine/models/cosmetic';
 
 @Component({
   selector: 'app-commit-history',
@@ -10,6 +11,10 @@ import { Commit } from 'app/features/others/labyrinthine/models/commit';
 })
 export class CommitHistoryComponent {
   readonly commits = input<Commit[]>([]);
+  readonly cosmetics = input<Cosmetic[]>([]);
+  readonly cosmeticsById = computed(() =>
+    new Map(this.cosmetics().map(cosmetic => [cosmetic.id, cosmetic]))
+  );
   readonly commitsByDateDesc = computed(() =>
     [...this.commits()].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   );
